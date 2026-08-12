@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="59.77" height="32.001" viewBox="0 0 59.77 32.001">
+  <g id="Group_8637" data-name="Group 8637" transform="translate(-70.229 -780.5)">
+    <rect id="win-ico" width="8" height="32" rx="4" transform="translate(70.229 780.5)" fill="#0c8e6b"/>
+    <g id="wins" transform="translate(-362.773 -1035.166)">
+      <g id="Path_5992" data-name="Path 5992" transform="translate(433 1816)" fill="none">
+        <path d="M16-.168,51.814-.333,59.772,15.75,51.814,31.5,16,31.667Z" stroke="none"/>
+        <path d="M 51.19413757324219 0.6695632934570312 L 16.99999618530273 0.8278656005859375 L 16.99999618530273 30.66216278076172 L 51.19703674316406 30.50384712219238 L 58.65415191650391 15.74498558044434 L 51.19413757324219 0.6695632934570312 M 51.81360626220703 -0.3333148956298828 L 59.77219772338867 15.74964427947998 L 51.81360626220703 31.50100517272949 L 15.99999618530273 31.66680335998535 L 15.99999618530273 -0.1675167083740234 L 51.81360626220703 -0.3333148956298828 Z" stroke="none" fill="#1a8e6b"/>
+      </g>
+      <text id="Win" transform="translate(467.777 1835.769)" fill="#1a8e6b" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="10" font-family="Poppins-SemiBold, Poppins" font-weight="600" letter-spacing="-0.02em"><tspan x="-9.985" y="0">WIN</tspan></text>
+    </g>
+  </g>
+</svg>

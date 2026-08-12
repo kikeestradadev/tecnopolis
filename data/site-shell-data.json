@@ -1,0 +1,21 @@
+{
+	"topWidget": {
+		"src": "images/top_widget.png",
+		"alt": ""
+	},
+	"logo": {
+		"href": "index.html",
+		"src": "images/tecnopolis_logo.svg",
+		"alt": "Tecnopolis"
+	},
+	"social": [
+		{ "href": "#", "src": "images/facebook-ico.svg", "alt": "Facebook" },
+		{ "href": "#", "src": "images/instagram-ico.svg", "alt": "Instagram" },
+		{ "href": "#", "src": "images/youtube-ico.svg", "alt": "YouTube" },
+		{ "href": "#", "src": "images/twitter-ico.svg", "alt": "Twitter" }
+	],
+	"rightBanner": {
+		"src": "images/right_widget_1.png",
+		"alt": ""
+	}
+}

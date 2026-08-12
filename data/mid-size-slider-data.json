@@ -1,0 +1,56 @@
+{
+	"title": "Tech News & Analysis",
+	"seeAllHref": "#",
+	"seeAllLabel": "See All",
+	"seeAllSpan": "Tech News & Analysis",
+	"items": [
+		{
+			"href": "#",
+			"image": "images/test1.jpg",
+			"title": "Apple, Google y el futuro del comercio digital",
+			"date": "10 HOURS AGO"
+		},
+		{
+			"href": "#",
+			"image": "images/test2.jpg",
+			"title": "Apple, Google y el futuro del comercio digital",
+			"date": "10 HOURS AGO"
+		},
+		{
+			"href": "#",
+			"image": "images/test3.jpg",
+			"title": "Apple, Google y el futuro del comercio digital",
+			"date": "10 HOURS AGO"
+		},
+		{
+			"href": "#",
+			"image": "images/test4.jpg",
+			"title": "Apple, Google y el futuro del comercio digital",
+			"date": "10 HOURS AGO"
+		},
+		{
+			"href": "#",
+			"image": "images/test5.jpg",
+			"title": "Apple, Google y el futuro del comercio digital",
+			"date": "10 HOURS AGO"
+		},
+		{
+			"href": "#",
+			"image": "images/test6.jpg",
+			"title": "Apple, Google y el futuro del comercio digital",
+			"date": "10 HOURS AGO"
+		},
+		{
+			"href": "#",
+			"image": "images/test7.jpg",
+			"title": "Apple, Google y el futuro del comercio digital",
+			"date": "10 HOURS AGO"
+		},
+		{
+			"href": "#",
+			"image": "images/test8.jpg",
+			"title": "Apple, Google y el futuro del comercio digital",
+			"date": "10 HOURS AGO"
+		}
+	]
+}

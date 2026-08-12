@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="70" viewBox="0 0 70 70">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Rectangle_4229" data-name="Rectangle 4229" d="M16,0H70a0,0,0,0,1,0,0V70a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V16A16,16,0,0,1,16,0Z" transform="translate(96 964)" fill="#dfcd90"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.261" y1="0.977" x2="0.801" y2="0.013" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b93a22"/>
+      <stop offset="1" stop-color="#a2301a"/>
+    </linearGradient>
+  </defs>
+  <g id="winner-ico" transform="translate(-96 -964)" clip-path="url(#clip-path)">
+    <g id="Group_2941" data-name="Group 2941" transform="translate(-831.18 318.663) rotate(-45)">
+      <rect id="Rectangle_4228" data-name="Rectangle 4228" width="96" height="24" transform="translate(152 1136)" fill="url(#linear-gradient)"/>
+      <text id="WINNER" transform="translate(200 1153)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="14" font-family="Poppins-SemiBold, Poppins" font-weight="600" letter-spacing="-0.02em"><tspan x="-26" y="0">WINNER</tspan></text>
+    </g>
+  </g>
+</svg>

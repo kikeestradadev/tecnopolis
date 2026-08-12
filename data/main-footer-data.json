@@ -1,0 +1,17 @@
+{
+	"logo": {
+		"href": "#",
+		"src": "images/tecnopolis_logo_white.svg",
+		"alt": "Tecnopolis"
+	},
+	"social": [
+		{ "href": "#", "src": "images/facebook-ico-white.svg", "alt": "Facebook" },
+		{ "href": "#", "src": "images/instagram-ico-white.svg", "alt": "Instagram" },
+		{ "href": "#", "src": "images/youtube-ico-white.svg", "alt": "YouTube" },
+		{ "href": "#", "src": "images/twitter-ico-white.svg", "alt": "Twitter" }
+	],
+	"disclaimers": [
+		"Tecnopolis es una revista digital sobre tecnología, actualidad y comercio electrónico. Publicamos análisis, guías y tendencias para profesionales, founders y lectores curiosos que quieren entender cómo se mueve el mercado digital.",
+		"© Copyright 2026, All Rights Reserved | Tecnopolis. Marca y logo son propiedad de Tecnopolis. Contenido editorial con fines informativos. Las opiniones expresadas pertenecen a sus autores y no necesariamente a la publicación."
+	]
+}
