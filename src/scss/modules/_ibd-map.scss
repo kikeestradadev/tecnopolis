@@ -1,0 +1,167 @@
+.ibd-map{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 40px;
+    @media (width >= $xl) {
+        flex-direction: row;
+    }
+    &__item:nth-child(1){
+        // border: 1px solid red;
+        width: 100%;
+        @media (width >= $xl) {
+            width: 60%;
+        }
+    }
+    &__item:nth-child(2){
+        // border: 1px solid blue;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @media (width >= $xl) {
+            width: 40%;
+        }
+    }
+    &__select-item{
+        display: block;
+        width: 232px;
+		position: relative;
+		background-color: #F3F3F3;	
+		padding: 10px 20px;	
+		border-radius: 4px;
+		font: normal normal 600 17px/28px Poppins;
+		letter-spacing: -0.34px;
+		color: #1F2024;
+		border: none;
+		-webkit-appearance: none; /* Para navegadores WebKit como Chrome y Safari */
+		-moz-appearance: none; /* Para navegadores basados en Gecko como Firefox */
+		appearance: none; /* Resto de los navegadores */
+		background-image: url('images/triangle-bottom.svg'); /* URL de tu archivo SVG */
+		background-repeat: no-repeat;
+		background-position: calc(100% - 10px) center; /* Puedes ajustar esto para alinear el triángulo como desees */
+        @media (width >= $s) and (width < $xl) {
+            margin-bottom: 15px;
+        }
+		&:focus-visible {
+			outline: none; 
+		}
+		@media (width >= $m) {
+			font: normal normal 600 23px/28px Poppins;
+			letter-spacing: -0.46px;
+		}
+		@media (width >= $xl) {
+			font: normal normal 600 17px/28px Poppins;
+			letter-spacing: -0.34px;
+            margin-left: auto;
+		}
+		@media (width >= $xxl) {
+			font: normal normal 600 23px/28px Poppins;
+			letter-spacing: -0.46px;
+		}
+	}
+    &__state-info-container{
+        // border: 1px solid green;
+        width: 277px;
+        padding-left:70px;
+        position: relative;
+        @media (width >= $xl) {
+            margin: 0 auto;
+        }
+    }
+    &__logo{
+        position: absolute;
+        left: 0;
+        top: 50%; 
+        transform: translateY(-50%);
+    }
+    &__state-label{
+        display: block;
+        width: 100%;
+        font: normal normal normal 14px/25px Poppins;
+        letter-spacing: 0px;
+        color: #1F2024;
+    }
+    &__state-info{
+        font-weight: bold;
+    }
+    &__state-bonuses-title{
+        font: normal normal 600 23px/17px Poppins;
+        letter-spacing: -0.46px;
+        color: #2C2E32;
+        display: block;
+        margin-top: 15px;
+    }
+    &__state-bonuses-grid{
+        border-top: 4px solid #9E852E;
+        margin-top: 15px;
+        height: 300px;
+        padding:15px 0;
+        overflow-y: auto;
+		&::-webkit-scrollbar {
+			display: none;
+		}	
+		-ms-overflow-style: none;	
+		scrollbar-width: none;
+    }
+    &__state-bonuses-grid-item{
+        border-bottom: 1px solid #CCCCCC;
+        display: flex;
+        align-items: center;
+        height: 60px;
+        padding:0 15px;
+    }    
+    &__state-bonuses-brand{
+        padding-left: 10px;
+        font: normal normal 600 17px/27px Poppins;
+        letter-spacing: -0.34px;
+        color: #1F2024;
+    }
+    &__state-bonuses-description{
+        padding-left: 10px;
+        font: normal normal normal 14px/25px Poppins;
+        letter-spacing: 0px;
+        color: #1F2024;
+    }
+    &__state {
+        stroke: white;
+        transition: fill .4s ease;
+        transform-origin: center center;
+        @media (width >= $l) {
+            @media (hover: hover) and (pointer: fine) {
+            &:hover {
+                fill: #8f8b7a !important;
+                cursor: pointer;
+                transform: scale(1.005, 1.005);
+            }
+            }
+        }
+        &.active {
+            fill: #9e852e !important;
+            cursor: pointer;
+            transform: scale(1.005, 1.005);
+        }
+    }
+    &__map-container{
+        border: 1px solid red;
+    }
+}
+#ibdStateLabel{
+    display: none;
+    @media (width >= $l) {
+        box-shadow: 0px 7px 40px rgba(0, 0, 0, 0.7);
+        opacity: 0%;
+        padding: 1rem;
+        border-radius: 8px;
+        font-size: 24px;
+        position: fixed;
+        color: white;
+        font-family: "Poppins";
+        background-color: black;
+        width: fit-content;
+        transform: translateX(-50%);
+        transition: opacity .4s ease;
+        z-index: 1;
+        display: block;
+    }
+}

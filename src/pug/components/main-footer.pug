@@ -1,0 +1,21 @@
+footer(class='main-footer')
+	div(class='main-footer__container')
+		div(class='main-footer__social-media-section')
+			div(class='main-footer__social-media-item')
+				a(href=mainFooterData.logo.href)
+					img(
+						class='main-footer__white-logo'
+						src=mainFooterData.logo.src
+						alt=mainFooterData.logo.alt
+					)
+			div(class='main-footer__social-media-item')
+				ul(class='footer-ul')
+					each social in mainFooterData.social
+						li(class='footer-ul__li')
+							a(class='footer-ul__anchor' href=social.href)
+								img(class='footer-ul__image' src=social.src alt=social.alt)
+		div(class='main-footer__disclaimer-container')
+			each text in mainFooterData.disclaimers
+				div(class='main-footer__collapse-footer-text')
+					p(class='main-footer__disclaimer-text active')= text
+					span(class='main-footer__collapse-text-button') ...

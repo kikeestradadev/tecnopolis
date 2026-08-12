@@ -1,0 +1,199 @@
+.team-top-banner{
+	background-color: #F3F3F3;	
+	border-radius: 8px 8px 0px 0px;	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	// overflow: hidden;
+	@media (width >= $m) {
+		min-height: 400px;
+		border-bottom: 8px solid #9E852E;
+	}
+	&__container{
+		padding-top: 30px;
+		position: relative;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		@media (width >= $m) {
+			max-width: 90%;
+			padding-left: 300px;			
+			justify-content: flex-end;
+		}
+		@media (width >= 1600px) and (width < 1650px) {
+			max-width: 95%;
+		}
+	}
+	&__container-item:nth-child(1),&__container-item:nth-child(3){
+		width: 100%;
+	}
+	&__container-item:nth-child(1){
+		background-color: #F3F3F3;	
+		width: 100%;
+		margin-bottom: 100px;
+		@media (width >= $m) {
+			min-height: 107px;
+			margin-bottom: 30px;
+		}
+	}
+	&__container-item:nth-child(2){
+		position: relative;
+		width:264px;
+		height: 296px;
+		border-radius: 16px 16px 0px 0px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		@media (width >= $m) {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+		background-image: url('images/bg_grid.svg');
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		background-blend-mode: multiply;
+		background-size: 65%;
+	}
+	&__picture{
+		width: 152px;
+		height: 152px;	
+		background-color: #ffffff;
+		position: absolute;
+		top: 0;  
+		left: 50%; 
+		transform: translate(-50%, -50%);
+		border-radius: 50%;
+		transition: all .5s;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 4px solid #E3E2E2;
+	}
+	&__avatar{
+		transform: scale(1.5);
+	}	
+	&__team-card-title-score, &__team-card-title-data{
+		color: white;
+		text-shadow: black 0.1em 0.1em 0.2em;
+		text-transform: uppercase;
+	}
+	&__team-card-title-score{
+		font: normal normal medium 17px/17px Poppins;
+		letter-spacing: -0.34px;
+		display: block;
+		text-align: center;
+	}
+	&__team-card-title-data{
+		font: normal normal bold 27px/27px Poppins;
+		letter-spacing: -0.54px;
+	}
+	&__title-league, &__title-first-name, &__title-second-name{
+		display: block;
+		text-transform: uppercase;
+		text-align: center;
+		@media (width >= $m) {
+			text-align: left;
+		}
+	}
+	&__title-league{
+		
+		font: normal normal normal 20px/22px Poppins;
+		letter-spacing: 0px;
+		color: #9E852E;
+		@media (width >= $m) {
+			font: normal normal normal 23px/23px Poppins;
+		}
+	}
+	&__title-first-name{
+		font: normal normal normal 34px/37px Poppins;
+		letter-spacing: -0.53px;
+		color: #2C2E32;
+		@media (width >= $m) {
+			font: normal normal normal 41px/45px Poppins;
+		}
+
+		@media (width >= 1600px) and (width < 1650px) {
+			font: normal normal normal 34px/37px Poppins;
+		}
+	}
+	&__title-second-name{
+		font: normal normal bold 34px/37px Poppins;
+		letter-spacing: -0.53px;
+		color: #2C2E32;
+		@media (width >= $m) {
+			font: normal normal bold 41px/45px Poppins;
+		}
+		@media (width >= 1600px) and (width < 1650px) {
+			font: normal normal bold 34px/37px Poppins;
+		}
+	}
+	&__container-item:nth-child(3){
+		background-color: white;
+		border-top: 8px solid #9E852E;
+		padding: 15px;
+		@media (width >= $m) {
+			min-height: 164px;
+		}
+	}
+	&__bg-item{
+		height: 8px;
+	}
+	&__bg-container{
+		margin-bottom: 10px;
+	}
+	&__bg-item:nth-child(1){
+		background-color: #dfdfdf;
+	}
+	&__bg-item:nth-child(2){
+		background-color: #efefef;
+	}
+	&__bg-item:nth-child(3){
+		background-color: #dfdfdf;
+	}
+	&__row{
+		margin-bottom: 1px;
+	}
+	&__row > div{
+		padding-left: 0;
+	}
+	&__row:nth-child(2) div{
+		font: normal normal normal 10px/26px Poppins;
+		letter-spacing: 0px;
+		color: #BEA037;
+		@media (width >= $m) {
+			font: normal normal normal 10px/26px Poppins;
+		}
+	}
+	&__row:nth-child(3) div{
+		font: normal normal 600 15px/17px Poppins;
+		letter-spacing: -0.3px;
+		color: #2C2E32;
+		@media (width >= $m) {
+			font: normal normal 600 15px/17px Poppins;
+		}
+	}
+	&__row:nth-child(4) div{
+		font: normal normal normal 10px/26px Poppins;
+		letter-spacing: 0px;
+		color: #BEA037;
+		@media (width >= $m) {
+			font: normal normal normal 10px/26px Poppins;
+		}
+	}
+	&__row:nth-child(5) div{
+		font: normal normal normal 10px/14px Poppins;
+		letter-spacing: -0.2px;
+		color: #2C2E32;
+		@media (width >= $m) {
+			font: normal normal normal 12px/17px Poppins;
+		}
+	}
+	
+
+}

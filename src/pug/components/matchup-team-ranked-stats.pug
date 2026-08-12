@@ -1,0 +1,54 @@
+section(class='team-ranked-stats')
+	h2(class='matchup-text-center-title') 
+		| team ranked stats 
+		span(class='matchup-return-of-investment__title-span') regular season
+	div(class='team-ranked-stats__container sbi-grid full s-grid-1 m-grid-2 row-gap')
+		div(class='team-ranked-stats__item')
+			div(class='tabs-container team-ranked-stats')
+				ul(class='tabs-container__tabs team-ranked-stats__tabs' id='tabs')
+					li(class='team-ranked-stats__tab')
+						img(class='team-ranked-stats__team-logo', src="images/matchup-odds-logo.svg", alt="")
+					li(class='tabs-container__tab team-ranked-stats__tab is-active') OFFENSE
+					li(class='tabs-container__tab team-ranked-stats__tab') DEFENSE
+				div(class='team-ranked-stats__title')
+					div(class='team-ranked-stats__title-item') STAT
+					div(class='team-ranked-stats__title-item') RECORD
+					div(class='team-ranked-stats__title-item') RANK
+				div(class='tabs-container__panels team-ranked-stats__panels')
+					div(class='tabs-container__panel team-ranked-stats__panel is-active')
+						-for(let i=1; i<=15; i++)
+							div(class='team-ranked-stats__score-container')
+								div(class='team-ranked-stats__score-item') Points per Game (PPG)
+								div(class='team-ranked-stats__score-item') 17.00
+								div(class='team-ranked-stats__score-item') Rk 30th
+					div(class='tabs-container__panel team-ranked-stats__panel')
+						-for(let i=1; i<=15; i++)
+							div(class='team-ranked-stats__score-container')
+								div(class='team-ranked-stats__score-item') Points per Game (PPG)
+								div(class='team-ranked-stats__score-item') 17.00
+								div(class='team-ranked-stats__score-item') Rk 30th
+		div(class='team-ranked-stats__item')
+			div(class='tabs-container team-ranked-stats')
+				ul(class='tabs-container__tabs team-ranked-stats__tabs' id='tabs')
+					li(class='team-ranked-stats__tab')
+						img(class='team-ranked-stats__team-logo', src="images/matchup-odds-logo.svg", alt="")
+					li(class='tabs-container__tab team-ranked-stats__tab is-active') OFFENSE
+					li(class='tabs-container__tab team-ranked-stats__tab') DEFENSE
+				div(class='team-ranked-stats__title')
+					div(class='team-ranked-stats__title-item') STAT
+					div(class='team-ranked-stats__title-item') RECORD
+					div(class='team-ranked-stats__title-item') RANK
+				div(class='tabs-container__panels team-ranked-stats__panels')
+					div(class='tabs-container__panel team-ranked-stats__panel is-active')
+						-for(let i=1; i<=15; i++)
+							div(class='team-ranked-stats__score-container')
+								div(class='team-ranked-stats__score-item') Points per Game (PPG)
+								div(class='team-ranked-stats__score-item') 17.00
+								div(class='team-ranked-stats__score-item') Rk 30th
+					div(class='tabs-container__panel team-ranked-stats__panel')
+						-for(let i=1; i<=15; i++) 
+							div(class='team-ranked-stats__score-container')
+								div(class='team-ranked-stats__score-item') Points per Game (PPG)
+								div(class='team-ranked-stats__score-item') 17.00
+								div(class='team-ranked-stats__score-item') Rk 30th						
+		

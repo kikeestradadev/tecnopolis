@@ -1,0 +1,17 @@
+section(class='state-sportsbooks')
+	each group in stateSportsbooksData.items
+		details(class='state-sportsbooks__container-state')
+			summary= group.title
+			p= group.intro
+			each book in group.books
+				article(class='state-sportsbooks__sportsbook-item')
+					span(class='state-sportsbooks__title')= book.name
+					a(class='state-sportsbooks__anchor' href=book.href)
+						picture
+							source(
+								class='state-sportsbooks__state-banner'
+								srcset=book.desktop
+								media='(min-width:768px)'
+							)
+							img(class='state-sportsbooks__state-banner' src=book.mobile alt=book.name)
+					p= book.text

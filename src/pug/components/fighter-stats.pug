@@ -1,0 +1,22 @@
+section(class='fighter-stats')
+	div(class='fighter-stats__title-container')
+		video(autoplay, loop, class='fighter-stats__video')
+			source(src='video/fighter-anim.mp4' type='video/mp4')
+		h2(class='fighter-stats__title') FIGHTER STATS
+	div(class='sbi-grid full s-grid-1 m-grid-2 row-gap')
+		article(class='fighter-stats__item')
+			include ./fighter-last-fight.pug
+		article(class='fighter-stats__item')
+			include ./fighter-title-draws.pug
+		article(class='fighter-stats__item')
+			include ./fighter-wins-by-method.pug
+		article(class='fighter-stats__item')
+			include ./fighter-average-round-survival.pug
+		article(class='fighter-stats__item')
+			include ./fighter-takedown-average.pug 
+		article(class='fighter-stats__item')
+			include ./fighter-striking-accuracy.pug
+		article(class='fighter-stats__item')
+			include ./fighter-title-wins.pug
+		article(class='fighter-stats__item')
+			include ./fighter-title-losses.pug	

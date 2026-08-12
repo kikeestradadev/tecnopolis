@@ -1,0 +1,92 @@
+.fighter-last-fight{
+	&__title{
+		text-align: center;
+		font: normal normal 600 20px/21px Poppins;
+		letter-spacing: -0.44px;
+		color: #2C2E32;
+		text-transform: uppercase;
+		display: block;
+		margin-bottom: 30px;
+		@media (width >= $m) {
+			font: normal normal 600 22px/23px Poppins;
+		}
+	}
+	&__title-color{
+		color: #9E852E;
+	}
+	&__fighters-container{
+		position: relative;
+		display      : flex;
+		flex-wrap    : wrap;
+		margin-left  : auto;
+		margin-right : auto;
+		justify-content: space-between;
+	}
+	&__fighter_item{
+		width: calc(50% - 10px);		
+	}	
+	&__vrs{
+		position:absolute; 
+		top:50%; 
+		left:50%; 
+		transform:translate(-50%, -50%); 
+		z-index: 500;
+		width: 70px;
+		height: 70px;
+		@media (width >= 500px) {
+			width: 100px;
+			height: 100px;
+		}
+		@media (width >= $m) {
+			width: 70px;
+			height: 70px;
+		}
+	}
+	&__avatar-container{
+		border-radius: 16px 32px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		overflow: hidden;
+		align-items: center;
+		
+	}
+	&__avatar{
+		width: 80%;		
+	}
+	&__fighter-name{
+		margin-top: 10px;
+		display: block;
+		text-align: center;
+		font: normal normal bold 17px/19px Poppins;
+		letter-spacing: -0.46px;
+		color: #2C2E32;
+		@media (width >= 500px) {
+			font: normal normal bold 23px/23px Poppins;
+		}
+	}
+	&__date{
+		display: block;
+		text-align: center;
+		font: normal normal normal 17px/17px Poppins;
+		letter-spacing: -0.34px;
+		color: #2C2E32;
+		margin-top: 30px;
+		border-top: 1px solid #9E852E;
+		border-bottom: 1px solid #9E852E;
+		padding: 10px 0;
+	}
+
+	.fighter-winner{
+		background-color: #E3D4A0;	
+	}
+	.fighter-loser{
+		background-color: #E6E6E6;
+		mix-blend-mode: luminosity;
+	}
+	&__winner-flag{
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}

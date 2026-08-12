@@ -1,0 +1,47 @@
+mixin multiLevelMenu(items, backLabel)
+	ul(class='sub-menu')
+		each child in items
+			li(class='sub-menu__li')
+				if child.children && child.children.length
+					a(
+						href=child.href || '#'
+						class='sub-menu__anchor'
+						style=`background-image: url('${child.icon}');`
+						data-level-id=`#${child.id}`
+					)= child.label
+					div(class='multi-nivel-container' id=child.id)
+						div(class='btn-brand-back-mn' data-level-id=`#${child.id}`)
+							img(class='btn-brand-back-mn__icon' src=child.icon alt='')
+							| #{backLabel || child.label}
+						+multiLevelMenu(child.children, child.label)
+				else
+					a(
+						href=child.href || '#'
+						class='sub-menu__anchor'
+						style=child.icon ? `background-image: url('${child.icon}');` : false
+					)= child.label
+
+ul(class='dk-left-sidebar-menu')
+	each item in leftSidebarMenuData.items
+		if item.type === 'submenu'
+			li(class='dk-left-sidebar-menu__li')
+				a(href='#' class='dk-left-sidebar-menu__anchor open-sub-menu')= item.label
+				div(class='push-menu-container')
+					div(class='btn-brand-back-desktop')= item.label
+					div(class='btn-brand-back-mobile')= item.label
+					+multiLevelMenu(item.children, item.label)
+		else
+			li(class='dk-left-sidebar-menu__li')
+				a(href=item.href class='dk-left-sidebar-menu__anchor')= item.label
+	li(class='dk-left-sidebar-menu__li input-position-relative')
+		span(class='input-search-action')= leftSidebarMenuData.search.label
+			img(class='input-search-action__img search-visible' src=leftSidebarMenuData.search.icon alt='')
+			img(class='input-search-action__img search-hover' src=leftSidebarMenuData.search.iconHover alt='')
+		div(class='input-container')
+			input(
+				type='text'
+				name='fname'
+				placeholder=leftSidebarMenuData.search.placeholder
+				class='input-search-tag'
+			)
+			img(class='input-search-action__img close' src=leftSidebarMenuData.search.iconClose alt='')

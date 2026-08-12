@@ -3,8 +3,10 @@ h1, h2, h3, h4, h5, h6{
 	margin					: 0;
 }
 
-// Default text styles 
-body {font-family: 'Inter' }
+// Default text styles
+body {
+	font-family: 'Poppins', sans-serif;
+}
 h1{
 	font					: normal normal 600 36px/43px Inter;
 	letter-spacing			: -0.72px;	

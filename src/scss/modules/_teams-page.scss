@@ -1,0 +1,207 @@
+.teams-page{
+	&__title-head{		
+		font: normal normal 600 36px/43px Poppins;
+		letter-spacing: -0.72px;
+		color: #1F2024;
+		display: flex;
+		align-items: center;
+		@media (width >= $m) {
+			font: normal normal 600 51px/56px Poppins;
+			letter-spacing: -0.66px;
+		}
+	}
+	&__description{
+		font: normal normal 600 12px/17px Poppins;
+		letter-spacing: -0.24px;		
+		color: #1F2024;
+		@media (width >= $m) {
+			font: normal normal 600 19px/27px Poppins;
+			letter-spacing: -0.38px;
+		}
+	}
+	&__item{
+		border: 1px solid #E0E0E0;
+		min-height: 184px;
+		border-radius: 8px;
+		position: relative;
+		padding-top: 90px;
+		padding: 90px 15px 15px 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 15px;
+		box-shadow: 0px 4px 6px #0000001F;
+		background-image: url('images/bg_grid.svg');
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		background-blend-mode: multiply;
+		@media (width >= $m) {
+			padding: 115px 15px 15px 15px;
+			min-height: 232px;
+			border-radius: 16px;
+		}
+	}
+
+	&__picture{
+		width: 104px;
+		height: 104px;	
+		background-color: #ffffff;
+		position: absolute;
+		top: 0;  
+		left: 50%; 
+		transform: translate(-50%, -50%);
+		border-radius: 50%;
+		transition: all .5s;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 4px solid #E3E2E2;
+		@media (width >= $m) {
+			width: 115px;
+			height: 115px;	
+		}
+		@media (hover: hover) and (pointer: fine) {
+		&:hover{
+			border-radius: 8px;
+		}
+		}
+	}
+	
+	&__home-team, &__visit-team{
+		text-align: center;
+		font: normal normal medium 17px/17px Poppins;
+		letter-spacing: -0.34px;
+		color: #FFFFFF;
+		text-transform: uppercase;
+		text-shadow: black 0.1em 0.1em 0.2em;
+	}
+	&__grid {
+		margin-top: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px; // Espacio entre las cajas
+    }
+	&__item {
+		flex: 0 1 calc(100%); // Ancho del 50% menos el espacio entre las cajas
+		margin-bottom: 50px; // Separación inferior de 50px
+
+		@media (width >= 375px) {
+			flex: 0 1 calc(50% - 15px); // Ancho del 50% menos el espacio entre las cajas
+		}
+
+		@media (width >= 600px) {
+			flex: 0 1 calc(33.333333% - 15px); // Mismo ancho del 50% en la medida "m"
+		}
+
+		@media (width >= 900px) {
+			flex: 0 1 calc(25% - 15px); // Ancho del 25% en la medida "l"
+		}
+		@media (width >= $l) {
+			flex: 0 1 calc(33.333333% - 15px); // Mismo ancho del 50% en la medida "m"
+		}
+		@media (width >= 1200px) {
+			flex: 0 1 calc(25% - 15px); // Ancho del 25% en la medida "l"
+		}
+		@media (width >= $xl) {
+			flex: 0 1 calc(33.333333% - 15px); // Mismo ancho del 50% en la medida "m"
+		}
+		@media (width >= 1800px) {
+			flex: 0 1 calc(25% - 15px); // Ancho del 25% en la medida "l"
+		}
+		@media (width >= 1900px) {
+			flex: 0 1 calc(20% - 15px); // Ancho del 25% en la medida "l"
+		}
+	}
+	&__button-expand-container{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__button-expand{
+		background: white;
+		border: 1px solid #99853D;
+		font: normal normal 600 13px/24px Poppins;
+		letter-spacing: 0px;
+		color: #99853D;
+		text-transform: uppercase;
+		width: 104px;
+		height: 32px;
+		cursor: pointer;		
+	}
+	&__select-item{
+		position: relative;
+		background-color: #F3F3F3;	
+		padding: 10px 20px;	
+		border-radius: 4px;
+		font: normal normal 600 17px/28px Poppins;
+		letter-spacing: -0.34px;
+		color: #1F2024;
+		border: none;
+		-webkit-appearance: none; /* Para navegadores WebKit como Chrome y Safari */
+		-moz-appearance: none; /* Para navegadores basados en Gecko como Firefox */
+		appearance: none; /* Resto de los navegadores */
+		background-image: url('images/triangle-bottom.svg'); /* URL de tu archivo SVG */
+		background-repeat: no-repeat;
+		background-position: calc(100% - 10px) center; /* Puedes ajustar esto para alinear el triángulo como desees */
+		&:focus-visible {
+			outline: none; 
+		}
+		@media (width >= $m) {
+			font: normal normal 600 23px/28px Poppins;
+			letter-spacing: -0.46px;
+		}
+	}
+	&__select-item::-ms-expand {
+		display: none; /*Evita que se muestre la flecha por defecto en versiones de IE*/}
+	&__select-item-option{
+		background-color: #2C2E32;	
+		color: #F3F3F3;
+		padding: 10px;	
+		border-radius: 4px;
+		font: normal normal normal 17px/31px Poppins;
+		letter-spacing: 0px;
+		width: 100%;
+	}
+	&__input-search-section{
+		display: flex;
+		justify-content: space-between;
+		
+	}
+	&__input-search-item{
+		padding: 0 15px;
+		width: 100%;
+		border: 4px solid #CCCCCC;
+		height: 48px;
+		margin-right: 10px;
+		@media (width >= $m) {
+			height: 56px;
+		}
+		
+	}
+	&__button-search-item{
+		background-color: #9E852E;
+		font: normal normal 600 14px/24px Poppins;		
+		letter-spacing: 0px;
+		color: #FFFFFF;
+		text-transform: uppercase;
+		border-radius: 0px 3px 3px 0px;			
+		border: none;
+		width: 104px;
+		height: 48px;
+		@media (width >= $m) {
+			font: normal normal 600 17px/24px Poppins;
+			width: 128px;
+			height: 56px;
+		}
+	}
+	&__button-search-item::placeholder{
+		font: normal normal normal 12px/26px Poppins;
+		letter-spacing: 0px;
+		color: #000000;
+	}
+	&__select-item-option:hover {}
+	select:focus-visible {
+		border: none;
+	  }
+}

@@ -1,0 +1,212 @@
+// here start the sticky container 
+.sticky-banner-table-content-desktop{
+	background						: #2c2e32;
+	width							: calc( var(--stiky-banner-width) - 17px);
+	height							: var(--stiky-banner-height);
+	border-radius					: 8px;
+	z-index							: 9;
+	display							: flex;
+	flex-direction					: column;
+	justify-content					: space-between;
+	&::before{
+		content						: "";
+		background-image			: url('https://insidersbettingdigest.com/wp-content/themes/ibdthemev2/core-assets/images/sticky_banner_play_arrow.svg');
+		background-repeat			: no-repeat;
+		width						: 50px;
+		height						: 86px;
+		position					: absolute;
+		bottom						: 60px;
+		right						: 26px;
+		z-index						: 50000;
+	}
+	&::after{
+		content						: "";
+		background-image			: url('https://insidersbettingdigest.com/wp-content/themes/ibdthemev2/core-assets/images/sticky_banner_top_arrow.svg');	
+		background-repeat			: no-repeat;
+		width						: 17px;
+		height						: 255px;
+		position					: absolute;
+		top							: 10px;
+		right						: 26px;	
+	}
+	// here is the left sticky banner brand image section
+	&__top-container{
+		position: relative;
+		// border							: 1px solid white;
+		height							: 260px;	
+		display							: flex;
+		flex-direction					: column;
+		justify-content					: flex-start;
+	}
+	&__container-info{
+		// border: 1px solid red;
+		height: 430px;
+		padding: 20px;
+		overflow-y: auto;
+		&::-webkit-scrollbar {
+			display: none;
+		}	
+		-ms-overflow-style: none;	
+		scrollbar-width: none;
+	}
+	&__container-info-item{
+		background-color: #1e1f22;
+		margin-bottom: 5px;
+	}
+	&__container-info-item > summary{
+		list-style: none;
+		height: 41px;
+		background-color: #000000;
+		color: white;
+		display: flex;
+		align-items: center;
+		padding: 0 10px;
+		font: normal normal 600 18px/41px Poppins;
+		letter-spacing: -0.36px;
+		color: #FFFFFF;
+		text-decoration: none !important;
+		cursor: pointer;
+	}
+	&__container-info-item > summary > a{
+		list-style: none;
+		height: 41px;
+		background-color: #000000;
+		color: white;
+		display: flex;
+		align-items: center;
+		font: normal normal 600 18px/41px Poppins;
+		letter-spacing: -0.36px;
+		color: #FFFFFF;
+		text-decoration: none !important;
+		width: 100%;
+	}
+	&__container-info-item > summary::-webkit-details-marker {
+		display: none;
+	}
+	.detail-arrow > summary::after {
+		content: '\f078';
+		font-family: FontAwesome;
+		margin-left: auto;
+		order: 2; 
+	}
+	.detail-arrow[open] > summary::after {
+		content: '\f077';
+	}
+	&__ul{
+		margin: 0;
+	}
+	&__li {
+		position: relative;
+		margin: 0;
+		// border-bottom: 1px solid #2c2e32;
+		padding: 10px 0;
+		@media (hover: hover) and (pointer: fine) {
+		&:hover{
+			color: #9E852E;
+		}
+		}
+		&::before{
+			content: "";
+			width: 150%;
+			height: 2px;
+			background-color: #2c2e32;
+			position: absolute;
+			bottom: 0;
+			left: -45px;
+		}
+	}
+	&__li:last-child {
+		border: none;
+		&::before{
+			content: "";
+			width: 150%;
+			height: 2px;
+			background-color: transparent;
+			position: absolute;
+			bottom: 0;
+			left: -45px;
+		}
+	}
+	&__li > a{
+		font: normal normal medium 18px/41px Poppins;
+		letter-spacing: -0.36px;
+		color: #FFFFFF;
+		@media (hover: hover) and (pointer: fine) {
+		&:hover{
+			color: #9E852E;
+			text-decoration: none !important;
+		}
+		}
+	}
+	// here is the breadcrumbs section 
+	&__breadcrumbs-container{
+		// border							: 1px solid white;
+		position						: relative;
+		height							: 133px;
+		background						: #cccccc;
+		clip-path						: polygon(0 0,100% 20%,100% 100%,0 100%);	
+		border-top-left-radius			: 5px;	
+		display: flex;
+		align-items: center;
+	}
+	// here is the breadcrumbs section centered 
+	&__breadcrumbs{
+		// border							: 1px solid white;
+		display							: flex;
+		align-items						: center;
+		justify-content					: center;
+		width							: 100%;
+		padding: 0 15px;
+	}
+	// here is the breadcrumbs anchors
+	&__breadcrumbs-anchors{
+		text-transform					: uppercase;
+		text-decoration					: none;
+	}
+	// here is the breadcrumbs first-child desktop
+	&__breadcrumbs-anchors:first-child{
+		position: relative;
+		text-transform					: uppercase;
+		font 							: normal normal 600 17px/20px Poppins;
+		letter-spacing 					: 0;
+		color 							: #000000;
+		background						: #9e852e;
+		padding							: 1px 3px; 
+		border-radius					: 3px;
+		margin-right: 25px;
+		&::after{
+			content						: "";
+			background-image			: url('images/triangle_right.svg');
+			background-repeat			: no-repeat;
+			width						: 20px;
+			height						: 20px;
+			// border: 1px solid black;
+			position					: absolute;
+			right						: -25px;
+			transform: scale(.9);
+		}
+	}
+	// here is the breadcrumbs last-child desktop
+	&__breadcrumbs-anchors:last-child{
+		text-transform					: uppercase;
+		font 							: normal normal 400 17px/20px Poppins;
+		letter-spacing 					: 0;
+		color 							: #000000;
+	}
+	&__anchor-bet{
+		width: 152px;
+		height: 48px;
+		background-color: #9e852e;
+		color: #ffffff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto;
+		font: normal normal 600 19px/24px Poppins;
+		letter-spacing: 0px;
+		color: #FFFFFF;
+		text-transform: uppercase;
+		text-decoration: none !important;
+	}
+}	
+// here finish the sticky container 

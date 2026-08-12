@@ -1,0 +1,36 @@
+article(class='sportsbook-card ed-container full')
+    div(class='sportsbook-card__title-container ed-item')
+        div(class='sportsbook-card__title-item')
+            span(class='sportsbook-card__item-counter') 1
+            img(class='sportsbook-card__item-title-logo', src="https://insidersbettingdigest.com/wp-content/uploads/2024/02/logo-betus.svg", alt="")
+        div(class='sportsbook-card__title-item')
+            div(style="--percentage : 20; --color: #2C2E32" class="sportsbook-card__item-container-rating-circle-title")
+                svg(height="65px" width="65px")
+                    circle(pathLength="100" cy="50%" cx="50%" r="29.5", class="sportsbook-card__item-container-rating-vector-title")
+                    circle(pathLength="100" cy="50%" cx="50%" r="29.5", class="sportsbook-card__item-container-rating-vector-title")
+                span.cali-span 9.7
+        //- a(class='sportsbook-card__item-title-anchor-title', href="#") Bet Now
+    div(class='sportsbook-card__item ed-item m-1-1 lg-1-2 xxl-35')
+        span(class='sportsbook-card__item-bonus') 125% SIGN-UP BONUS
+        a(class='sportsbook-card__item-title-anchor-mobile', href="#") Bet Now
+        a(class='sportsbook-card__anchor-review-mobile', href="#") Read Review
+    div(class='sportsbook-card__item ed-item m-1-1 lg-1-2 xxl-40')
+        span(class='sportsbook-card__sub-title') our 
+            span(class='sportsbook-card__sub-title-color') rating
+        div(class='sbi-grid full gap-1 sm-grid-2 m-grid-2 l-grid-2 lg-grid-1 xxl-grid-2')
+            -for(let i = 1; i<=6; i++ )
+                div
+                    div(class='sportsbook-card__progress-bar-item')
+                        span(class='sportsbook-card__progress-bar-title') Bonuses
+                        div(class='sportsbook-card__progress-bar-item-grid')
+                            div(class='sportsbook-card__progresive-bar-container') 
+                                div(class='sportsbook-card__progresive-bar', style='width:50%') 
+                            span(class='sportsbook-card__progress-bar-percentage') 10%
+            
+    div(class='sportsbook-card__item ed-item m-1-1 lg-100 xxl-25')
+        div(class='sportsbook-card__item-deposit-methods-mobile')
+            span(class='sportsbook-card__sub-title') Deposit 
+                span(class='sportsbook-card__sub-title-color') Methods
+            div(class='sportsbook-card__item-deposit-methods-grid')
+                -for(let i = 1; i<=9; i++ )
+                    img(src="https://insidersbettingdigest.com/wp-content/uploads/2024/02/americanexpress.svg", alt="logo")

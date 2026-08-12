@@ -1,0 +1,23 @@
+section(class='slider-module')
+	div(class='slider-title')
+		div(class='slider-title__title-container')
+			div(class='slider-title__title-item')
+				h1(class='slider-title__title-head')
+					img(src=smallSizeSliderData.icon alt='' class='slider-title__ico')
+					| #{smallSizeSliderData.title}
+			div(class='slider-title__title-item')
+				a(href=smallSizeSliderData.seeAllHref class='slider-title__title-anchor')
+					span= smallSizeSliderData.seeAllLabel
+					span= smallSizeSliderData.seeAllSpan
+	div(class='small-size-slider-container')
+		div(class='swiper small-size-slider')
+			div(class='swiper-wrapper')
+				each slide in smallSizeSliderData.items
+					a(href=slide.href class='swiper-slide small-size-slider__item')
+						div(
+							class='small-size-slider__image-container'
+							style=`background-image: url('${slide.image}')`
+						)
+						div(class='small-size-slider__text-cointainer')
+							span(class='small-size-slider__item-title')= slide.title
+							span(class='small-size-slider__item-date')= slide.date

@@ -1,0 +1,19 @@
+{
+	"visibleCount": 7,
+	"moreLabel": "more",
+	"items": [
+		{ "label": "lorem 1", "href": "https://www.google.com" },
+		{ "label": "Lorem ipsum 2", "href": "https://www.google.com" },
+		{ "label": "Lorem ipsum 3", "href": "https://www.google.com" },
+		{ "label": "lorem 4", "href": "https://www.google.com" },
+		{ "label": "Lorem ipsum 5", "href": "https://www.google.com" },
+		{ "label": "lorem 6", "href": "https://www.google.com" },
+		{ "label": "Lorem ipsum 7", "href": "https://www.google.com" },
+		{ "label": "lorem 8", "href": "https://www.google.com" },
+		{ "label": "Lorem ipsum 9", "href": "https://www.google.com" },
+		{ "label": "lorem 10", "href": "https://www.google.com" },
+		{ "label": "Lorem ipsum 11", "href": "https://www.google.com" },
+		{ "label": "Lorem ipsum 12", "href": "https://www.google.com" },
+		{ "label": "lorem 13", "href": "https://www.google.com" }
+	]
+}

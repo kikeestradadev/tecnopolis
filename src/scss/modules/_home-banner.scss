@@ -1,0 +1,20 @@
+/*here start the home banner styles*/
+.home-banner{
+	background					: #ffffff;
+	height						: auto;	
+	margin-bottom				: 34px;
+	@media (width >= $l) {
+		background				: #f3f3f3;
+	}
+	&__anchor{
+		display					: block;
+		width					: 100%;
+	}
+	&__image{
+		width					: 100%;
+		max-width				: 100%;
+		margin					: 0 auto;
+		display					: block;
+	}
+}
+/*here start the home banner styles*/

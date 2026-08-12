@@ -1,0 +1,19 @@
+section(class='border-multicolor-container')
+	div(class='border-multicolor-container__content')
+		div(class='experts-picks-banner-section')
+			div(class='experts-picks-banner')
+				div(class='experts-picks-banner__container')
+					div(class='experts-picks-banner__item')
+						img(class='experts-picks-banner__image-dk' src=expertsPicksBannerData.imageDk alt='')
+						img(class='experts-picks-banner__image-md' src=expertsPicksBannerData.imageMd alt='')
+						img(class='experts-picks-banner__image-mb' src=expertsPicksBannerData.imageMb alt='')
+					div(class='experts-picks-banner__item')
+						div(class='experts-picks-banner__input-container')
+							span(class='experts-picks-banner__input-label')= expertsPicksBannerData.label
+							div(class='experts-picks-banner__input-item-container')
+								input(
+									class='experts-picks-banner__input-item'
+									type='text'
+									placeholder=expertsPicksBannerData.placeholder
+								)
+								button(class='experts-picks-banner__input-button')= expertsPicksBannerData.button

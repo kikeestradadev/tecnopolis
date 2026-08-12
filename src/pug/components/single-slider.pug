@@ -1,0 +1,11 @@
+section(class='single-slider-container')
+	div(class='swiper single-slider')
+		div(class='swiper-wrapper')
+			each slide in singleSliderData.items
+				a(href=slide.href class='swiper-slide single-slider__item')
+					div(class='single-slider__image-container')
+						picture
+							source(srcset=slide.desktop media='(min-width:640px)')
+							img(class='single-slider__image' src=slide.mobile alt=slide.alt)
+		div(class='single-slider__prev swiper-button-prev')
+		div(class='single-slider__next swiper-button-next')

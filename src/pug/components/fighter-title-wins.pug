@@ -1,0 +1,16 @@
+div(class='fighter-title-wins')
+	span(class='fighter-title-wins__title') title 
+		span(class='fighter-title-wins__title-color') wins
+	div(class='fighter-title-wins__item')
+		div(class='fighter-title-wins__score-container')
+			img(src="images/arrow-wins.svg", alt="" class='fighter-title-wins__score-banner')
+			span(class='fighter-title-wins__score') 26
+		div(class='fighter-title-wins__table')
+			-for(let i = 1; i <= 10; i++)
+				div(class='fighter-title-wins__table-row')
+					div(class='fighter-title-wins__table-item')
+						span(class='fighter-title-wins__name') Dominick Reyes
+					div(class='fighter-title-wins__table-item')
+						span(class='fighter-title-wins__number-fight') UFC 247:
+							span(class='fighter-title-wins__fighters') Jones vs. Reyes
+						span(class='fighter-title-wins__date') Feb 08, 2020

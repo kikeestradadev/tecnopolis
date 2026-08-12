@@ -1,0 +1,11 @@
+.team-full-widget{
+	&__item{
+		box-shadow: 0px 2px 6px #0000001F;
+		min-height: 96px;
+		padding: 15px;
+		@media (width >= $m) {
+			min-height: 120px;
+		}
+	}
+	
+}

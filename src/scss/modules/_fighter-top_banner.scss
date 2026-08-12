@@ -1,0 +1,388 @@
+.fighter-top_banner{
+	&__white-container{
+		position: relative;
+		overflow: hidden;
+		// border: 1px solid black;
+		height: 650px;
+		@media (width >= $m) {
+			height: auto;
+		}
+	}
+	&__statistics{
+		position: absolute;
+		width: 140px;
+		// border: 1px solid black;
+		display: flex;
+		bottom: 30px;
+		left: 0;
+		z-index: 500;
+		@media (width >= $m) {
+			top: 30px;
+			width: 170px;
+			left: 15px;
+		}
+	}
+	&__statistics-item{
+		background-color: white;
+		flex: 1;
+		width: calc(50% - 10px); 
+		margin-right: 10px; 
+		min-height: 100px;
+		border: 1px solid #99853D;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		padding: 10px;
+		@media (width >= $m) {
+			height: 120px;
+			padding: 15px;
+		}
+	}
+	&__statistics-item:last-child {
+		margin-right: 0;
+	  }
+	&__statistics-data-1{
+		width: 100%;
+		font: normal normal 600 34px/41px Poppins;
+		letter-spacing: -0.44px;
+		letter-spacing: -0.53px;
+		color: #2C2E32;
+		display: block;
+		text-align: center;
+		border-bottom: 4px solid #99853D;
+		padding-bottom: 5px;
+		margin-bottom: 5px;
+		width: 100%;
+		@media (width >= $m) {
+			font: normal normal 600 41px/41px Poppins;
+			letter-spacing: -0.53px;
+		}
+	}
+	&__statistics-data-2{
+		width: 100%;
+		font: normal normal normal 8px/10px Poppins;
+		letter-spacing: 0px;
+		color: #2C2E32;
+		display: block;
+		text-align: center;
+		width: 100%;
+		@media (width >= $m) {
+			font: normal normal normal 10px/10px Poppins;
+			letter-spacing: -0.2px;
+		}		
+	}
+	&__gray-container{
+		// border: 1px solid black;
+		// position: relative;
+		overflow: hidden;
+		background-color: #F3F3F3;
+		border-radius: 8px 8px 0px 0px;
+		min-height: 464px;
+		background-image: url('images/fighter-bkg-sm.svg'); 
+		background-repeat: no-repeat;
+		background-size: cover;	
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		@media (width >= $m) {
+			min-height: 600px;
+			background-image: url('images/fighter-bkg-xl.svg');
+			background-repeat: no-repeat;
+			background-position: bottom 0 left 10px;
+			background-size: contain;
+		}		
+	}
+	&__gray-container::after{
+		content: "";
+		position: absolute;
+		width: 100%;
+		bottom: 185px;
+		height: 8px;
+		background-color: #99853D;
+		z-index: 500;
+		@media (width >= $m) {
+			bottom:0;	
+		}
+	}
+	&__fighter-image{
+		position: absolute;
+		bottom: 185px;
+		left: -20px;
+		width: 200px;
+		@media (width >= $m) {
+			left: 50px;
+			width: 300px;
+			bottom:0;
+		}
+		@media (width >= $xl) {
+			left: 50px;
+			width: 300px;
+			bottom:0;
+		}
+		@media (width >= 1800px) {
+			left: 100px;
+			width: 344px;
+		}
+	}
+	&__fighter-info{
+		// border: 1px solid red;
+		width: 100%;
+		max-width: 432px;
+		@media (width >= $m) {
+			position: absolute;
+			right: 15px;
+			top: 100px;
+			max-width: 350px;
+		}     
+		@media (width >= 950px) {
+			max-width: 450px;
+		}
+		@media (width >= $l) {
+			max-width: 270px;
+		}
+		@media (width >= $lg) {
+			max-width: 450px;
+		}
+		@media (width >= 1200px) {
+			max-width: 450px;
+		}
+		@media (width >= $lg) {
+			max-width: 400px;
+		}
+		@media (width >= $xl) {
+			max-width: 270px;
+		}
+		@media (width >= 1700px) {
+			max-width: 370px;
+		}
+		@media (width >= 1900px) {
+			max-width: 432px;
+			right: 30px;
+		}
+	}
+	&__fighter-info > span{
+		display: block;
+	}
+	&__nick-name{
+		padding-top: 15px;
+		font: normal normal normal 20px/22px Poppins;
+		letter-spacing: 0px;
+		color: #9E852E;
+		display: block;
+		text-align: center;
+		@media (width >= $m) {
+			text-align: left;
+			font: normal normal normal 23px/23px Poppins;
+		}
+		@media (width >= 1024px) {
+			font: normal normal normal 20px/22px Poppins;
+		}
+		@media (width >= 1200px) {
+			font: normal normal normal 23px/23px Poppins;
+		}
+		
+		@media (width >= 1600px) {
+			font: normal normal normal 20px/22px Poppins;
+		}
+		@media (width >= 1700px) {
+			font: normal normal normal 23px/23px Poppins;
+		}
+	}
+	&__name{
+		font: normal normal normal 34px/37px Poppins;
+		letter-spacing: -0.53px;
+		color: #2C2E32;
+		text-transform: uppercase;
+		display: block;
+		text-align: center;
+		@media (width >= $m) {
+			text-align: left;
+			font: normal normal normal 41px/45px Poppins;
+		}
+
+		@media (width >= 1024px) {
+			font: normal normal normal 34px/37px Poppins;
+		}
+		@media (width >= 1200px) {
+			font: normal normal normal 41px/45px Poppins;
+		}
+		@media (width >= 1600px) {
+			font: normal normal normal 34px/37px Poppins;
+		}
+
+		@media (width >= 1700px) {
+			font: normal normal normal 41px/45px Poppins;
+		}
+	}
+	&__last-name{
+		font: normal normal bold 34px/37px Poppins;
+		letter-spacing: -0.53px;
+		color: #2C2E32;
+		text-transform: uppercase;
+		display: block;
+		text-align: center;
+		margin-bottom: 15px;
+		@media (width >= $m) {
+			text-align: left;
+			font: normal normal bold 41px/45px Poppins;
+		}
+
+		@media (width >= 1024px) {
+			font: normal normal bold 34px/37px Poppins;
+		}
+		@media (width >= 1200px) {
+			font: normal normal bold 41px/45px Poppins;
+		}
+
+		@media (width >= 1600px) {
+			font: normal normal bold 34px/37px Poppins;
+		}
+		@media (width >= 1700px) {
+			font: normal normal bold 41px/45px Poppins;
+		}
+	}
+	&__category{
+		font: normal normal medium 14px/22px Poppins;
+		letter-spacing: -0.34px;
+		color: #2C2E32;
+		display: block;
+		text-align: center;
+		@media (width >= $m) {
+			text-align: left;
+			font: normal normal medium 17px/26px Poppins;
+		}
+	}
+	&__record{
+		font: normal normal medium 14px/22px Poppins;
+		letter-spacing: -0.34px;
+		color: #2C2E32;
+		display: block;
+		text-align: center;
+		@media (width >= $m) {
+			text-align: left;
+			font: normal normal medium 17px/26px Poppins;
+		}
+	}
+	&__main-table{
+		// border: 1px solid blue;
+		padding: 15px;
+		background-color: white;
+		border-top: 8px solid #99853D;	
+		position: absolute;
+		width: 100%;
+		max-width: 150px;
+		min-height: 450px;
+		right: 15px;
+		bottom: 30px;
+		z-index: 700;
+		box-shadow: 0px 2px 6px #0000001F;		
+		@media (width >= 500px) {
+			max-width: 250px;
+		}
+		@media (width >= 600px) {
+			max-width: 350px;
+		}
+		
+		@media (width >= $m) {
+			bottom: 0;
+			max-width: 350px;
+			min-height: 288px;
+			z-index: 500;	
+		}
+		@media (width >= 950px) {
+			max-width: 450px;
+		}
+		@media (width >= $l) {
+			max-width: 270px;
+		}
+		@media (width >= $lg) {
+			max-width: 450px;
+		}
+		@media (width >= 1200px) {
+			max-width: 450px;
+		}
+		@media (width >= $lg) {
+			max-width: 400px;
+		}
+		@media (width >= $xl) {
+			max-width: 270px;
+		}
+		@media (width >= 1700px) {
+			max-width: 370px;
+		}
+		@media (width >= 1900px) {
+			max-width: 432px;
+			right: 30px;
+		}
+		
+	}
+	&__main-table-top-border{
+		display: flex;
+	}
+	&__main-table-top-border-item{
+		height: 8px;
+		width: 33.33%;
+		background-color: #dddddd;
+	}
+	&__main-table-top-border-item:nth-child(2){
+		height: 8px;
+		width: 33.33%;
+		background-color: #efefef;
+	}
+	&__main-table-row{
+		margin-top: 15px;
+		display      : flex;
+		flex-wrap    : wrap;
+		margin-left  : auto;
+		margin-right : auto;
+		width        : 100%;
+	}
+	&__main-table-row-item{
+		display: flex;
+		flex-direction: column;
+		border-bottom: 1px solid #ddd;
+		width: 50%;
+		@media (width >= $m) {
+			width: 33.33%;
+		}
+	}
+	
+	&__main-table-row-item:nth-child(3){
+		width: 100%;
+		@media (width >= $m) {
+			width: 33.33%;
+		}
+	}
+	&__main-table-row-item-title{
+		font: normal normal normal 10px/26px Poppins;
+		letter-spacing: 0px;
+		color: #BEA037;
+		height: 20px;		
+		margin-bottom: 5px;
+		display: flex;
+		align-items: center;
+		@media (width >= $m) {
+			font: normal normal normal 10px/26px Poppins;
+			letter-spacing: 0px;
+		}
+	}
+	&__main-table-row-item-data{
+		font: normal normal 600 10px/15px Poppins;
+		letter-spacing: -0.34px;
+		color: #2C2E32;
+		height: 20px;
+		margin-bottom: 5px;
+		display: flex;
+		align-items: center;
+		@media (width >= 500px) {
+			font: normal normal 600 13px/15px Poppins;
+			letter-spacing: -0.3px;
+		}
+		@media (width >= $m) {
+			font: normal normal 600 15px/17px Poppins;
+			letter-spacing: -0.3px;
+		}
+	}
+}

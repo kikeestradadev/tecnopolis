@@ -1,0 +1,53 @@
+section(class='matchup-stats')
+	h2(class='matchup-text-center-title') Stats
+	div(class='matchup-stats__container sbi-grid full s-grid-1 m-grid-2 xl-grid-2 cxxl-grid-2 row-gap')
+		div(class='matchup-stats__item')
+			div(class='tabs-container stats-records')
+				div(class='stats-records__title-container')
+					h3(class='stats-records__title') RECORDS
+				ul(class='tabs-container__tabs stats-records__tabs' id='tabs')
+					li(class='tabs-container__tab stats-records__tab is-active') ML
+					li(class='tabs-container__tab stats-records__tab') ATS
+					li(class='tabs-container__tab stats-records__tab') o/u
+				div(class='stats-records__team-logos-container')
+					div(class='stats-records__team-logo-item')
+						img(class='stats-records__team-logo', src="images/matchup-odds-logo.svg", alt="")
+					div(class='stats-records__team-logo-item')
+						img(class='stats-records__team-logo', src="images/matchup-odds-logo.svg", alt="")
+				div(class='tabs-container__panels stats-records__panels')
+					div(class='tabs-container__panel stats-records__panel is-active')
+						-for(let i =1; i <=3; i++)
+							div(class='stats-records__scores-container')
+								div(class='stats-records__scores-item') 8-8-1
+								div(class='stats-records__scores-item') lorem
+								div(class='stats-records__scores-item') 8-8-1
+					div(class='tabs-container__panel stats-records__panel')
+						-for(let i =1; i <=3; i++)
+							div(class='stats-records__scores-container')
+								div(class='stats-records__scores-item') 8-8-2
+								div(class='stats-records__scores-item') lorem
+								div(class='stats-records__scores-item') 8-8-2
+					div(class='tabs-container__panel stats-records__panel')
+						-for(let i =1; i <=3; i++)
+							div(class='stats-records__scores-container')
+								div(class='stats-records__scores-item') 8-8-3
+								div(class='stats-records__scores-item') lorem
+								div(class='stats-records__scores-item') 8-8-3			
+		div(class='matchup-stats__item')
+			div(class='head-to-head')
+				div(class='head-to-head__title-container')
+					h3(class='head-to-head__title') HEAD TO HEAD
+				div(class='head-to-head__team-logos-container')
+					div(class='head-to-head__team-logo-item')
+						img(class='head-to-head__team-logo', src="images/matchup-odds-logo.svg", alt="")
+					div(class='head-to-head__team-logo-item')
+						img(class='head-to-head__team-logo', src="images/matchup-odds-logo.svg", alt="")
+				div(class='head-to-head__scores-container')
+					-for(let i =1; i <=10; i++)
+						div(class='head-to-head__scores')
+							div(class='head-to-head__scores-item') 26.65
+							div(class='head-to-head__scores-item')
+								span(class='head-to-head__progresive-bar-title') POINTS PER GAME (PPG) 
+								div(class='head-to-head__progresive-bar-container') 
+									div(class='head-to-head__progresive-bar', style='height:24px;width:50%') 
+							div(class='head-to-head__scores-item') 26.65

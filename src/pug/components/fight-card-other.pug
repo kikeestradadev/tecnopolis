@@ -1,0 +1,22 @@
+section(class='fight-card-other')
+	span(class='fight-card-other__title') Upcoming UFC Event
+	-for(let i = 1; i<= 1; i++)
+		article(class='fight-card-other__matchup')
+			div(class='fight-card-other__matchup-item') 
+				div(class='fight-card-other__grid')
+					div(class='fight-card-other__grid-item')
+						img(src="images/upcoming_fighter.png", alt="fighter")
+					div(class='fight-card-other__grid-item')
+						img(src="images/vrs.svg", alt="vrs", class='fight-card-other__vrs')
+					div(class='fight-card-other__grid-item')
+						img(src="images/upcoming_fighter.png", alt="fighter")
+			div(class='fight-card-other__matchup-item')
+				div(class='fight-card-other__label')
+					div(class='fight-card-other__label-item')
+						span(class='fight-card-other__label-event-name') UFC Fight Night
+						span(class='fight-card-other__label-fighters-name') Nunes 
+							span(class='fight-card-other__label-fighters-name_vrs') vs 
+							| Aldana
+						span(class='fight-card-other__label-date') Saturday, Jun 10th
+						a(href="#", class='fight-card-other__label-anchor') FIGHT CARD
+

@@ -1,0 +1,18 @@
+section(class='news-show-more')
+	div(class='news-show-more__container')
+		div(class='news-show-more__main-title-container') 
+			span(class='news-show-more__main-title') 
+				img(src="images/nfl-helmet.svg", alt="", class='news-show-more__main-title-ico')
+				| Latest 
+				span(class='news-show-more__slug-league') nfl 
+				| Betting News
+		-for(let i=1; i<=3; i++)		
+			div(class='news-show-more__grid')
+				div(class='news-show-more__grid-item', style="background-image: url('images/slide_item1.jpg')")
+				div(class='news-show-more__grid-item')
+					span(class='news-show-more__date') 10 HOURS AGO
+					span(class='news-show-more__title') NFL Draft 2023: Will the first three picks in the 2023 NFL Draft be quarterbacks?
+					span(class='news-show-more__content') There are a number of different scenarios that could play out when the first round of the NFL Draft kicks…
+					a(href="http://", class='news-show-more__anchor')  Read More…
+	div(class='news-show-more__button-expand-container')
+		button(class='news-show-more__button-expand') expand

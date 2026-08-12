@@ -1,0 +1,81 @@
+.fighter-takedown-average{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-self: center;
+	&__item {
+		height: 50px;
+		border-bottom: 1px solid #D7D7D7;
+		width: 100%;
+		padding: 0 5px;
+	}
+	&__item:first-child{
+		border: none;
+		height: auto;
+		
+	}
+	&__item:nth-child(2), &__item:nth-child(3), &__item:nth-child(4){
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__title{
+		width: 100%;
+		text-align: center;
+		font: normal normal 600 20px/21px Poppins;
+		letter-spacing: -0.44px;
+		color: #2C2E32;
+		text-transform: uppercase;
+		display: block;
+		@media (width >= $m) {
+			font: normal normal 600 22px/23px Poppins;
+		}
+	}
+	&__title-color{
+		color: #9E852E;
+	}
+	
+	&__graphic-percentage{
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	@keyframes rellenar{
+		to{
+			stroke-dasharray: var(--porcentaje) 100;
+		}
+	}	
+	circle{
+		fill: none;
+		stroke-width: 40;
+		transform: rotate(-90deg);
+		transform-origin: 50%;
+		stroke-dasharray: 100 100;
+		stroke: #f3f3f3;
+	}
+	  circle:nth-child(2){ /* el segundo círculo, es el que se ve por encima del anterior y debe tener el color mas intenso y el area del porcentaje */
+		stroke: var(--color);
+		stroke-dasharray: 0 100;
+		animation: rellenar .35s linear forwards;
+	}
+	&__data{
+		position:absolute; 
+		top:50%; 
+		left:50%; 
+		transform:translate(-50%, -50%); 
+		font: normal normal 600 24px/29px Poppins;
+		letter-spacing: 0px;
+		color: #2C2E32;
+	}
+	&__info{
+		font: normal normal normal 17px/17px Poppins;
+		letter-spacing: -0.34px;
+		color: #2C2E32;
+	}
+	&__info:last-child{
+		font: normal normal 600 15px/17px Poppins;
+		letter-spacing: -0.3px;
+		color: #2C2E32;
+	}
+}

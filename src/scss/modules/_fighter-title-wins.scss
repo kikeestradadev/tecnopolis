@@ -1,0 +1,103 @@
+.fighter-title-wins{
+	&__title{
+		text-align: center;
+		font: normal normal 600 20px/21px Poppins;
+		letter-spacing: -0.44px;
+		color: #2C2E32;
+		text-transform: uppercase;
+		display: block;
+		margin-bottom: 30px;
+		@media (width >= $m) {
+			font: normal normal 600 22px/23px Poppins;
+		}
+	}
+	&__title-color{
+		color: #9E852E;
+	}
+	&__item{
+		// border: 1px solid green;
+		width: 100%;
+		max-width: 288px;
+		margin: 0 auto;
+	}
+	&__score-container{
+		// border: 1px solid green;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		border-bottom: 1px solid #D7D7D7;
+		padding-bottom: 15px;
+	}
+	&__score{
+		font-style: normal;
+		font-weight: normal;
+		font-stretch: medium;
+		font-size: 80px;
+		line-height: 80px;
+		font-family: Poppins;
+		letter-spacing: -1.6px;
+		color: #2C2E32;		
+	}
+	&__score-banner{
+		position: absolute;
+		left: 0;
+	}
+	&__table-row{
+		border-bottom: 1px solid #D7D7D7;
+		padding-bottom: 10px;
+		display: flex;
+	}
+	&__table {
+		// border: 1px solid red;
+		height: 200px;
+		padding-bottom: 15px;
+		overflow-y: scroll;
+		scrollbar-width: none; 
+		-ms-overflow-style: none; 
+	}
+	
+	&__table::-webkit-scrollbar {
+		width: 0;
+	}
+	&__table-item{
+		margin-top: 10px;
+		font: normal normal normal 12px/18px Poppins;
+		letter-spacing: 0px;
+		color: #2C2E32;
+		
+	}
+
+	&__table-item:nth-child(1){
+		flex-basis: 100px;
+		flex-grow: 0;
+		// border: 1px solid red;
+		position: relative;
+		padding: 0 10px 0 20px; 
+	}
+
+	&__table-item:nth-child(1)::before{
+		content: "";
+		position: absolute;
+		width: 8px;
+		height: 100%;
+		left: 0;
+		background-color: #0C8E6B;
+		border-radius: 8px;
+	}
+	&__table-item:nth-child(2){
+		padding: 0 10px; 
+		width: calc(100% - 100px);
+		// border: 1px solid red;
+	}
+	&__number-fight{
+		font-weight: bold;
+		display: block;
+	}
+	&__fighters{
+		font-weight: normal;
+	}
+	&__date{
+		display: block;
+	}
+}

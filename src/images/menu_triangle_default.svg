@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 29.8 30" style="enable-background:new 0 0 29.8 30;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F3F3F3;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:#1F2024;}
+	.st3{display:none;}
+	.st4{display:inline;}
+	.st5{fill:#99853D;}
+	.st6{fill:#9E852E;}
+</style>
+<g id="DEFAULT_STATE">
+	<g>
+		<g>
+			<circle class="st0" cx="14.9" cy="15" r="14.5"/>
+			<path class="st1" d="M14.9,1c7.7,0,14,6.3,14,14s-6.3,14-14,14s-14-6.3-14-14S7.2,1,14.9,1 M14.9,0c-8.3,0-15,6.7-15,15
+				s6.7,15,15,15s15-6.7,15-15S23.2,0,14.9,0L14.9,0z"/>
+		</g>
+		<g>
+			<polygon class="st0" points="7,12.5 22.8,12.5 14.9,21.2 			"/>
+			<path class="st2" d="M21.7,13l-6.8,7.5L8.2,13H21.7 M23.9,12h-18l9,10L23.9,12L23.9,12z"/>
+		</g>
+	</g>
+</g>
+<g id="HOVER-STATE" class="st3">
+	<g class="st4">
+		<g>
+			<circle class="st0" cx="14.9" cy="15" r="14.5"/>
+			<path class="st1" d="M14.9,1c7.7,0,14,6.3,14,14s-6.3,14-14,14s-14-6.3-14-14S7.2,1,14.9,1 M14.9,0c-8.3,0-15,6.7-15,15
+				s6.7,15,15,15s15-6.7,15-15S23.2,0,14.9,0L14.9,0z"/>
+		</g>
+		<g>
+			<polygon class="st0" points="7,12.5 22.8,12.5 14.9,21.2 			"/>
+			<path class="st5" d="M21.7,13l-6.8,7.5L8.2,13H21.7 M23.9,12h-18l9,10L23.9,12L23.9,12z"/>
+		</g>
+	</g>
+</g>
+<g id="OPEN" class="st3">
+	<g class="st4">
+		<circle class="st6" cx="14.9" cy="15" r="14.5"/>
+		<path class="st1" d="M14.9,1c7.7,0,14,6.3,14,14s-6.3,14-14,14s-14-6.3-14-14S7.2,1,14.9,1 M14.9,0c-8.3,0-15,6.7-15,15
+			s6.7,15,15,15s15-6.7,15-15S23.2,0,14.9,0L14.9,0z"/>
+	</g>
+	<g class="st4">
+		<polygon class="st5" points="7,12.5 22.8,12.5 14.9,21.2 		"/>
+		<path class="st0" d="M21.7,13l-6.8,7.5L8.2,13H21.7 M23.9,12h-18l9,10L23.9,12L23.9,12z"/>
+	</g>
+</g>
+</svg>

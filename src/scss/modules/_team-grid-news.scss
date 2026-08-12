@@ -1,0 +1,199 @@
+.team-grid-news{
+	&__item{
+		box-shadow: 0px 2px 6px #0000001F;
+		min-height: 96px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		@media (width >= $m) {
+			min-height: 128px;
+		}
+		
+	}	
+}
+
+.team-grid-left-news{
+	// border:1px solid black;
+	width: 100%;
+	display: flex;
+	align-items: center;	
+	&__item:nth-child(1){
+		@media (width >= $s) and (width < $m) {
+			display: none;
+		}
+		display: flex;
+		flex-basis: 120px;
+		flex-grow: 0;
+		align-items: center;
+		justify-content: flex-end;
+		// border:1px solid blue;
+		@media (width >= 1600px) {
+			justify-content: center;
+		}
+		@media (width >= 1700px) {
+			justify-content: flex-end;
+		}
+	}
+	&__item:nth-child(2){	
+		padding: 0 15px;	
+		@media (width >= $s) and (width < $m) {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+		}
+		// border:1px solid blue;
+		width: calc(100% - 120px);
+		align-items: center;
+	}
+
+	&__title, &__anchor{
+		text-transform: uppercase;
+		
+		// border:1px solid blue;
+	}
+	&__title{	
+		display: flex;	
+		font: normal normal 600 12px/23px Poppins;
+		letter-spacing: -0.34px;	
+		color: #1F2024;
+		padding-right: 5px;	
+		@media (width >= 375px) {
+			font: normal normal 600 17px/23px Poppins;
+		}	
+		@media (width >= 500px) {
+			font: normal normal 600 22px/23px Poppins;
+			padding-right: 0;	
+		}
+		@media (width >= $m) {
+			font: normal normal 600 22px/23px Poppins;
+			letter-spacing: -0.44px;
+			display: block;
+			text-align: center;
+			margin-bottom: 15px;
+		}
+		@media (width >= 1600px) {
+			font: normal normal 600 17px/23px Poppins;
+		}
+		@media (width >= 1700px) {
+			font: normal normal 600 22px/23px Poppins;
+		}
+	}
+	&__title-color{
+		color: #9E852E;
+	}
+	&__anchor{
+		width: 96px;
+		height: 32px;
+		background-color: #99853D;
+		color: white;	
+		display: flex;
+		align-items: center;
+		justify-content: center;	
+		text-decoration: none;		
+		font: normal normal 600 12px/24px Poppins;	
+		@media (width >= 500px) {
+			font: normal normal 600 13px/24px Poppins;
+			width: 104px;
+			height: 32px;
+		}
+		@media (width >= $m) {
+			margin: 0 auto;
+		}
+	}
+}
+
+.team-grid-right-news{
+	// border: 1px solid red;
+	width: 100%;
+	padding: 0 15px;
+	display: flex;
+	@media (width >= $m) {
+		padding: 0 30px;
+	}
+	@media (width >= 1600px) {
+		padding: 0 15px;
+	}
+	@media (width >= 1700px) {
+		padding: 0 30px;
+	}
+	&__text-info{
+		// border: 1px solid green;
+		width: calc(100% - 110px);
+		padding-right: 5px;
+	}
+	&__anchor-container{
+		// border: 1px solid green;
+		flex-basis: 110px;
+		flex-grow: 0;
+		display: flex;
+		align-items: center;
+	}
+	&__text-title, &__text-teams, &__text-date{
+		display: block;
+		margin-bottom: 5px;
+	}
+
+	&__text-date{
+		margin-bottom: 0;
+	}
+
+
+	&__text-title{
+		font: normal normal medium 12px/14px Poppins;
+		letter-spacing: 0px;
+		color: #9E852E;
+		@media (width >= 500px) {
+			font: normal normal medium 15px/14px Poppins;
+		}
+	}
+	&__text-teams{
+		font: normal normal bold 14px/20px Poppins;
+		letter-spacing: -0.49px;
+		color: #2C2E32;
+		@media (width >= 500px) {
+			font: normal normal bold 23px/20px Poppins;
+		}
+	}
+	&__text-date{
+		font: normal normal normal 12px/18px Poppins;
+		letter-spacing: -0.42px;
+		color: #2C2E32;
+		@media (width >= 500px) {
+			font: normal normal normal 15px/18px Poppins;
+		}
+	}
+
+	&__anchor-container{
+		display: flex;
+		justify-content: flex-end;
+	}
+	&__anchor{
+		width: 96px;
+		height: 32px;
+		background-color: #99853D;
+		color: white;	
+		display: flex;
+		align-items: center;
+		justify-content: center;	
+		text-decoration: none;		
+		font: normal normal 600 12px/24px Poppins;	
+		@media (width >= 500px) {
+			font: normal normal 600 13px/24px Poppins;
+			width: 104px;
+			height: 32px;
+		}
+		@media (width >= $m) {
+			margin: 0 auto;
+		}
+	}
+	&__text-vrs{
+		font: normal normal normal 14px/20px Poppins;
+		letter-spacing: -0.49px;
+		@media (width >= 500px) {
+			font: normal normal normal 23px/20px Poppins;
+			letter-spacing: -0.81px;
+		}		
+		color: #2C2E32;
+	}
+}

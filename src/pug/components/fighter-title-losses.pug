@@ -1,0 +1,15 @@
+div(class='fighter-title-losses')
+	span(class='fighter-title-losses__title') title 
+		span(class='fighter-title-losses__title-color') losses
+	div(class='fighter-title-losses__item')
+		div(class='fighter-title-losses__score-container')
+			img(src="images/arrow-losses.svg", alt="" class='fighter-title-losses__score-banner')
+			span(class='fighter-title-losses__score') 1
+		div(class='fighter-title-losses__table')
+			-for(let i = 1; i <= 10; i++)
+				div(class='fighter-title-losses__table-row')
+					div(class='fighter-title-losses__table-item')
+						span(class='fighter-title-losses__name') Dominick Reyes
+					div(class='fighter-title-losses__table-item')
+						span(class='fighter-title-losses__name-event') Jones vs. Reyes
+						span(class='fighter-title-losses__date') Feb 08, 2020

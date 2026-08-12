@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48.787" height="81.002" viewBox="0 0 48.787 81.002">
+  <g id="read-arrow" transform="translate(0.002 0.5)">
+    <g id="Group_8293" data-name="Group 8293" transform="translate(0 -0.498)">
+      <path id="Subtraction_1" data-name="Subtraction 1" d="M23536.5,18703.5a40,40,0,1,1,0-80c.168,0,.334,0,.5,0v80H23537C23536.83,18703.5,23536.666,18703.5,23536.5,18703.5Z" transform="translate(-23496 -18623)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+    </g>
+    <path id="arrow-guide" d="M-1926.849,19358.314a.5.5,0,0,1-.01-.705l15.12-15.609H-1941.5a.5.5,0,0,1-.5-.5.5.5,0,0,1,.5-.5h30.038l-15.386-15.143a.5.5,0,0,1-.01-.709.5.5,0,0,1,.709,0l16.45,16.188-.334.344a.5.5,0,0,1-.275.283l-15.832,16.344a.494.494,0,0,1-.359.15A.511.511,0,0,1-1926.849,19358.314Z" transform="translate(1958.484 -19301.002)" fill="#2c2e32"/>
+  </g>
+</svg>

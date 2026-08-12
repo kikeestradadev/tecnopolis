@@ -1,0 +1,15 @@
+.article-title{
+    margin-bottom: 18px;
+
+    @media (width >= 769px) {
+        margin-bottom: 24px;
+    }
+}
+
+.article-title h1{
+    font-size: 29px;
+
+    @media (width >= 769px) {
+        font-size: 51px;
+    }
+}

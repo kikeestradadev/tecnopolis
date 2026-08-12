@@ -1,0 +1,293 @@
+/*here start the style for the top soport main container*/
+.top-sports{
+	padding							: 70px 0;
+	margin-bottom					: 40px;
+	&__logo{
+		display						: flex;
+		align-items					: center;
+		justify-content				: center;
+		margin-bottom				: 70px;
+		padding						: 0 15px;
+	}
+	&__logo > img{
+		width						: 100%;
+		max-width					: 168px;
+		@media (width >= $m) {
+			max-width				: 300px;
+		}
+		@media (width >= $m) {
+			max-width				: 362px;
+		}
+	}	
+	&__container{
+		width						: 100%;
+		max-width					: 824px;
+		margin						: 0 auto;
+		// border: 1px solid red;
+	}	
+	@media (width >= $m) {
+		padding						: 70px 15px;
+	}  
+}
+/*here is the style for the main top tabulation*/
+.tab-menu{
+	margin-bottom					: 30px;
+	position						: relative;
+	padding-top						: 20px;
+	&__item{
+		cursor						: pointer;
+		width						: 144px;
+		height						: 64px;
+		border						: 1px solid #2c2e32;
+		border-radius				: 4px;
+		margin						: 0 12px;
+		display						: flex;
+		align-items					: center;
+		justify-content				: center;
+		&.active{
+			background				: #2c2e32;
+			> span{
+				color				: #ffffff 
+			}
+			.tab-icon-white{
+				display				: block;
+			}
+			.tab-icon-black{
+				display				: none;
+			}
+		}
+	}
+	&__item:first-child{
+		margin-left					: 0;
+	}
+	&__item:last-child{
+		margin-right				: 0;
+	}
+	&__text{
+		// border: 1px solid red;
+		text-transform: uppercase;
+		display						: flex;
+		align-items					: center;
+		justify-content				: center;	
+		font						: normal normal 600 19px/23px Poppins;
+		letter-spacing				: -0.38px;
+		color						: #2C2E32;
+		&.active{
+			color					: #ffffff;
+		}	
+	}
+	.tab-icon{
+		margin-right				: 10px;
+	}
+	.tab-icon-white{
+		display						: none;
+	}
+	&::after {
+		content: "";
+		background-image			: url(images/scroll-horizontal-ico.svg);
+		background-repeat			: no-repeat;
+		width						: 30px;
+		height						: 30px;
+		position					: absolute;
+		top							: 0;
+		right						: 0;
+		z-index						: 5000;
+
+	}
+}
+/*here is the style for the main top tabulation panels*/
+.tab-menu-panels{
+	&__item{
+		min-height					: 190px;
+		display						: none;
+		&.active{
+			display					: block;
+		}
+	}
+	&__banner{
+		// overflow: hidden;
+		border-radius				: 8px;
+		margin-bottom				: 30px;
+	}
+	&__banner img{
+		border-radius				: 8px;
+		width						: 100%;
+	}
+}
+
+/*here is the style for the sub tabulation*/
+.sub-tab-container{
+	position: relative;
+	display							: flex;
+	flex-direction					: column;
+	@media (width >= $m) {
+		flex-direction				: row;
+	}
+	&::after {
+		content					: "";
+		background-image		: url(images/scroll-horizontal-ico.svg);
+		background-repeat		: no-repeat;
+		width					: 30px;
+		height					: 30px;
+		position				: absolute;
+		top						: -20px;
+		right					: 0;
+		z-index					: 5000;
+		background-color		: white;
+		@media (width >= $m) {
+			background-image		: url(images/scroll-vertical-ico.svg);
+			top						: 20px;
+			right					: -20px;
+		}
+	}
+}
+.sub-menu-container{
+	// border						: 1px solid red;
+	padding							: 0 15px;
+	@media (width >= $m) {
+		flex-basis					: 329px;
+		flex-grow					: 0;
+		height						: auto;
+	}	
+}
+.sub-tab-menu{	
+	&__item{
+		border-bottom				: 2px solid #ccc29e;
+		border-right				: 2px solid #ccc29e;
+		padding						: 0 15px;
+		cursor						: pointer;
+		font						: normal normal normal 14px/22px Poppins;
+		letter-spacing				: 0px;
+		@media (width >= $m) {
+			font					: normal normal 600 19px/23px Poppins;
+			letter-spacing			: -0.38px;
+			padding					: 0 20px;
+		}
+		color						: #2C2E32;
+		width						: 230px;
+		height						: 41px;
+		display						: flex;
+		align-items					: center;
+		text-transform				: uppercase;
+		&.active{
+			color					: #9E852E;
+			.sub-tab-menu-black{ 
+				display				: none;
+			}
+			.sub-tab-menu-gold{
+				display				: block;
+			}
+			@media (width >= $m) {
+				&::before{
+					content				: "";
+					display				: block;
+					height				: 4px;
+					background			: rgb(158, 133, 46);
+					width				: 16px;
+					position			: absolute;
+					left				: -0;
+					top					: 28px;
+				}	
+			}		
+		}
+		@media (width >= 375px) {
+			width					: 240px;
+			height					: 41px;
+		}
+		@media (width >= $m) {
+			width					: 100%;
+			height					: 64px;
+			border-right			: 2px solid #ccc29e;
+			border-bottom			: 2px solid #ffffff;
+			@media (hover: hover) and (pointer: fine) {
+			&:hover{
+				color					: #9E852E;
+				.sub-tab-menu-black{
+					display				: none;
+				}
+				.sub-tab-menu-gold{
+					display				: block;
+				}
+			}
+			}
+		}		
+	}
+	&__icon-content{
+		// border: 1px solid red;
+		flex-basis: 50px;
+		flex-grow: 0;
+		display: flex;
+		justify-content: center;
+	}
+	&__item{
+		@media (width >= $m) {
+		border-bottom				: 2px solid #ccc29e;
+		}
+	}
+	&__item:last-child{
+		@media (width >= $m) {
+		border-bottom				: none;
+		}
+	}
+	&__item span{
+		position					: relative;
+		display						: flex;
+		align-items					: center;
+		width						: 100%;
+	}
+	.sub-tab-menu-ico{
+		transform					: scale(.8);
+		@media (width >= $m) {
+			transform				: scale(1);
+		}
+		// margin-right				: 10px;
+	}
+	.sub-tab-menu-gold{
+		display						: none;
+	}
+}
+.sub-tab-panels{	
+	position						: relative;
+	padding							: 10px;
+	// border							: 1px solid blue;
+	@media (width >= $m) {
+		width						: calc(100% - 329px);		
+	}
+	&__item{
+		
+		position: relative;
+		display						: none;
+		&.active{
+			display					: block;
+		}		
+	}
+	&__title{
+		// border						: 1px solid red;
+		font						: normal normal 600 24px/29px Poppins;
+		letter-spacing				: -0.48px;
+		@media (width >= $m) {
+			font					: normal normal 600 27px/32px Poppins;
+			letter-spacing			: -0.54px;
+		}
+		color						: #1F2024;
+		display						: block;
+		margin-bottom: 20px;
+		
+	}
+	&__text {
+		// border: 1px solid green;
+		font						: normal normal normal 14px/22px Poppins;
+		letter-spacing				: 0px;
+		color						: #1F2024;
+		display						: block;
+		height						: 120px;
+	}
+	overflow					: auto;		
+	scrollbar-width				: none; /* Oculta la barra de desplazamiento en Firefox */
+
+	&::-webkit-scrollbar {
+		display					: none; /* Oculta la barra de desplazamiento en Chrome y Safari */
+	}
+	
+}
+/*here finish the style for the top soport main container*/

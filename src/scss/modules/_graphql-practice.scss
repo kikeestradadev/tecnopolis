@@ -1,0 +1,9 @@
+.graphql-practice{
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+    }    
+    &__container-item{
+        width: 50%;
+    }
+}

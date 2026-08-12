@@ -1,0 +1,19 @@
+section(class='swiper small-size-slider-bonuses')
+	div(class='swiper-wrapper')
+		each item in smallSizeSliderBonusesData.items
+			div(class='swiper-slide small-size-slider-bonuses__item')
+				div(class='small-size-slider-bonuses__bonus-title')
+					span(class='small-size-slider-bonuses__percentage')= item.percentage
+					span(class='small-size-slider-bonuses__label')= item.label
+					span(class='small-size-slider-bonuses__sub-label')= item.subLabel
+				img(class='small-size-slider-bonuses__logo' src=item.logo alt='')
+				div(class='small-size-slider-bonuses__list-container')
+					ul(class='small-size-slider-bonuses__ul')
+						each perk in item.perks
+							li(class='small-size-slider-bonuses__ul-li')= perk
+				div(class='small-size-slider-bonuses__bonus-container')
+					span(class='small-size-slider-bonuses__code-label')= item.codeLabel
+						span(class='small-size-slider-bonuses__code')= item.code
+				a(href=item.href class='small-size-slider-bonuses__anchor')= item.cta
+	div(class='small-size-slider-bonuses__prev swiper-button-prev')
+	div(class='small-size-slider-bonuses__next swiper-button-next')

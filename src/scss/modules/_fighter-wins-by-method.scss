@@ -1,0 +1,77 @@
+.fighter-wins-by-method{
+	&__item{
+		margin-bottom: 40px;
+	}
+	&__title{
+		text-align: center;
+		font: normal normal 600 20px/21px Poppins;
+		letter-spacing: -0.44px;
+		color: #2C2E32;
+		text-transform: uppercase;
+		display: block;
+		margin-bottom: 30px;
+		@media (width >= $m) {
+			font: normal normal 600 22px/23px Poppins;
+		}
+	}
+	&__title-color{
+		color: #9E852E;
+	}
+	&__progress-bar-container{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__progress-bar-bg {
+		height: 32px;
+		width: calc(100% - 64px);
+		background-color: #CCCCCC;
+		position: relative;
+		background: -webkit-repeating-linear-gradient(90deg, #ffffff 0, #ffffff 5px, #cccccc 5px, #cccccc 16px) 0/200%;
+		background: repeating-linear-gradient(90deg, #ffffff 0, #ffffff 5px, #cccccc 5px, #cccccc 16px) 0/200%;
+	  	display: flex;
+	  	align-items: center;
+	} 
+
+	&__progress-bar-bg::before{
+		content:"";
+		position: absolute;
+		height: 100%;
+		width: var(--fighter-progress-bar-bg);
+		background: transparent linear-gradient(270deg, #D6BF71 0%, #9E852E 100%) 0% 0% no-repeat padding-box;
+		z-index: 2;
+	}
+	&__progress-bar-percentage{
+		font: normal normal 600 17px/17px Poppins;
+		letter-spacing: -0.34px;
+		color: #FFFFFF;
+		position: relative;
+		z-index: 100;
+		left: 15px;
+		text-shadow: black 0.1em 0.1em 0.2em;
+	}
+	&__progress-right-score{
+		flex-basis: 64px;
+		flex-grow: 0;
+		height: 32px;
+		background-color: #919192;
+		font: normal normal 600 17px/17px Poppins;
+		letter-spacing: -0.34px;
+		color: #FFFFFF;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__progress-bar-title-container{
+		margin-bottom: 10px;
+	}
+	&__progress-bar-title{
+		font: normal normal 600 17px/17px Poppins;
+		letter-spacing: -0.34px;
+		color: #2C2E32;
+		margin-bottom: 10px;
+		text-transform: uppercase;
+	}
+	&__progress-bar-title-color{
+		color: #9E852E;
+	}
+}

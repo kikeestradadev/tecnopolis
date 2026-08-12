@@ -1,0 +1,146 @@
+{
+	"logo": "images/top_sports_logo.svg",
+	"banner": "images/top_sports_banner.png",
+	"tabs": [
+		{
+			"label": "nfl",
+			"icon": "images/nfl-ico.svg",
+			"iconWhite": "images/nfl-ico-white.svg",
+			"subtabs": [
+				{
+					"label": "NFL BETTING",
+					"title": "NFL Betting",
+					"icon": "images/nfl-helmet.svg",
+					"iconGold": "images/nfl-helmet-gold.svg",
+					"text": "Tecnopolis cubre tecnología, actualidad y comercio electrónico con análisis, guías y tendencias para profesionales y lectores curiosos."
+				},
+				{
+					"label": "NFL BEST BETS",
+					"title": "NFL Best Bets",
+					"icon": "images/best-bets-ico.svg",
+					"iconGold": "images/best-bets-ico-white.svg",
+					"text": "Tecnopolis cubre tecnología, actualidad y comercio electrónico con análisis, guías y tendencias para profesionales y lectores curiosos."
+				},
+				{
+					"label": "#1 NFL BETTING SITE",
+					"title": "#1 NFL Betting Site",
+					"icon": "images/betting-site-ico.svg",
+					"iconGold": "images/betting-site-ico-white.svg",
+					"text": "Tecnopolis cubre tecnología, actualidad y comercio electrónico con análisis, guías y tendencias para profesionales y lectores curiosos."
+				}
+			]
+		},
+		{
+			"label": "nba",
+			"icon": "images/nba-ico.svg",
+			"iconWhite": "images/nba-ico-gold.svg",
+			"subtabs": [
+				{
+					"label": "NBA BETTING",
+					"title": "NBA Betting",
+					"icon": "images/nba-ico.svg",
+					"iconGold": "images/nba-ico-gold.svg",
+					"text": "Tecnopolis cubre tecnología, actualidad y comercio electrónico con análisis, guías y tendencias para profesionales y lectores curiosos."
+				},
+				{
+					"label": "NBA BEST BETS",
+					"title": "NBA Best Bets",
+					"icon": "images/best-bets-ico.svg",
+					"iconGold": "images/best-bets-ico-white.svg",
+					"text": "Tecnopolis cubre tecnología, actualidad y comercio electrónico con análisis, guías y tendencias para profesionales y lectores curiosos."
+				},
+				{
+					"label": "#1 NBA BETTING SITE",
+					"title": "#1 NBA Betting Site",
+					"icon": "images/betting-site-ico.svg",
+					"iconGold": "images/betting-site-ico-white.svg",
+					"text": "Tecnopolis cubre tecnología, actualidad y comercio electrónico con análisis, guías y tendencias para profesionales y lectores curiosos."
+				}
+			]
+		},
+		{
+			"label": "mlb",
+			"icon": "images/mlb-ico.svg",
+			"iconWhite": "images/mlb-ico-white.svg",
+			"subtabs": [
+				{
+					"label": "MLB BETTING",
+					"title": "MLB Betting",
+					"icon": "images/mlb-ico-black.svg",
+					"iconGold": "images/mlb-ico-gold.svg",
+					"text": "Tecnopolis cubre tecnología, actualidad y comercio electrónico con análisis, guías y tendencias para profesionales y lectores curiosos."
+				},
+				{
+					"label": "MLB BEST BETS",
+					"title": "MLB Best Bets",
+					"icon": "images/best-bets-ico.svg",
+					"iconGold": "images/best-bets-ico-white.svg",
+					"text": "Tecnopolis cubre tecnología, actualidad y comercio electrónico con análisis, guías y tendencias para profesionales y lectores curiosos."
+				},
+				{
+					"label": "#1 MLB BETTING SITE",
+					"title": "#1 MLB Betting Site",
+					"icon": "images/betting-site-ico.svg",
+					"iconGold": "images/betting-site-ico-white.svg",
+					"text": "Tecnopolis cubre tecnología, actualidad y comercio electrónico con análisis, guías y tendencias para profesionales y lectores curiosos."
+				}
+			]
+		},
+		{
+			"label": "nhl",
+			"icon": "images/nhl-ico.svg",
+			"iconWhite": "images/nhl-ico-white.svg",
+			"subtabs": [
+				{
+					"label": "NHL BETTING",
+					"title": "NHL Betting",
+					"icon": "images/nhl-ico.svg",
+					"iconGold": "images/nhl-ico-gold.svg",
+					"text": "Tecnopolis cubre tecnología, actualidad y comercio electrónico con análisis, guías y tendencias para profesionales y lectores curiosos."
+				},
+				{
+					"label": "NHL BEST BETS",
+					"title": "NHL Best Bets",
+					"icon": "images/best-bets-ico.svg",
+					"iconGold": "images/best-bets-ico-white.svg",
+					"text": "Tecnopolis cubre tecnología, actualidad y comercio electrónico con análisis, guías y tendencias para profesionales y lectores curiosos."
+				},
+				{
+					"label": "#1 NHL BETTING SITE",
+					"title": "#1 NHL Betting Site",
+					"icon": "images/betting-site-ico.svg",
+					"iconGold": "images/betting-site-ico-white.svg",
+					"text": "Tecnopolis cubre tecnología, actualidad y comercio electrónico con análisis, guías y tendencias para profesionales y lectores curiosos."
+				}
+			]
+		},
+		{
+			"label": "mls",
+			"icon": "images/soccer-ico.svg",
+			"iconWhite": "images/soccer-ico-white.svg",
+			"subtabs": [
+				{
+					"label": "MLS BETTING",
+					"title": "MLS Betting",
+					"icon": "images/soccer-ico.svg",
+					"iconGold": "images/soccer-ico-gold.svg",
+					"text": "Tecnopolis cubre tecnología, actualidad y comercio electrónico con análisis, guías y tendencias para profesionales y lectores curiosos."
+				},
+				{
+					"label": "MLS BEST BETS",
+					"title": "MLS Best Bets",
+					"icon": "images/best-bets-ico.svg",
+					"iconGold": "images/best-bets-ico-white.svg",
+					"text": "Tecnopolis cubre tecnología, actualidad y comercio electrónico con análisis, guías y tendencias para profesionales y lectores curiosos."
+				},
+				{
+					"label": "#1 MLS BETTING SITE",
+					"title": "#1 MLS Betting Site",
+					"icon": "images/betting-site-ico.svg",
+					"iconGold": "images/betting-site-ico-white.svg",
+					"text": "Tecnopolis cubre tecnología, actualidad y comercio electrónico con análisis, guías y tendencias para profesionales y lectores curiosos."
+				}
+			]
+		}
+	]
+}

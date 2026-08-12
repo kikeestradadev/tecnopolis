@@ -1,0 +1,104 @@
+/*here start mid-size slider module styles*/
+.mid-size-slider-section{
+	// padding						: 0 20px;
+	position					: relative;
+	z-index						: 0;
+}
+.mid-size-slider{
+	margin-bottom				: 34px;
+	z-index						: 0;
+	&__item{
+		position				: relative;
+		width					: 193px;
+		height					: 324px;
+		@media (width >= $m) {
+			width					: 297px;
+			height					: 396px;
+		}
+		@media (width >= $l) {
+			width					: 297px;
+			height					: 496px;
+		}
+		border-radius			: 8px;
+		overflow				: hidden;
+		// border					:1px solid black;
+		text-decoration			: none;		
+		background-repeat		: no-repeat;
+		background-position		: center center;
+		background-size			: cover;
+		display					: flex;
+		flex-direction			: column;
+		justify-content			: flex-end;
+		&:before{
+			content             : "";
+			background           : linear-gradient(to bottom, transparent 30%, #000000 70%);
+			position            : absolute;
+			width               : 100%;
+			height              : 100%;
+			top                 : 0;
+			right               : 0;
+			bottom              : 0;
+			left                : 0;
+			z-index             : -1;
+			opacity             : .7;
+		}
+	}
+	
+	&__text-cointainer{
+		position: relative;
+		// border					: 1px solid white;
+		width					: 100%;
+		padding					: 10px 10px 10px 10px;	
+		@media (width >= $m) {
+			padding				: 10px 15px 15px 15px;	
+		}	
+		@media (width >= $l) {
+			padding				: 10px 30px 30px 30px;	
+		}	
+		
+	}
+	&__item-title{
+		margin-bottom: 5px;
+		display					: block;
+		font: normal normal 600 17px/20px Poppins;
+		letter-spacing: -0.34px;
+		@media (width >= $m) {
+			font					: normal normal 600 27px/32px Poppins;
+			letter-spacing			: -0.54px;
+			margin-bottom: 15px;
+		}		
+		color					: #FFFFFF;
+	}
+	&__item-date{
+		display					: block;
+		@media (width >= $m) {
+			font : normal normal normal 11px/11px Poppins;
+			letter-spacing: -0.22px;
+		}
+		font					: normal normal normal 12px/20px Poppins;
+		letter-spacing			: -0.24px;
+		color					: #FFFFFF;
+		text-transform			: uppercase;
+	}
+	.swiper-button-prev, .swiper-button-next{
+		display: none;
+		@media (width >= $l) {
+			display: flex;
+			--swiper-navigation-size: 30px;
+			--swiper-theme-color	: #1F2024;
+			border					: 1px solid white;
+			width					: 80px;
+			height					: 80px;
+			border-radius			: 50%;
+			background				: #f3f3f3;
+			opacity					: 1;
+			transition				: 1s;
+			top						:var(--swiper-navigation-top-offset,45%)
+		}
+	}
+	.swiper-button-disabled{ 
+		opacity					: .3;
+		pointer-events			: initial;
+	}
+}
+/*here finish mid-size slider module styles*/

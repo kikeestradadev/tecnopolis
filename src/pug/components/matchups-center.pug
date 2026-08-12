@@ -1,0 +1,37 @@
+section(class='matchups-center')
+	div(class='title-page')
+		div(class='title-page__title-container')
+			div(class='title-page__title-item')
+				h1(class='title-page__title-head') 
+					img(src="images/college2-ico.svg", alt="", class='title-page__ico')
+					| NFL Matchups
+	div(class='matchups-center__search-component')
+		div(class='sbi-grid full m-grid-2 row-gap')
+			div(class='sbi-grid full s-grid-2 row-gap')
+				select(class='matchups-center__select-item' id='selectItem1' name='select-item-1')
+					option(class='matchups-center__select-item-option' value='lorem') 2023
+					option(class='matchups-center__select-item-option' value='lorem') lorem
+					option(class='matchups-center__select-item-option' value='lorem') lorem
+					option(class='matchups-center__select-item-option' value='lorem') lorem
+				select(class='matchups-center__select-item' id='selectItem1' name='select-item-1')
+					option(class='matchups-center__select-item-option' value='lorem') week 1
+					option(class='matchups-center__select-item-option' value='lorem') lorem
+					option(class='matchups-center__select-item-option' value='lorem') lorem
+					option(class='matchups-center__select-item-option' value='lorem') lorem
+	div(class='matchups-center__grid-container')
+		-for(let i = 1; i <= 1; i++)
+			div(class='matchups-center__grid-item')
+				span(class='matchups-center__title') Thursday 
+					pan(class='matchups-center__title-color') 10 August, 2023 
+				-for(let i = 1; i <= 1; i++)	
+					div(class='matchups-center__grid-matchup-container')
+						div(class='matchups-center__grid-matchup-container-item') 7:00 PM
+						div(class='matchups-center__grid-matchup-container-item')
+							div(class='matchups-center__grid-matchup-teams-container') 
+								span(class='matchups-center__grid-matchup-team-name') PATRIOTS
+								img(src="images/matchup-team-ico.svg", alt="", class='matchups-center__grid-matchup-team-ico')
+								img(src="images/matchup-vrs-ico.svg", alt="", class='matchups-center__grid-matchup-vrs-ico')
+								img(src="images/matchup-team-ico.svg", alt="", class='matchups-center__grid-matchup-team-ico')
+								span(class='matchups-center__grid-matchup-team-name') PATRIOTS
+						div(class='matchups-center__grid-matchup-container-item') 
+							a(href="#" class='matchups-center__grid-anchor') MATCHUP

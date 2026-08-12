@@ -1,0 +1,100 @@
+/* here star footer component styles*/
+.main-footer{
+	width								: 100%;
+	max-width							: 1920px;
+	margin								: 0 auto; 
+	background							: white;
+	@media (width >= $l) {
+		padding							: 0 var(--right-side-bar-width) 0 0;
+	}
+	@media (width >= $lg) {
+		padding							: 0 var(--right-side-bar-width) 0 var(--left-side-bar-width);
+	}		
+	
+	&__container{
+		padding							: 40px 20px;
+		background						: #2c2e32;
+		border-top						: 4px solid #9e852e;
+		@media (width >= $m) {
+			padding						: 40px 40px;
+		}
+	}
+	&__social-media-section{
+		display							: flex;		
+		justify-content					: space-between;
+		height							: 32px;
+		// border: 1px solid white;
+	}
+	&__white-logo{
+		width							: 100px;
+		height							: auto;
+		@media (width >= $m) {
+			width						: 121px;
+			height						: auto;
+		}
+	}
+	&__collapse-text-button{
+		position						: absolute;
+		right							: 0;
+		bottom							:-20px;
+		font-size						: 40px;
+		cursor							: pointer;
+		color							: #9e852e;
+		&.active{
+			color						: #ffffff;
+		}
+		@media (width >= 480px) {
+			display						: none;
+		}
+	}
+	&__collapse-footer-text{
+		position						: relative;
+	}
+	&__disclaimer-text{
+		position						: relative;
+		// border: 1px solid white;
+		&.active{
+			@media (width >= 0px) and (width < 480px) {
+				overflow				: hidden;
+				display					: -webkit-box;
+				-webkit-box-orient		: vertical;
+				-webkit-line-clamp		: 2; /* start showing ellipsis when 3rd line is reached */
+				transition				: .5s;
+			}	
+		}
+			
+		font-size						: 11px;
+		line-height						: 17px;
+		font							: normal normal medium 11px/17px Poppins;
+		letter-spacing					: 0px;
+		color							: #F3F3F3;
+		margin-bottom					: 25px;
+		@media (width >= $m) {
+			font-size					: 13px;
+			line-height					: 20px;
+		}
+	}	
+}
+
+.footer-ul{
+	margin								: 0;
+	padding								: 0;
+	list-style							: none;
+	display								: flex;
+	flex-wrap							: wrap;
+	width								: 142px;
+	&__li{
+		width							: 25%;
+		display							: flex;
+		align-items						: center;
+		justify-content					: center;
+	}
+	&__anchor{}
+	&__image{
+		transform						: scale(.8);
+		@media (width >= 374px) {
+			transform					: scale(1);
+		}
+	} 
+}
+/* here finish footer component styles*/

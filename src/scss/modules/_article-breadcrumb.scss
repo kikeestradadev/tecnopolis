@@ -1,0 +1,36 @@
+.article-breadcrumb{
+    font-size: 9px;
+    margin-bottom: 18px;
+
+    @media (width >= 769px) {
+        font-size: 11px;
+        cursor: pointer;
+        margin-bottom: 24px;
+    }
+}
+
+.article-breadcrumb a{
+    font-size: 9px;
+    color: black;
+
+    @media (width >= 769px) {
+        font-size: 11px;
+        color: black;
+    }
+}
+
+.article-breadcrumb span{
+    color: #D6BF71;
+    margin-left: 3px;
+    margin-right: 3px;
+
+    @media (width >= 769px) {
+        color: #D6BF71;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+.article-breadcrumb a:first-child {
+    font-weight: bold;
+}

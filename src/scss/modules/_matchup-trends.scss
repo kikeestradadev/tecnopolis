@@ -1,0 +1,17 @@
+.matchup-trends{
+	&__item{
+		display: flex;
+		align-items: center;
+		box-shadow: 0px 2px 6px #0000001F;
+		height: 112px;
+		padding: 0 15px;
+	}
+	&__logo{
+		margin-right: 10px;
+	}
+	&__text{
+		font: normal normal normal 14px/20px Poppins;
+		letter-spacing: 0px;
+		color: #1F2024;
+	}
+}

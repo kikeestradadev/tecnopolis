@@ -1,0 +1,52 @@
+section(class='matchup-team-scores')
+	h2(class='matchup-text-center-title') team scores
+	div(class='matchup-team-scores__container')
+		div(class='matchup-team-scores__title-container')
+			div(class='matchup-team-scores__top-title') final
+			div(class='matchup-team-scores__top-title') sun, aug 04
+		div(class='matchup-team-scores__score-container')
+			div(class='matchup-team-scores__score-title-container')
+				div(class='matchup-team-scores__score-title-brand') 
+				div(class='matchup-team-scores__score-title') 1
+				div(class='matchup-team-scores__score-title') 2
+				div(class='matchup-team-scores__score-title') 3
+				div(class='matchup-team-scores__score-title') 4
+				div(class='matchup-team-scores__score-title') t
+			div(class='matchup-team-scores__score-teams')
+				div(class='matchup-team-scores__score-team-container')
+					div(class='matchup-team-scores__score-team-brand') 
+						img(class='matchup-team-scores__team-logo', src="images/matchup-odds-logo.svg", alt="")
+						span(class='matchup-team-scores__team-name')
+							| NEW ENGLAND 
+							span(class='matchup-team-scores__team-name-color') PATRIOTS
+					div(class='matchup-team-scores__score-team') 7
+					div(class='matchup-team-scores__score-team') 3
+					div(class='matchup-team-scores__score-team') 0
+					div(class='matchup-team-scores__score-team') 0
+					div(class='matchup-team-scores__score-team') 10
+				div(class='matchup-team-scores__score-team-container')
+					div(class='matchup-team-scores__score-team-brand') 
+						img(class='matchup-team-scores__team-logo', src="images/matchup-odds-logo.svg", alt="")
+						span(class='matchup-team-scores__team-name')
+							| NEW ENGLAND 
+							span(class='matchup-team-scores__team-name-color') PATRIOTS
+					div(class='matchup-team-scores__score-team') 7
+					div(class='matchup-team-scores__score-team') 3
+					div(class='matchup-team-scores__score-team') 0
+					div(class='matchup-team-scores__score-team') 0
+					div(class='matchup-team-scores__score-team') 10
+		div(class='matchup-team-scores__leaders')
+			div(class='matchup-team-scores__leaders-title') COMPLETE LEADERS
+			div(class='sbi-grid full s-grid-1 m-grid-2 row-gap')
+				-for(let i =1; i <=2; i++)
+					div(class='matchup-team-scores__leaders-item')
+						-for(let i =1; i <=3; i++)
+							div(class='matchup-team-scores__leaders-player')
+								div(class='matchup-team-scores__leaders-player-picture')
+									img(src="images/team-scores-avatar.png", alt="")
+								div(class='matchup-team-scores__leaders-player-info') 
+									span(class='matchup-team-scores__leaders-player-info-item') Passing:
+									span(class='matchup-team-scores__leaders-player-info-item') 
+										| Davon Godchaux 
+										span(class='matchup-team-scores__leaders-player-info-item-sub') (NE) 17
+									span(class='matchup-team-scores__leaders-player-info-item') lorem

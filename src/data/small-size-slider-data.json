@@ -1,0 +1,69 @@
+{
+	"title": "Trending",
+	"icon": "images/tech-icon.svg",
+	"seeAllHref": "#",
+	"seeAllLabel": "See All",
+	"seeAllSpan": "Trending News",
+	"items": [
+		{
+			"href": "#",
+			"image": "images/slide_item1.jpg",
+			"title": "OpenAI, chips y el nuevo ciclo del e-commerce",
+			"date": "10 HOURS AGO"
+		},
+		{
+			"href": "#",
+			"image": "images/slide_item1.jpg",
+			"title": "OpenAI, chips y el nuevo ciclo del e-commerce",
+			"date": "10 HOURS AGO"
+		},
+		{
+			"href": "#",
+			"image": "images/slide_item1.jpg",
+			"title": "OpenAI, chips y el nuevo ciclo del e-commerce",
+			"date": "10 HOURS AGO"
+		},
+		{
+			"href": "#",
+			"image": "images/slide_item1.jpg",
+			"title": "OpenAI, chips y el nuevo ciclo del e-commerce",
+			"date": "10 HOURS AGO"
+		},
+		{
+			"href": "#",
+			"image": "images/slide_item1.jpg",
+			"title": "OpenAI, chips y el nuevo ciclo del e-commerce",
+			"date": "10 HOURS AGO"
+		},
+		{
+			"href": "#",
+			"image": "images/slide_item1.jpg",
+			"title": "OpenAI, chips y el nuevo ciclo del e-commerce",
+			"date": "10 HOURS AGO"
+		},
+		{
+			"href": "#",
+			"image": "images/slide_item1.jpg",
+			"title": "OpenAI, chips y el nuevo ciclo del e-commerce",
+			"date": "10 HOURS AGO"
+		},
+		{
+			"href": "#",
+			"image": "images/slide_item1.jpg",
+			"title": "OpenAI, chips y el nuevo ciclo del e-commerce",
+			"date": "10 HOURS AGO"
+		},
+		{
+			"href": "#",
+			"image": "images/slide_item1.jpg",
+			"title": "OpenAI, chips y el nuevo ciclo del e-commerce",
+			"date": "10 HOURS AGO"
+		},
+		{
+			"href": "#",
+			"image": "images/slide_item1.jpg",
+			"title": "OpenAI, chips y el nuevo ciclo del e-commerce",
+			"date": "10 HOURS AGO"
+		}
+	]
+}

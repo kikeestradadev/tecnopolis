@@ -1,0 +1,51 @@
+/*here start small-size slider module styles*/
+.small-size-slider-container{
+	margin-bottom						: 25px;
+}
+
+.small-size-slider .swiper-wrapper{
+	align-items: baseline;
+}
+
+.small-size-slider{	
+	z-index								: 0;
+	&__item{
+		position						: relative;
+		width							: 297px;
+		height							: auto;
+		border-top-left-radius			: 8px;
+		border-top-right-radius			: 8px;
+		overflow						: hidden;
+		text-decoration					: none;		
+		display							: flex;
+		flex-direction					: column;
+		justify-content					: flex-end;
+	}
+	&__image-container{
+		width							: 100%; 
+		height							: 181px;
+		border-radius					: 8px;		
+		background-repeat				: no-repeat;
+		background-position				: center center;
+		background-size					: cover;
+		margin-bottom					: 10px;
+	}	
+	&__text-cointainer{
+		width							: 100%;
+	}
+	&__item-title{
+		display							: block;
+		font							: normal normal 600 14px/21px Poppins;
+		letter-spacing					: -0.14px;
+		color							: #1F2024;
+		margin-bottom					: 5px;
+	}
+	&__item-date{
+		display							: block;
+		font							: normal normal normal 12px/17px Poppins;
+		letter-spacing					: 0px;
+		color							: #919192;
+		text-transform					: uppercase;
+	}
+}
+/*here finish small-size slider module styles*/

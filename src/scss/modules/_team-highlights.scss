@@ -1,0 +1,73 @@
+.team-highlights{
+	&__item{
+		box-shadow: 0px 2px 6px #0000001F;
+		height: auto;
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		position: relative;
+		@media (width >= $m) {
+			padding: 15px 15px 15px 260px;
+			height: 250px;			
+		}
+	}
+	&__logo{
+		width: 152px;
+		height: 152px;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 10px;
+		@media (width >= $m) {
+			position: absolute; 
+			left: 35px;
+			width: 190px;
+			height: 190px;
+		}
+	}
+	&__text1, &__text2, &__text3{
+		display: block;
+	}	
+	&__text1{
+		font: normal normal 600 20px/22px Poppins;
+		letter-spacing: -0.4px;
+		color: #9E852E;
+		text-transform: uppercase;
+		display: block;
+		text-align: center;
+		margin-bottom: 20px;
+		@media (width >= $m) {
+			font: normal normal 600 27px/32px Poppins;
+			letter-spacing: -0.54px;
+			color: #2C2E32;
+			text-align: left;
+		}
+	}
+	&__text2{
+		font: normal normal 600 17px/12px Poppins;
+		letter-spacing: -0.17px;
+		color: #9E852E;
+		text-transform: uppercase;
+		margin: 5px 0;
+		display: block;
+		text-align: center;
+		margin-bottom: 10px;
+		@media (width >= $m) {
+			text-align: left;
+		}
+		
+	}
+	&__text3{
+		font: normal normal 600 12px/17px Poppins;
+		letter-spacing: -0.3px;
+		color: #2C2E32;
+		display: block;
+		text-align: center;
+		border-top: 1px solid #CCCCCC;
+		padding-top: 5px;
+		@media (width >= $m) {
+			font: normal normal 600 15px/27px Poppins;
+			text-align: left;
+		}
+	}
+}

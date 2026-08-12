@@ -1,0 +1,31 @@
+.sport-top-image{
+    height			: 192px;
+    width			: 100%;
+    border-radius	: 8px;
+    margin-bottom	: 64px;
+	overflow		: hidden;    
+    @media (width >= 1800px) {
+        height		: 296px;
+        width		: 100%;
+    }
+}
+
+.small-screen-image {
+    display			: block;
+	width			: 100%;
+    @media (width >= 769px) {
+        display		: none;
+    }
+}
+
+.large-screen-image{
+    display			: none;
+    @media (width >= 769px) {
+        display		: block;
+		width		: 100%;		
+    }
+}
+
+.wp-caption-text{
+    display: none;
+}

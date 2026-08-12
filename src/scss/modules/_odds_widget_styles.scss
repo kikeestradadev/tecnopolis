@@ -1,0 +1,83 @@
+/*Here start ODds Widgets styles*/
+.odds-custom-style .tw-max-w-3xl {
+	max-width: 100%;
+  }
+  
+  .odds-custom-style .tw-bg-zinc-100 {
+	background-color: White !important;
+  }
+  
+  .odds-custom-style .tw-bg-\[\#E4E4E4\] {
+	background-color: white !important;
+  }
+  
+  .odds-custom-style .tw-border-t-\[1px\] {
+	border-top-width: none;
+	border-top: 1px solid white;
+  }
+  
+  .odds-custom-style .tw-border-b-\[1px\] {
+	border-bottom-width: 1px;
+	border-bottom: 1px solid white;
+  }
+  
+  .odds-custom-style .tw-block{
+	font: normal normal 600 15px/12px Poppins;
+  letter-spacing: -0.15px;
+  color: #000000;
+  text-transform: uppercase;
+  }
+  
+  /* .odds-custom-style .tw-hidden{
+	font: normal normal 600 15px/12px Poppins;
+  letter-spacing: -0.15px;
+  color: #000000;
+  text-transform: uppercase;
+  } */
+  .odds-custom-style .tw-w-full > .tw-py-1 {
+	background: white !important;
+	height: 47px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .odds-custom-style .tw-w-full > .tw-max-w-3xl > .tw-w-full:nth-child(1) {
+	.tw-text-center:first-child {
+	  font: normal normal medium 10px/10px Poppins;
+	  letter-spacing: 0px;
+	  color: #1F2024;
+	}
+	.tw-text-center:last-child {
+	  font: normal normal 600 10px/10px Poppins;
+	  letter-spacing: 0px;
+	  color: #000000;
+	}
+  }
+  
+  .odds-custom-style .tw-w-full > .tw-max-w-3xl > .tw-w-full:nth-child(2) {
+	.tw-text-center:first-child {
+	  color: white;
+	}
+	
+	.tw-text-center:nth-child(2) {
+	  font: normal normal medium 10px/10px Poppins;
+	  letter-spacing: 0px;
+	  color: #1F2024;
+	  text-transform: uppercase;
+	}
+	.tw-text-center:nth-child(3) {
+	  font: normal normal medium 10px/10px Poppins;
+	  letter-spacing: 0px;
+	  color: #1F2024;
+	  text-transform: uppercase;
+	}
+	.tw-text-center:nth-child(4) {
+	  font: normal normal medium 10px/10px Poppins;
+	  letter-spacing: 0px;
+	  color: #1F2024;
+	  text-transform: uppercase;
+	}
+  
+  }
+  /*Here start ODds Widgets styles*/

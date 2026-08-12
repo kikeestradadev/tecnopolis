@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="168" height="63" viewBox="0 0 168 63" role="img" aria-labelledby="tecnopolisLogoWhiteTitle">
+	<title id="tecnopolisLogoWhiteTitle">TECNOPOLIS</title>
+	<g fill="none">
+		<rect x="0" y="15.5" width="32" height="32" rx="8" fill="#9E852E"/>
+		<path d="M8.5 24.5h15v3.4h-5.6V39.5h-3.8V27.9H8.5v-3.4z" fill="#FFFFFF"/>
+		<text x="40" y="39" font-family="Poppins, Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="0.4">
+			<tspan fill="#FFFFFF">TECNO</tspan><tspan fill="#E8D9A0">POLIS</tspan>
+		</text>
+	</g>
+</svg>

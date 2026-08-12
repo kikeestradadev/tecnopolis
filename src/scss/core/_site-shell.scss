@@ -1,0 +1,350 @@
+// here start the styles for the blurry overlap container
+.blurry-overlap{
+	display								: none;
+	&.active{
+		display							: block;
+		position						: absolute;
+		background						: hsla(220, 6%, 18%, 0.7);
+		backdrop-filter					: blur(1px);
+		transition						: opacity 0.1s;
+		top								: 0;
+		width							: 100%;
+		max-width						: 1920px;
+		bottom							: 0;
+		left							: 0;
+		right							: 0;
+		height							: 100%;
+		z-index							: 1000;
+		margin							: 0 auto;
+	}
+}
+// here ends the styles for the blurry overlap container
+
+
+
+
+// here start the styles for the html body
+body{
+	background							: var(--main-background);
+	position							: relative;
+	font-family							: 'Poppins', sans-serif;
+	&.active{
+		overflow						: hidden;
+	}
+}
+// here ends the styles for the html body
+
+
+// here start the styles for the top-widget
+.top-widget{
+	outline								: 1px solid var(--boder-layout);
+	height           					: var(--header-height);
+	width								: 100%;
+	max-width							: 1920px;
+	margin								: 0 auto;	
+	position							: relative;
+	z-index								: 1000;
+	overflow							: hidden;
+	@media (width >= $lg) { 
+		z-index: 3500; 
+	}
+	// here start the styles for the top-widget__container fixed
+	&__container{	
+		outline							: 1px solid var(--boder-layout-fixed);
+		padding							: 0;
+		position						: fixed;
+		background						: var(--main-background);
+		height							: var(--header-height);
+		width							: 100%;
+		max-width						: 1920px;
+		z-index							: 900;
+		overflow						: hidden;
+	}
+	img {
+		display							: block;
+		width							: 1920px;
+		min-width						: 1920px;
+		height							: var(--header-height);
+		max-width						: none;
+		object-fit						: cover;
+		object-position					: center top;
+	}
+   // here ends the styles for the top-widget__container fixed
+}
+// here ends the styles for the top-widget
+
+
+
+// here start the styles for the top-nav-spacer and contains the mobile menu
+.nav-spacer{
+	outline								: 1px solid var(--boder-layout);
+	background							: var(--main-background);
+	height								: var(--nav-spacer-height);
+	width								: 100%;
+	max-width							: 1920px;
+	margin								: 0 auto;
+	position							: relative;	
+	// here start the styles for the top-nav-spacer__fixed and contains the mobile menu
+	&__container{
+		outline							: 1px solid var(--boder-layout-fixed);
+		background						: var(--main-background);
+		height							: var(--nav-spacer-height);
+		width							: 100%;
+		max-width						: 1920px;
+		margin							: 0 auto;
+		position						: fixed;
+		z-index							: 900;
+		display							: flex;
+		justify-content					: space-between; 
+		align-items						: center;
+		padding							: 0 20px;
+		@media (width >= $lg) {
+			display						: none;
+		}
+	}
+	// here ends the styles for the top-nav-spacer__fixed and contains the mobile menu
+	&__logo{
+		display							: block;
+		width							: 168px;
+		height							: 63px;
+		@media (width >= $lg) {
+			display						: none;
+		}
+	}
+	&__open-mobile-menu{
+		display							: block;
+		width							: 56px;
+		height							: 56px;
+		background						: #f3f3f3;
+		background-image				: url('images/open.svg');
+		background-repeat				: no-repeat;
+		background-position				: center center;
+		border-radius					: 8px;
+		@media (width >= 800px) {
+			@media (hover: hover) and (pointer: fine) {
+			&:hover{
+				background					: #9E852E;
+				background-image			: url('images/open_white.svg'); 
+				background-repeat			: no-repeat;
+				background-position			: center center;
+			}
+			}
+		}
+		@media (width >= $lg) {
+			display						: none;
+		}
+	}
+	
+}
+// here ends the styles for the top-nav-spacer and contains the mobile menu
+
+// here start the left side dynamic menu sidebar
+.left-sidebar{
+	outline								: 1px solid var(--boder-layout);
+	position							: absolute;
+	left								: 0;
+	top									: 0;
+	width								: var(--left-side-bar-width);
+	background							: transparent;
+	height								: calc(100vh - (var(--header-height) + var(--nav-spacer-height)));	
+	display								: none;
+	@media (width >= $lg) {
+		display							: block;
+		position						: relative;
+		
+		flex-basis						: var(--left-side-bar-width);
+		flex-grow						: 0;
+		z-index							: 3000;			
+	}
+	// here start the left side dynamic menu sidebar fixed
+	&__container-fixed{
+		outline							: 1px solid var(--boder-layout-fixed);
+		position						: fixed;
+		width							: var(--left-side-bar-width);
+		background						: var(--main-background);
+		z-index							: -1;
+		height							: calc(100vh - (var(--header-height) + var(--header-top-spacer)));
+		@media (width >= $s) and (width < $lg) {
+			top							: 0;
+			z-index						: 5000;
+			height						: 100vh;
+		}
+		@media (width >= $s) {
+			padding-top					: 40px;
+		}
+		@media (width >= $m) {
+			padding-top					: 103px;
+		}
+		@media (width >= $lg) {
+			padding-top					: 0;
+			&.active{
+				top						: 0;
+				z-index					: 50000;
+				width					: calc(var(--left-side-bar-width) + 425px);
+				padding					: 142px 0 0 0;
+				height					: 100vh;
+				z-index					: 100;
+			}
+		}
+		// padding-top					: calc(var(--header-height) + var(--nav-spacer-height));
+	}
+	// here ends the left side dynamic menu sidebar fixed
+	&__list-nav{
+		position						: relative;
+		// border							: 1px solid blue;
+		height							: 100%;	
+		background						: white;	
+		@media (width >= $lg) {
+			&.active{
+				background-image		: url('images/scroll-vertical-ico.svg');
+				background-repeat		: no-repeat;
+				background-position		: 88% 1%;
+			}
+		}
+	}
+	&__logo-container{
+		height							: 63px;
+		display							: flex;
+		justify-content					: space-between;
+		align-items						: center;
+		padding							: 0 16px;
+		@media (width >= $lg) {
+			padding: 0 16px 0 48px;
+			// justify-content					: center;
+		}
+	}
+	&__logo-container img{
+		width							: 168px;
+		height							: 63px;
+	}
+	&__close-container{
+		width							: 56px;
+		height							: 56px;
+		background						: #f3f3f3;
+		background-image				: url('images/close.svg');
+		background-repeat				: no-repeat;
+		background-position				: center center;
+		border-radius					: 8px;
+		cursor							: pointer;
+		@media (width >= $lg) {
+			display						: none;
+		}
+	}
+	&.active{
+		display							: block;
+	}
+}
+// here ends the left side dynamic menu sidebar
+
+// here start the main wrapp container
+.main-wrapper{
+	background							: var(--main-background);
+	outline								: 1px solid var(--boder-layout);
+	width								: 100%;
+	max-width							: 1920px;
+	margin								: 0 auto;
+	position							: relative;
+	padding								: 0; 
+	display								: flex;
+	min-height							: 100vh;
+	padding								: 25px 0 0 0;
+	@media (width >= $lg) {
+		padding							: 0;
+	}
+}
+// here ends the main wrapp container
+
+
+
+// here start the main content full widht for the components one column
+.content-info-full{
+	outline								: 1px solid var(--boder-layout);
+	width								: 100%;
+	padding								: 0 20px;
+	@media (width >= $l) {
+		width							: calc(100% - var(--right-side-bar-width));
+	}
+	@media (width >= $lg) {
+		width							: calc(100% - (var(--left-side-bar-width) + var(--right-side-bar-width)));
+	}
+}
+// here start the main content full widht for the components one column
+
+
+// here start main content using 2 columns inside pages and sticky banner
+.content-info-column{
+	
+	position							: relative;
+	padding								: 0 0 40px 0;
+	display								: flex;
+	// border								: 1px solid green;
+
+	&__item:first-child{
+		z-index							: 2;
+		display							: none;
+		@media (width >= $xl) {
+			// background: #f3f3f3;
+			display						: block;
+			flex-basis					: calc( var(--stiky-banner-width) + var(--content-column-gap));
+			flex-grow					: 0;			
+			height						: var(--stiky-banner-height);
+			position					: sticky;
+			top							: calc(var(--header-height) + var(--header-top-spacer) - 4px);
+			margin-bottom				: 100px;			
+		}
+		
+	}
+	&__item:last-child{
+		width							: 100%;
+		@media (width >= $xl) {
+			width						: calc(100% - var(--stiky-banner-width) - var(--content-column-gap));  
+			   
+		}	
+	}
+	.sticky-banner-mobile-container{
+		// background						: #f3f3f3;
+		min-height						: 100px;
+		border-radius					: 8px;
+		overflow						: hidden;
+		margin-bottom: 30px;
+		@media (width >= $xl) {
+			display						: none;
+		}
+	}
+}
+// here ends main content using 2 columns inside pages and sticky banner
+
+// here start the left side dynamic widgets
+.right-sidebar{
+	outline								: 1px solid var(--boder-layout);
+	background							: transparent;
+	display								: none;
+	flex-basis							:  var(--right-side-bar-width);
+	flex-grow							: 0; 
+	&__container::-webkit-scrollbar {
+		display							: none !important;
+   }
+	&__container{
+		background						: var(--main-background);
+		outline							: 1px solid var(--boder-layout-fixed);
+		// padding							: 0 24px 0 40px;
+		position						: fixed;
+		height							: calc(100vh - (var(--header-height) + var(--header-top-spacer)));
+		width							:  var(--right-side-bar-width);
+		overflow-y						: scroll;
+		scrollbar-color					: #8888883b transparent;
+		scrollbar-width					: thin;  
+		z-index							: 9; 
+		padding: 0 10px 60px 10px;
+    }
+	&__banner-container{
+		margin-bottom: 20px;
+	}
+	&__banner{
+		width: 100%;
+	}
+	@media (width >= $l) {
+		display							: block;
+	}
+}
+// here start the left side dynamic widgets

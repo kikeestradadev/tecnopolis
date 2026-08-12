@@ -1,0 +1,29 @@
+section(class='teams-page')
+	div(class='title-page')
+		div(class='title-page__title-container')
+			div(class='title-page__title-item')
+				h1(class='title-page__title-head') 
+					img(src="images/college2-ico.svg", alt="", class='title-page__ico')
+					| NFL Teams Stats
+	div(class='teams-page__search-component')
+		div(class='sbi-grid full s-grid-1 m-grid-2 row-gap')
+			div(class='sbi-grid full s-grid-1 row-gap')
+				select(class='teams-page__select-item' id='selectItem1' name='select-item-1')
+					option(class='teams-page__select-item-option' value='lorem') Conference
+					option(class='teams-page__select-item-option' value='lorem') lorem
+					option(class='teams-page__select-item-option' value='lorem') lorem
+					option(class='teams-page__select-item-option' value='lorem') lorem
+			div(class='teams-page__input-search-section')
+				input(class='teams-page__input-search-item' type='text' placeholder='Name or nickname')
+				button(class='teams-page__button-search-item') Filter
+		div(class='teams-page__search-inputs')
+		div(class='teams-page__grid')
+			-for(let i = 1; i <=10; i++)
+				- let backgroundColor = `#${i}7${i}33F`
+				div(class='teams-page__item', style=`background-color:${backgroundColor}`)
+					div(class='teams-page__picture')
+						img(class='teams-page__avatar' src="images/matchup-logo1.svg", alt="")
+					span(class='teams-page__home-team') Lorem Ipsum
+					span(class='teams-page__visit-team') Lorem Ipsum
+		div(class='teams-page__button-expand-container')
+			button( class='teams-page__button-expand') expand

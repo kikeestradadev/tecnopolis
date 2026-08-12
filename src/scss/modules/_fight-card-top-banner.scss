@@ -1,0 +1,257 @@
+.fight-card-top-banner{
+	position: relative;
+	margin-bottom: 30px;
+	// border: 2px solid red;
+	&__fighters-container{
+		border-radius: 8px 8px 0px 0px;
+		position: relative;
+		padding: 15px;
+		background-color: #F3F3F3;
+		min-height: 500px;
+		overflow: hidden;	
+		display: flex;
+		justify-content: space-between;	
+	}
+	&__fighter{
+		position: relative;
+		top: 200px;
+		max-width: 130px;
+		height: 50%;
+		z-index: 0;
+		@media (width >= 375px) {
+			max-width: 150px;
+		}
+		@media (width >= 500px) {
+			max-width: 200px;
+		}
+		@media (width >= 600px) {
+			max-width: 300px;
+		}
+		@media (width >= $m) {
+			top: 0;
+			max-width: 100%;
+			z-index: 50;
+		}		
+	}
+	&__fighters-container::after{
+		content: "";
+		position: absolute;
+		width: 100%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 25%;
+		background-color: #ffffff;
+		border-top: 8px solid #9E852E;		
+		
+	}
+	&__top-label{
+		position: absolute;
+		top: 15px;
+		left: 50%;
+		transform: translate(-50%, 10%);
+		width: 100%;
+		max-width: 300px;
+		padding: 0 10px;
+		// border: 1px solid black;
+		@media (width >= $m) {
+			max-width: 400px;
+		}
+	}
+	&__event-number{
+		display: block;
+		text-align: center;
+		font: normal normal bold 19px/17px Poppins;
+		letter-spacing: 0px;
+		color: #2C2E32;
+		@media (width >= $m) {
+			font: normal normal bold 27px/20px Poppins;
+		}
+		@media (width >= 1024px) and (width < 1100px) {
+			font: normal normal bold 19px/17px Poppins;
+		}
+		@media (width >= 1600px) and (width < 1700px) {
+			font: normal normal bold 19px/17px Poppins;
+		}
+	}
+	&__event-name{
+		display: block;
+		text-align: center;
+		font: normal normal medium 14px/17px Poppins;
+		letter-spacing: 0px;
+		color: #9E852E;
+		@media (width >= $m) {
+			font: normal normal medium 17px/20px Poppins;
+		}
+		@media (width >= 1024px) and (width < 1100px) {
+			font: normal normal medium 14px/17px Poppins;
+		}
+		@media (width >= 1600px) and (width < 1700px) {
+			font: normal normal medium 14px/17px Poppins;
+		}
+		
+	}
+	&__fighters-names{
+		display: block;
+		text-align: center;
+		font: normal normal bold 24px/29px Poppins;
+		letter-spacing: -0.84px;
+		color: #1F2024;
+		@media (width >= $m) {
+			font: normal normal bold 35px/35px Poppins;
+		}
+		@media (width >= 1024px) and (width < 1100px) {
+			font: normal normal bold 24px/29px Poppins;
+		}
+		@media (width >= 1600px) and (width < 1700px) {
+			font: normal normal bold 24px/29px Poppins;
+		}
+	}
+	&__date{
+		display: block;
+		text-align: center;
+		font: normal normal normal 14px/20px Poppins;
+		letter-spacing: -0.49px;
+		color: #1F2024;
+		@media (width >= $m) {
+			font: normal normal normal 15px/35px Poppins;
+		}
+		@media (width >= 1024px) and (width < 1100px) {
+			font: normal normal normal 14px/20px Poppins;
+		}
+		@media (width >= 1600px) and (width < 1700px) {
+			font: normal normal normal 14px/20px Poppins;
+		}
+	} 
+	&__place{
+		display: block;
+		text-align: center;
+		font: normal normal normal 14px/20px Poppins;
+		letter-spacing: -0.49px;
+		color: #1F2024;
+		@media (width >= $m) {
+			font: normal normal normal 15px/20px Poppins;
+		}
+		@media (width >= 1024px) and (width < 1100px) {
+			font: normal normal normal 14px/20px Poppins;
+		}
+		@media (width >= 1600px) and (width < 1700px) {
+			font: normal normal normal 14px/20px Poppins;
+		}
+	}
+	&__table-container{		
+		background-color: white;
+		position: relative;
+		top: -1px;
+		z-index: 50;
+		width: 100%;
+		@media (width >= $m) {
+			position: absolute;
+			top: 60%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			max-width: 432px;	
+			background-color: transparent;
+		}
+	}
+	&__title{
+		background-color: white;
+		position: relative;
+		top: -2px;
+		height: 30px;
+		display: block;
+		text-align: center;
+		font: normal normal 600 15px/27px Poppins;
+		letter-spacing: -0.3px;
+		color: #2C2E32;
+		text-transform: uppercase;
+		// border: 1px solid rebeccapurple;
+		@media (width >= $m) {
+			font: normal normal 600 19px/27px Poppins;
+			letter-spacing: -0.38px;
+			background-color: transparent;
+		}
+	}
+	
+	&__table{
+		background-color: white;
+		width: 100%;	
+		box-shadow: 0px 2px 6px #0000001F;
+		padding: 0 5px;
+		@media (width >= $m) {
+			border-top: 8px solid #9E852E;
+			padding: 0 15px;
+			
+		}
+	}
+	&__table-row{
+		display: flex;
+		flex-wrap: wrap;
+		border-bottom: 1px solid #dddddd;
+	}
+	&__table-row:last-child{		
+		border-bottom: none;
+	}
+	&__table-item{
+		width: 33.33%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		height: 50px;
+		font: normal normal normal 14px/18px Poppins;
+		letter-spacing: -0.3px;
+		color: #2C2E32;
+		@media (width >= $m) {
+			font: normal normal normal 15px/17px Poppins;
+		}
+	}
+	&__anchor-dk{
+		display: none;
+		margin-bottom: 30px;
+		@media (width >= $m) {
+			display: block;
+		width: 100%;
+		}
+	}
+	&__image-dk{
+		display: block;
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
+	.row-title{
+		text-decoration: none;
+		font: normal normal 600 14px/18px Poppins;
+		letter-spacing: 0px;
+		color: #9E852E;
+	}	
+	.row-title-uppercase{
+		text-decoration: none;
+		font: normal normal 600 14px/18px Poppins;
+		letter-spacing: 0px;
+		color: #9E852E;
+		text-transform: uppercase;
+	}	
+	&__anchor-mobile{
+		// border: 1px solid red;
+		position: absolute;
+		bottom: 5%;
+		z-index: 50;
+		width: 100%;
+		@media (width >= 375px) {
+			bottom: 3%
+		}
+		@media (width >= 500px) {
+			bottom: 5%
+		}
+		@media (width >= $m) {
+			display: none;
+		}
+	}
+	&__image-mobile{
+		display: block;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+}

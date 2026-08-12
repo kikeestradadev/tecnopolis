@@ -1,0 +1,257 @@
+/*here start the slider title styles*/
+.slider-title{
+	margin-bottom				: 15px;
+	&__title-container{
+		display					: flex;
+		flex-wrap				: nowrap;
+		// border					: 1px solid black;
+		min-height				: 50px;
+		align-items				: center;
+		justify-content			: space-between;		
+	}
+	&__title-item{
+		@media (width >= 0px) and (width < 375px) {
+			width: 50%;			
+		}
+	}
+	&__title-head{
+		text-transform			: capitalize;
+		display					: flex;
+		font					: normal normal 600 17px/20px Poppins;
+		letter-spacing			: -0.34px;
+		@media (width >= $m) {
+			font				: normal normal 600 27px/32px Poppins;
+			letter-spacing		: -0.54px;
+		}
+		@media (width >= $xl) {
+			font				: normal normal 600 41px/49px Poppins;
+			letter-spacing		: -0.82px;
+		}	
+		margin					: 0;	
+	}
+	&__title-anchor{
+		font					: normal normal medium 15px/27px Poppins;
+		letter-spacing			: -0.3px;
+		color					: #1F2024;
+		display					: block;
+		text-align				: right;
+		text-decoration			: none;
+		text-transform			: capitalize;
+		position				: relative;
+		&::after{
+			content				: "";
+			background-image	: url('images/chevron-right.svg');
+			background-repeat	: no-repeat;
+			display				: inline-block;
+			width				: 20px;
+			height				: 20px;
+			transform			: scale(.5);
+			position			: relative;
+			top					: 5px;
+			margin-left			: 5px;
+		}
+	}
+	&__title-anchor span:last-child{
+		display					: none;
+		@media (width >= $lg) {
+			display				: inline-block;
+		}	
+	}
+	&__carousell-container{
+		display					: none;
+	}
+	&__ico{
+		margin-right: 10px;
+	}
+}
+/*here finish the slider title styles*/
+
+
+/*here start the slider title News styles*/
+.slider-title-news{
+	margin-bottom				: 15px;
+	&__title-container{
+		display					: flex;
+		flex-wrap				: nowrap;
+		// border					: 1px solid black;
+		min-height				: 50px;
+		align-items				: center;
+		justify-content			: space-between;		
+	}
+	&__title-item{
+		@media (width >= 0px) and (width < 375px) {
+			width: 50%;			
+		}
+	}
+	&__slug-title{
+		text-transform: uppercase;
+	}
+	&__title-head{
+		text-transform			: uppercase;
+		display					: flex;
+		font					: normal normal 600 17px/20px Poppins;
+		letter-spacing			: -0.34px;
+		align-items: center;
+		@media (width >= $m) {
+			font				: normal normal 600 27px/32px Poppins;
+			letter-spacing		: -0.54px;
+		}
+		@media (width >= $xl) {
+			font				: normal normal 600 41px/49px Poppins;
+			letter-spacing		: -0.82px;
+		}	
+		margin					: 0;	
+	}
+	&__title-anchor{
+		font					: normal normal medium 15px/27px Poppins;
+		letter-spacing			: -0.3px;
+		color					: #1F2024;
+		display					: block;
+		text-align				: right;
+		text-decoration			: none;
+		text-transform			: capitalize;
+		position				: relative;
+		&::after{
+			content				: "";
+			background-image	: url('images/chevron-right.svg');
+			background-repeat	: no-repeat;
+			display				: inline-block;
+			width				: 20px;
+			height				: 20px;
+			transform			: scale(.5);
+			position			: relative;
+			top					: 5px;
+			margin-left			: 5px;
+		}
+	}
+	&__title-anchor span:last-child{
+		display					: none;
+		@media (width >= $lg) {
+			display				: inline-block;
+		}	
+	}
+	&__carousell-container{
+		display					: none;
+	}
+	&__ico{
+		margin-right: 10px;
+	}
+}
+/*here finish the slider title News styles*/
+
+
+/*here start the slider title page styles*/
+.slider-title-page{
+	margin-bottom				: 15px;
+	&__title-container{
+		display					: flex;
+		flex-wrap				: nowrap;
+		// border					: 1px solid black;
+		min-height				: 50px;
+		align-items				: center;
+		justify-content			: space-between;		
+	}
+	&__title-head{
+		text-transform			: capitalize;
+		display					: flex;
+		font					: normal normal 600 17px/20px Poppins;
+		letter-spacing			: -0.34px;
+		align-items: center;
+		@media (width >= $m) {
+			font				: normal normal 600 41px/49px Poppins;
+			letter-spacing		: -0.82px;
+		}	
+		margin					: 0;	
+	}	
+	&__ico{
+		margin-right: 0;
+		transform: scale(.7);
+		@media (width >= $m) {
+			margin-right: 10px;
+			transform: scale(1);
+		}
+	}
+}
+/*here finish the slider title page styles*/
+
+
+/*here start the slider title page styles*/
+.title-page{
+	margin-bottom				: 15px;
+	&__title-container{
+		display					: flex;
+		flex-wrap				: nowrap;
+		// border					: 1px solid black;
+		min-height				: 50px;
+		align-items				: center;
+		justify-content			: space-between;		
+	}
+	&__title-head{
+		text-transform			: capitalize;
+		display					: flex;
+		font					: normal normal 600 17px/20px Poppins;
+		letter-spacing			: -0.34px;
+		align-items: center;
+		@media (width >= $m) {
+			font				: normal normal 600 41px/49px Poppins;
+			letter-spacing		: -0.82px;
+		}	
+		margin					: 0;	
+	}	
+	&__ico{
+		margin-right: 0;
+		transform: scale(.7);
+		@media (width >= $m) {
+			margin-right: 10px;
+			transform: scale(1);
+		}
+	}
+}
+/*here finish the slider title page styles*/
+
+/*here start the matchups title */
+.matchups-title{
+	text-align: center;
+	text-transform: uppercase;
+}
+/*here finish the matchups title */
+
+/*here start the slider title News styles*/
+.title-pages-icon{
+	margin-bottom				: 15px;
+	&__title-container{
+		display					: flex;
+		flex-wrap				: nowrap;
+		// border					: 1px solid black;
+		min-height				: 50px;
+		align-items				: center;
+		justify-content			: space-between;		
+	}
+	&__title-item{
+		@media (width >= 0px) and (width < 375px) {
+			width: 50%;			
+		}
+	}
+	&__slug-title{
+		text-transform: uppercase;
+	}
+	&__title-head{
+		text-transform			: capitalize;
+		display					: flex;
+		font					: normal normal 600 17px/20px Poppins;
+		letter-spacing			: -0.34px;
+		@media (width >= $m) {
+			font				: normal normal 600 27px/32px Poppins;
+			letter-spacing		: -0.54px;
+		}
+		@media (width >= $xl) {
+			font				: normal normal 600 41px/49px Poppins;
+			letter-spacing		: -0.82px;
+		}	
+		margin					: 0;	
+	}	
+	&__ico{
+		margin-right: 10px;
+	}
+}
+/*here finish the slider title News styles*/

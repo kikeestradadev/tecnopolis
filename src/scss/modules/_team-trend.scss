@@ -1,0 +1,25 @@
+.team-trend{
+	&__item{
+		box-shadow: 0px 2px 6px #0000001F;
+		height: 96px;
+		display: flex;
+		align-items: center;
+		padding: 0 15px;
+		justify-content: center;
+		@media (width >= $m) {
+			height: 120px;
+		}
+	}
+	&__logo{
+		margin-right: 10px;
+	}
+	&__text{
+		font: normal normal normal 14px/20px Poppins;
+		letter-spacing: 0px;
+		color: #1F2024;
+		@media (width >= $m) {
+			font: normal normal normal 17px/27px Poppins;
+			letter-spacing: 0px;
+		}
+	}
+}

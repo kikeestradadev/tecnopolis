@@ -1,0 +1,154 @@
+{
+	"items": [
+		{
+			"type": "link",
+			"label": "Home",
+			"href": "index.html"
+		},
+		{
+			"type": "submenu",
+			"label": "tech",
+			"children": [
+				{
+					"label": "IA",
+					"href": "#",
+					"icon": "images/tech-icon.svg",
+					"id": "tech-ai",
+					"children": [
+						{
+							"label": "Gen AI",
+							"href": "#!",
+							"icon": "images/tech-icon.svg",
+							"id": "tech-ai-gen",
+							"children": [
+								{ "label": "Chatbots", "href": "#", "icon": "images/tech-icon.svg" },
+								{ "label": "Imágenes", "href": "#", "icon": "images/tech-icon.svg" },
+								{ "label": "Prompts", "href": "#", "icon": "images/tech-icon.svg" },
+								{ "label": "Empresa", "href": "#", "icon": "images/tech-icon.svg" }
+							]
+						},
+						{
+							"label": "ML",
+							"href": "#",
+							"icon": "images/tech-icon.svg"
+						},
+						{
+							"label": "Ética",
+							"href": "#",
+							"icon": "images/tech-icon.svg"
+						}
+					]
+				},
+				{
+					"label": "gadgets",
+					"href": "#",
+					"icon": "images/tech-icon.svg",
+					"id": "tech-gadgets",
+					"children": [
+						{ "label": "Phones", "href": "#", "icon": "images/tech-icon.svg" },
+						{ "label": "Laptops", "href": "#", "icon": "images/tech-icon.svg" },
+						{ "label": "Wearables", "href": "#", "icon": "images/tech-icon.svg" },
+						{ "label": "Audio", "href": "#", "icon": "images/tech-icon.svg" }
+					]
+				},
+				{
+					"label": "apps",
+					"href": "#",
+					"icon": "images/tech-icon.svg"
+				},
+				{
+					"label": "security",
+					"href": "#",
+					"icon": "images/tech-icon.svg"
+				},
+				{
+					"label": "cloud",
+					"href": "#",
+					"icon": "images/tech-icon.svg"
+				}
+			]
+		},
+		{
+			"type": "submenu",
+			"label": "news",
+			"children": [
+				{
+					"label": "startups",
+					"href": "#",
+					"icon": "images/tech-icon.svg",
+					"id": "news-startups",
+					"children": [
+						{ "label": "Funding", "href": "#", "icon": "images/tech-icon.svg" },
+						{ "label": "Latam", "href": "#", "icon": "images/tech-icon.svg" },
+						{ "label": "Casos", "href": "#", "icon": "images/tech-icon.svg" }
+					]
+				},
+				{
+					"label": "big tech",
+					"href": "#",
+					"icon": "images/tech-icon.svg"
+				},
+				{
+					"label": "policy",
+					"href": "#",
+					"icon": "images/tech-icon.svg"
+				},
+				{
+					"label": "trends",
+					"href": "#",
+					"icon": "images/tech-icon.svg"
+				}
+			]
+		},
+		{
+			"type": "submenu",
+			"label": "commerce",
+			"children": [
+				{
+					"label": "markets",
+					"href": "#",
+					"icon": "images/tech-icon.svg",
+					"id": "ecom-market",
+					"children": [
+						{ "label": "Amazon", "href": "#", "icon": "images/tech-icon.svg" },
+						{ "label": "MeLi", "href": "#", "icon": "images/tech-icon.svg" },
+						{ "label": "Shopify", "href": "#", "icon": "images/tech-icon.svg" },
+						{ "label": "DTC", "href": "#", "icon": "images/tech-icon.svg" }
+					]
+				},
+				{
+					"label": "pagos",
+					"href": "#",
+					"icon": "images/tech-icon.svg"
+				},
+				{
+					"label": "envíos",
+					"href": "#",
+					"icon": "images/tech-icon.svg"
+				},
+				{
+					"label": "UX",
+					"href": "#",
+					"icon": "images/tech-icon.svg"
+				}
+			]
+		},
+		{
+			"type": "link",
+			"label": "reviews",
+			"href": "#"
+		},
+		{
+			"type": "link",
+			"label": "opinión",
+			"href": "#"
+		}
+	],
+	"search": {
+		"label": "search",
+		"placeholder": "buscar",
+		"icon": "images/search.svg",
+		"iconHover": "images/search-gold.svg",
+		"iconClose": "images/close-input-ico.svg"
+	}
+}

@@ -1,0 +1,140 @@
+.matchup-injuries{
+	&__item{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		box-shadow: 0px 2px 6px #0000001F;
+		height: 500px;
+		padding:15px;
+	}
+	&__component{
+		width: 100%;
+	}
+	
+	&__title{
+		position: relative;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 10px;
+	}
+	&__title-logo{
+		position: absolute;
+		transform: scale(2);
+		left: 15px;
+	}
+	&__title-head{
+		text-align: center;
+		font: normal normal 600 22px/23px Poppins;
+		letter-spacing: -0.44px;
+		color: #2C2E32;
+		text-transform: uppercase;
+		display: block;
+	}
+	&__grid-head{
+		border-bottom: 1px solid #ddd;
+		margin-bottom: 10px;
+		padding-bottom: 5px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__grid-head-item{
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: medium;
+		font-size: 9px;
+		line-height: 9px;
+		letter-spacing: 0px;
+		color: #2C2E32;
+		text-transform: uppercase;
+		display: block;
+		text-align: center;
+	}
+	&__grid-scores-container {
+		padding: 0 0 15px 0;
+		height: 400px;
+		overflow-y: scroll;		
+		&::-webkit-scrollbar {
+			width: 6px;
+		}
+		&::-webkit-scrollbar-thumb {
+			background-color: transparent;
+		}
+		&::-webkit-scrollbar-track {
+			background-color: transparent;
+		}
+	}
+	&__grid-team{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__grid-team-item{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 15px;
+		letter-spacing: 0px;
+		color: #000000;
+		margin-bottom: 10px;
+	}
+	&__grid-team-left-data-container{
+		display: flex;
+		flex-direction: column;
+		margin-left: 10px;
+	}
+	
+	&__grid-team-left-data:nth-child(1){
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 12px;
+		letter-spacing: 0px;
+		color: #000000;
+		margin-bottom: 5px;
+	}
+	&__grid-team-left-data:nth-child(2){
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 12px;
+		letter-spacing: 0px;
+		color: #919192;
+	}
+	&__grid-team-right-data-container{
+		display: flex;
+		flex-direction: column;
+		margin-left: 10px;
+		
+	}
+	&__grid-team-right-data:nth-child(1){
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 12px;
+		letter-spacing: 0px;
+		color: #9E852E;
+		margin-bottom: 5px;
+		display: block;
+		text-align: right;
+	}
+	&__grid-team-right-data:nth-child(2){
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 12px;
+		letter-spacing: 0px;
+		color: #919192;
+		display: block;
+		text-align: right;
+	}
+}

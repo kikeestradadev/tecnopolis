@@ -1,0 +1,15 @@
+section(class='home-banner-section')
+	div(class='home-banner')
+		a(class='home-banner__anchor' href=homeBannerData.href)
+			picture
+				source(
+					class='home-banner__image'
+					srcset=homeBannerData.desktop
+					media='(min-width:1024px)'
+				)
+				source(
+					class='home-banner__image'
+					srcset=homeBannerData.tablet
+					media='(min-width:768px)'
+				)
+				img(class='home-banner__image' src=homeBannerData.mobile alt=homeBannerData.alt)

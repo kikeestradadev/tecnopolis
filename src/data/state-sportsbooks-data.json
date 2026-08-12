@@ -1,0 +1,17 @@
+{
+	"items": [
+		{
+			"title": "Guías por categoría",
+			"intro": "Tecnopolis cubre tecnología, actualidad y comercio electrónico con análisis, guías y tendencias para profesionales y lectores curiosos.",
+			"books": [
+				{
+					"name": "Shopify",
+					"href": "#",
+					"desktop": "https://insidersbettingdigest.com/wp-content/uploads/2024/03/BETUS-bonus-970x70-nodep.png",
+					"mobile": "https://insidersbettingdigest.com/wp-content/uploads/2024/03/BETUS-344x48-1.png",
+					"text": "Tecnopolis cubre tecnología, actualidad y comercio electrónico con análisis, guías y tendencias para profesionales y lectores curiosos."
+				}
+			]
+		}
+	]
+}

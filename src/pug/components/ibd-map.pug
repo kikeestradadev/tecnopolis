@@ -1,0 +1,31 @@
+section(class='ibd-map')
+	div(class='ibd-map__item')
+		div(id='ibdStateLabel')
+		h1 Sportsbooks by State
+		include ./usa-map-svg.html
+	div(class='ibd-map__item')
+		select(class='ibd-map__select-item' id='mapSelectState' name='select-state')
+			option(class='ibd-map__select-item-option' value='lorem') Select State
+		div(class='ibd-map__state-info-container', id='stateDataContainer')
+			img(
+				class='ibd-map__logo', 
+				src="https://insidersbettingdigest.com/wp-content/uploads/2024/03/USA-California.svg", 
+				width='40' 
+				height='40' 
+				alt="logo",
+				id='ibd_logo'
+				)
+			span(class='ibd-map__state-label') Retail Betting: 
+				span(class='ibd-map__state-info', id='retailBetting')
+			span(class='ibd-map__state-label') Online Betting: 
+				span(class='ibd-map__state-info', id='onlineBetting')
+			span(class='ibd-map__state-label') Legal betting Age:  
+				span(class='ibd-map__state-info', id='legalBettingAge')
+		div(class='ibd-map__state-bonuses')
+			span(class='ibd-map__state-bonuses-title') Alabama State Sportsbooks
+			div(class='ibd-map__state-bonuses-grid')
+				-for(let i=1; i<=1; i++)
+					div(class='ibd-map__state-bonuses-grid-item')
+						img(src="https://insidersbettingdigest.com/wp-content/uploads/2024/03/WynnBET-icon.svg", alt="logo" width='40' height='40' )
+						span(class='ibd-map__state-bonuses-brand') WynnBET
+							span(class='ibd-map__state-bonuses-description') Get $200 FREE when you Bet Celtics Vs. Warriors

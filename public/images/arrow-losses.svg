@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64.333" height="88" viewBox="0 0 64.333 88">
+  <g id="losses" transform="translate(1880 -449) rotate(90)">
+    <g id="Path_5992" data-name="Path 5992" transform="translate(433 1816)" fill="none">
+      <path d="M16,0,88-.333,104,32,88,63.667,16,64Z" stroke="none"/>
+      <path d="M 87.38052368164062 0.6695632934570312 L 17 0.9953842163085938 L 17 62.99536514282227 L 87.38343048095703 62.66952896118164 L 102.8819580078125 31.9953498840332 L 87.38052368164062 0.6695632934570312 M 88 -0.33331298828125 L 104 32 L 88 63.66668319702148 L 16 64 L 16 3.814697265625e-06 L 88 -0.33331298828125 Z" stroke="none" fill="#ccc"/>
+    </g>
+    <text id="LoSSES-2" data-name="LoSSES" transform="translate(489 1854)" fill="#ccc" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="18" font-family="Poppins-SemiBold, Poppins" font-weight="600" letter-spacing="-0.02em"><tspan x="-31.527" y="0">LOSSES</tspan></text>
+  </g>
+</svg>

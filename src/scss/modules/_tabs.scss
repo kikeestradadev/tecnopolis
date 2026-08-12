@@ -1,0 +1,59 @@
+.tabs-container {
+	width: 100%;
+	position: relative;
+
+	&__tabs {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+	}
+	&__tab {
+		background: #eee;
+		color: #666;
+		line-height: 2;
+		padding: 0 1em;
+		border: 1px solid #ccc;
+		margin-right: 1px;
+		border-bottom: none;
+		border-radius: 4px 4px 0 0;
+		position: relative;
+		top: 1px;
+		margin-bottom: 1px;
+		cursor: pointer;
+		&.is-active {
+			background: #fff;
+			color: #111;
+			position: relative;
+			z-index: 2;
+		}
+	}
+
+	&__panels {
+		position: relative;
+		z-index: 1;
+		border: 1px solid #ccc;
+		padding: 1em;
+	}
+
+	&__panel {
+		height: 400px; /* Establece la altura máxima del panel */
+		overflow-y: auto; /* Agrega scroll vertical cuando el contenido excede la altura máxima */
+		position: absolute;
+		left: -1000%;
+
+		/* Agrega estilos para ocultar la barra de scroll en navegadores webkit */
+		&::-webkit-scrollbar {
+			width: 0.5em; /* Ancho de la barra de scroll (ajusta según tu preferencia) */
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: transparent; /* Color del pulgar del scroll (transparente para ocultarlo) */
+		}
+
+		&.is-active {
+			position: relative;
+			left: 0;
+		}
+	}
+}

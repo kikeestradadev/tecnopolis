@@ -1,0 +1,120 @@
+/*here start betting academy component styles*/
+.betting-academy{
+	
+	margin-bottom				: 34px;
+	position					: relative;
+	background					: #2c2e32;
+	padding						: 40px 0;
+	background-image			: url('images/betting_academy_bg.png');
+	background-position			: center;
+	background-repeat			: no-repeat;
+	background-size				: 100%;
+	background-position			: top;
+	min-height					: 500px;
+	padding: 0 15px 40px 15px;
+	&__logo-container{
+		// border				: 1px solid white;
+		display					: flex;
+		align-items				: center;
+		justify-content			: center;
+		padding					: 40px 0 0 0;
+		margin-bottom			: 20px;
+		
+	}
+	&__logo{
+		width					: 100%;
+		max-width				: 200px;
+		@media (width >= $m) {
+			top					: 25%;  
+			max-width			: 304px;
+		}
+		@media (width >= $l) {
+			max-width			: 368px;
+		}
+	}
+	&__grid-container{
+		display					: flex;
+		flex-wrap				: wrap;	
+		// border: 1px solid white;	
+		margin					: 0 auto;
+		width					: 100%;
+		padding: 0 0 40px 0; 
+		@media (width >= $m) {
+			// padding: 0 30px;
+			max-width			: 580px;
+		}
+		@media (width >= $l) {
+			// padding: 0 70px;
+			max-width			: 580px;
+		}
+		@media (width >= $xxl) {
+			// padding: 0 150px;
+			max-width			: 1208px;
+		}
+	}
+	&__anchor{
+		text-decoration: none;
+	}
+	&__grid-item{
+		// border: 1px solid white;
+		text-decoration				: none;
+		position: relative;
+		box-sizing				: border-box;
+		flex					: 0 0 calc(50% - 10px); // establece un ancho del 50%, restando la separación de 10px (5px en cada lado)
+  		margin					: 5px; // crea una separación de 5px en todos los lados del item	
+		width					: 50%;
+		@media (width >= $xxl) {
+			width				: 25%;
+			flex				: 0 0 calc(25% - 10px); // establece un ancho del 25%, restando la separación de 10px (5px en cada lado)
+		}		
+	}
+	&__grid-item-text{
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, -0%);
+		// border: 1px solid yellow;
+		width: 100%;
+		display					: flex;
+		align-items				: center;
+		justify-content			: center;
+		font					: normal normal medium 16px/17px Poppins;
+		letter-spacing			: -0.32px;
+		color					: #cccccc;
+		text-transform			: capitalize;
+		text-decoration			: none !important;
+		margin					: 0;  
+        padding					: 0; 
+		height					: 40px;
+		z-index					: 500;
+	}
+	&__grid-image{
+		width					: 100%;
+		height					: auto;
+		margin					: 0; 
+        padding					: 0; 
+		display					: block;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+
+
+	&__disclaimer-container{
+		width					: 100%;
+		max-width				: 798px;
+		margin					: 0 auto;
+	}
+	&__text{
+		text-align				: center;
+		font					: normal normal normal 17px/27px Poppins;
+		letter-spacing			: 0px;
+		color					: #CCCCCC;
+	}
+	&__text-bold{
+		text-align				: center;
+		font					: normal normal 600 17px/27px Poppins;
+		letter-spacing			: 0px;
+		color					: #CCCCCC;
+	}
+}
+/*here start betting academy component styles*/

@@ -1,0 +1,25 @@
+section(class='matchup-injuries')
+	h2(class='matchup-text-center-title') injuries
+	div(class='matchup-injuries__container sbi-grid full s-grid-1 m-grid-2 xl-grid-2 cxxl-grid-2 row-gap')
+		-for(let i = 1; i<=2; i++)
+			div(class='matchup-injuries__item')
+				div(class='matchup-injuries__component')
+					div(class='matchup-injuries__title-container')
+						div(class='matchup-injuries__title')
+							img(class='matchup-injuries__title-logo' src="images/matchup-odds-logo.svg", alt="")
+							span(class='matchup-injuries__title-head') NEW ENGLAND
+						div(class='matchup-injuries__grid-head')
+							div(class='matchup-injuries__grid-head-item') PLAYER
+							div(class='matchup-injuries__grid-head-item') STATUS
+					div(class='matchup-injuries__grid-scores-container')
+						-for(let i = 1; i<=5; i++)
+							div(class='matchup-injuries__grid-team')
+								div(class='matchup-injuries__grid-team-item')
+									img(class='matchup-injuries__consensus-logo' src="images/injuries-avatar.png", alt="")
+									div(class='matchup-injuries__grid-team-left-data-container')
+										span(class='matchup-injuries__grid-team-left-data') Davon Godchaux
+										span(class='matchup-injuries__grid-team-left-data') Did Not Participate In
+								div(class='matchup-injuries__grid-team-item')
+									div(class='matchup-injuries__grid-team-right-data-container')
+										span(class='matchup-injuries__grid-team-right-data') Davon Godchaux
+										span(class='matchup-injuries__grid-team-right-data') Did Not Participate In

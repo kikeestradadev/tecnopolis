@@ -1,0 +1,8 @@
+section(class='swiper small-size-slider-states')
+	div(class='swiper-wrapper')
+		each item in smallSizeSliderStatesData.items
+			a(href=item.href class='swiper-slide small-size-slider-states__item')
+				img(class='small-size-slider-states__logo' src=item.logo alt=item.label)
+				span(class='small-size-slider-states__label')= item.label
+	div(class='small-size-slider-states__prev swiper-button-prev')
+	div(class='small-size-slider-states__next swiper-button-next')

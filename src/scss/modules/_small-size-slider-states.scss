@@ -1,0 +1,85 @@
+.small-size-slider-states-container{
+	margin-bottom: 25px;
+}
+.small-size-slider-states .swiper-wrapper{
+	align-items: baseline;
+}
+.small-size-slider-states{
+	// border: 1px solid red;
+	padding: 0 40px;
+	z-index: 0;
+	&__item{
+		position: relative;
+		border: 1px solid #E3E2E2;
+		width: 104px;
+		height: 152px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		text-decoration: none !important;
+		@media (width >= $l) {
+			@media (hover: hover) and (pointer: fine) {
+			&:hover {
+				border: 1px solid #9E852E;
+			}
+			}
+		}		
+	}
+	&__logo{
+		z-index: 10;
+		width: 54px;
+		height: 54px;
+	}
+	&__label{
+		font: normal normal medium 17px/17px Poppins;
+		letter-spacing: -0.34px;
+		color: #2C2E32;
+		text-transform: uppercase;
+	}
+	
+	&__prev, &__next{
+		--swiper-navigation-size: 20px;
+        background-color: white;
+        height: 152px;
+        width: 35px;
+        margin-top: -35px;
+		color: black;
+		font-weight: bold;	
+		top: var(--swiper-navigation-top-offset, 36px);
+	}
+	&__prev{
+        left: 0;
+	}
+	&__prev::after{
+		content: "" !important;
+		background-image: url('https://insidersbettingdigest.com/wp-content/uploads/2024/02/arrow-guide-left-states.svg');
+		background-repeat: no-repeat;
+		background-position: calc(50% + 9px) center; 
+		width: 20px;
+		height: 20px;
+		@media (width >= $m) {
+			background-position: calc(50% + 5px) center; 
+		}	
+	}
+	&__next{
+		// border-radius: 50%;
+        right: 0;
+	}
+	&__next::after{
+		content: "" !important;
+		background-image: url('https://insidersbettingdigest.com/wp-content/uploads/2024/02/arrow-guide-right-states.svg');
+		background-repeat: no-repeat;
+		background-position: calc(50% - 9px) center; 
+		width: 20px;
+		height: 20px;
+		@media (width >= $m) {
+			background-position: calc(50% - 5px) center; 
+		}
+	}
+	.swiper-button-disabled{ 
+		opacity					: 0.3;
+		pointer-events			: initial;
+		background-color: transparent;
+	}
+}

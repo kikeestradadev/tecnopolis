@@ -1,0 +1,32 @@
+/*.sports-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }*/
+
+  .sports-title{
+    display: flex;
+    height: auto;
+    align-items: center;
+    margin-bottom: 16px;
+
+    @media (width >= 769px) {
+        margin-bottom: 24px;
+    }
+}
+
+.sports-title img{
+    margin-right: 16px;
+}
+
+.sports-title h1{
+    font-size: 36px;
+
+    @media (width >= 769px) {
+        font-size: 51px;
+    }
+}

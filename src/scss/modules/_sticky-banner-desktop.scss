@@ -1,0 +1,142 @@
+
+// here start the sticky container 
+.sticky-banner-desktop{
+	background						: #2c2e32;
+	width							: calc( var(--stiky-banner-width) - 17px);
+	height							: var(--stiky-banner-height);
+	border-radius					: 8px;
+	z-index							: 9;
+	display							: flex;
+	flex-direction					: column;
+	justify-content					: space-between;
+	&::before{
+		content						: "";
+		background-image			: url('images/sticky_banner_play_arrow.svg');
+		background-repeat			: no-repeat;
+		width						: 50px;
+		height						: 86px;
+		position					: absolute;
+		bottom						: 60px;
+		right						: 26px;
+		z-index						: 50000;
+	}
+	&::after{
+		content						: "";
+		background-image			: url('images/sticky_banner_top_arrow.svg');	
+		background-repeat			: no-repeat;
+		width						: 17px;
+		height						: 255px;
+		position					: absolute;
+		top							: 10px;
+		right						: 26px;	
+	}
+
+	// here is the left sticky banner brand image section
+	&__top-image-container{
+		position: relative;
+		// border							: 1px solid white;
+		height							: 260px;	
+		display							: flex;
+		flex-direction					: column;
+		justify-content					: flex-end;
+	}
+	// here is the image brand that contains the image brand
+	&__brand-item{
+		// border							: 1px solid white;
+		height							: 181px;	
+		position						: relative;
+	}
+	// here is the image brand for the sticky banner live text 
+	&__logo-border{
+		// border: 1px solid red;
+		width							: 80%;
+		height							: auto;
+		display							: block;
+		margin							: 0 auto;
+	}
+	&__logo{
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, -50%); 
+
+	}
+	// here is the dynamic text for inside the image brand for the sicky banner
+	&__brand-item h1{
+		font 							: normal normal 600 41px/45px Poppins;
+		letter-spacing 					: 0;
+		color 							: #e6e6e6;
+		text-transform 					: uppercase;
+		display							: block;
+		width							: 100%;
+		text-align						: center;
+		margin							: 0;
+		padding: 0 15px;
+	}
+	// here is the left sticky baner video section 
+	&__video-container{
+		// border							: 1px solid white;
+		height							: 343px;	
+	}
+	// here is the video style  
+	&__video-container video{
+		width: 100%;
+		height: auto;	
+	}
+	// here is the breadcrumbs section 
+	&__breadcrumbs-container{
+		// border							: 1px solid white;
+		position						: relative;
+		height							: 133px;
+		background						: #cccccc;
+		clip-path						: polygon(0 0,100% 20%,100% 100%,0 100%);	
+		border-top-left-radius			: 5px;	
+		display: flex;
+		align-items: center;
+	}
+	// here is the breadcrumbs section centered 
+	&__breadcrumbs{
+		// border							: 1px solid white;
+		display							: flex;
+		align-items						: center;
+		justify-content					: center;
+		width							: 100%;
+		padding: 0 15px;
+	}
+	// here is the breadcrumbs anchors
+	&__breadcrumbs-anchors{
+		text-transform					: uppercase;
+		text-decoration					: none;
+	}
+	// here is the breadcrumbs first-child desktop
+	&__breadcrumbs-anchors:first-child{
+		position: relative;
+		text-transform					: uppercase;
+		font 							: normal normal 600 17px/20px Poppins;
+		letter-spacing 					: 0;
+		color 							: #000000;
+		background						: #9e852e;
+		padding							: 1px 3px; 
+		border-radius					: 3px;
+		margin-right: 25px;
+		&::after{
+			content						: "";
+			background-image			: url('images/triangle_right.svg');
+			background-repeat			: no-repeat;
+			width						: 20px;
+			height						: 20px;
+			// border: 1px solid black;
+			position					: absolute;
+			right						: -25px;
+			transform: scale(.9);
+		}
+	}
+	// here is the breadcrumbs last-child desktop
+	&__breadcrumbs-anchors:last-child{
+		text-transform					: uppercase;
+		font 							: normal normal 400 17px/20px Poppins;
+		letter-spacing 					: 0;
+		color 							: #000000;
+	}
+}	
+// here finish the sticky container 

@@ -1,0 +1,119 @@
+.matchup-game-stats{
+	&__item{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		box-shadow: 0px 2px 6px #0000001F;
+		min-height: 112px;
+		padding: 60px 15px;
+	}
+	&__title{
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 22px;
+		line-height: 23px;
+		letter-spacing: -0.44px;
+		color: #2C2E32;
+	}
+	&__title-color{
+		color: #9E852E;
+	}
+	&__graphic{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		// border: 1px solid green;
+
+	}
+	&__graphic_percentage{
+		position:relative;
+		
+	}
+	&__graphic-data-container{
+		width: 70%;
+		height: auto;
+		// border: 1px solid red;		
+		position: absolute;
+		top: 50%;  
+		left: 50%; 
+		transform: translate(-50%, -50%);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	&__graphic-data-1{
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 19px;
+		line-height: 23px;
+		letter-spacing: -0.38px;
+		color: #CCCCCC;
+	}
+	&__graphic-data-2{
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 30px;
+		line-height: 30px;
+		letter-spacing: -0.66px;
+		color: #012244;
+	}
+
+	@keyframes rellenar{
+		to{
+			stroke-dasharray: var(--porcentaje) 100;
+		}
+	}
+	
+	circle{
+		fill: none;
+		stroke-width: 20;
+		transform: rotate(-90deg);
+		transform-origin: 50%;
+		stroke-dasharray: 100 100;
+		stroke: #ABB4BA;
+	}
+	  circle:nth-child(2){ /* el segundo círculo, es el que se ve por encima del anterior y debe tener el color mas intenso y el area del porcentaje */
+		stroke: var(--color);
+		stroke-dasharray: 0 100;
+		animation: rellenar .35s linear forwards;
+	}
+	&__scores-container{
+		margin-bottom: 10px;
+	}
+	&__score{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__score:nth-child(2){
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 30px;
+		line-height: 32px;
+		letter-spacing: -0.82px;
+		@media (width >= $m) {
+			font-size: 41px;	
+			line-height: 49px;				
+		}
+	}
+	&__score:nth-child(3){
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 30px;
+		line-height: 32px;
+		letter-spacing: -0.82px;
+		@media (width >= $m) {
+			font-size: 41px;	
+			line-height: 49px;				
+		}
+	}
+	
+}
+
+

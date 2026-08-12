@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="124" height="102" viewBox="0 0 124 102">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_6908" data-name="Rectangle 6908" width="124" height="102" transform="translate(399 618)" fill="#c91318"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#989898"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <clipPath id="clip-path-2">
+      <path id="Path_12192" data-name="Path 12192" d="M1128.08,3540.425v-45.381h61.765l-87.1-87.1h-27.03L1047.77,3380v35.612l32.315,32.315H1047.77v92.5Z" transform="translate(-1047.77 -3380)" fill="none" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-2" x1="1" y1="1" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2c2e32"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x2="1" y2="0" xlink:href="#linear-gradient-2"/>
+  </defs>
+  <g id="Mask_Group_201" data-name="Mask Group 201" transform="translate(-399 -618)" clip-path="url(#clip-path)" style="mix-blend-mode: multiply;isolation: isolate">
+    <g id="Group_8686" data-name="Group 8686" transform="translate(400 624)">
+      <path id="Path_12191" data-name="Path 12191" d="M1128.08,3540.425v-45.381h61.765l-87.1-87.1h-27.03L1047.77,3380v35.612l32.315,32.315H1047.77v92.5Z" transform="translate(-1047.77 -3380)" fill="url(#linear-gradient)"/>
+      <g id="Mask_Group_200" data-name="Mask Group 200" transform="translate(0 0)" opacity="0.296" clip-path="url(#clip-path-2)" style="mix-blend-mode: overlay;isolation: isolate">
+        <g id="Group_8685" data-name="Group 8685" transform="translate(106.713 -44.47) rotate(45)">
+          <rect id="Rectangle_6890" data-name="Rectangle 6890" width="299.13" height="16" transform="translate(0 140)" fill="#2c2e32"/>
+          <rect id="Rectangle_6891" data-name="Rectangle 6891" width="299.13" height="16" transform="translate(0 100)" fill="#2c2e32"/>
+          <rect id="Rectangle_6892" data-name="Rectangle 6892" width="299.13" height="16" fill="url(#linear-gradient-2)"/>
+          <rect id="Rectangle_6893" data-name="Rectangle 6893" width="299.13" height="32" transform="translate(0 44)" fill="url(#linear-gradient-3)"/>
+          <rect id="Rectangle_6894" data-name="Rectangle 6894" width="299.13" height="8" transform="translate(0 132)" fill="#919192"/>
+          <rect id="Rectangle_6895" data-name="Rectangle 6895" width="299.13" height="8" transform="translate(0 92)" fill="url(#linear-gradient-2)"/>
+          <rect id="Rectangle_6896" data-name="Rectangle 6896" width="299.13" height="16" transform="translate(0 28)" fill="#919192"/>
+          <rect id="Rectangle_6897" data-name="Rectangle 6897" width="299.13" height="4" transform="translate(0 128)" fill="#707070"/>
+          <rect id="Rectangle_6898" data-name="Rectangle 6898" width="299.13" height="4" transform="translate(0 88)" fill="#ccc"/>
+          <rect id="Rectangle_6899" data-name="Rectangle 6899" width="299.13" height="4" transform="translate(0 24)" fill="#707070"/>
+          <rect id="Rectangle_6900" data-name="Rectangle 6900" width="299.13" height="4" transform="translate(0 120)" fill="#707070"/>
+          <rect id="Rectangle_6901" data-name="Rectangle 6901" width="299.13" height="4" transform="translate(0 80)" fill="#ccc"/>
+          <rect id="Rectangle_6902" data-name="Rectangle 6902" width="299.13" height="4" transform="translate(0 16)" fill="#707070"/>
+          <rect id="Rectangle_6903" data-name="Rectangle 6903" width="299.13" height="4" transform="translate(0 124)" fill="#f3f3f3"/>
+          <rect id="Rectangle_6904" data-name="Rectangle 6904" width="299.13" height="4" transform="translate(0 84)" fill="#f3f3f3"/>
+          <rect id="Rectangle_6905" data-name="Rectangle 6905" width="299.13" height="4" transform="translate(0 20)" fill="#f3f3f3"/>
+          <rect id="Rectangle_6906" data-name="Rectangle 6906" width="299.13" height="4" transform="translate(0 116)" fill="#f3f3f3"/>
+          <rect id="Rectangle_6907" data-name="Rectangle 6907" width="299.13" height="4" transform="translate(0 76)" fill="#f3f3f3"/>
+        </g>
+      </g>
+      <path id="Path_12193" data-name="Path 12193" d="M1048,3501.306c.988-.065,28.579,0,28.579,0L1048,3472.727Z" transform="translate(-1020.77 -3472.727)" fill="#707070"/>
+      <path id="Path_12194" data-name="Path 12194" d="M1048,3504.845c1.111-.073,32.118,0,32.118,0L1048,3472.727Z" transform="translate(-967.589 -3357.57)" fill="#c1c1c1"/>
+      <path id="Path_12195" data-name="Path 12195" d="M1082.089,3442.864c.207,15.7,0,33.273,0,33.273L1048,3442.864Z" transform="translate(-1001.77 -3328.284)" fill="#463f2d"/>
+      <path id="Path_12196" data-name="Path 12196" d="M1099.026,3442.864c.309,23.5,0,49.8,0,49.8l-51.026-49.8Z" transform="translate(-993.77 -3414.284)" fill="#aaa"/>
+    </g>
+  </g>
+</svg>

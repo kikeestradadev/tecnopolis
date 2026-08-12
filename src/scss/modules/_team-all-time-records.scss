@@ -1,0 +1,51 @@
+.team-all-time-records{
+	&__item{
+		box-shadow: 0px 2px 6px #0000001F;
+		min-height: 96px;
+		padding: 15px;
+		@media (width >= $m) {
+			min-height: 120px;
+		}
+	}
+	&__title{
+		font: normal normal 600 17px/23px Poppins;
+		letter-spacing: -0.34px;
+		color: #2C2E32;
+		text-transform: uppercase;
+		display: block;
+		text-align: center; 
+		margin-bottom: 20px;
+	}
+	&__title-color{
+		color: #9E852E;
+	}
+	&__player_item{
+		display: flex;
+		flex-direction: column;
+	}
+	&__avatar-container{
+		background-color: #E6E6E6;
+		border-radius: 16px 32px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 10px;
+	}
+	&__player_name{
+		display: block;
+		text-align: center;
+		margin: 5px 0;
+		font: normal normal normal 10px/11px Poppins;
+		letter-spacing: 0px;
+		color: #1F2024;
+	}
+	&__player_score{
+		display: block;
+		text-align: center;
+		font: normal normal bold 14px/27px Poppins;
+		letter-spacing: -0.28px;
+		color: #2C2E32;
+		border-top: 1px solid #9E852E;
+	}
+	
+}

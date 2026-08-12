@@ -1,0 +1,148 @@
+.news-show-more{ 
+	margin-bottom: 35px;
+	&__main-title-container{
+		font					: normal normal 600 20px/28px Poppins;
+		letter-spacing			: -0.4px;
+		color					: #1F2024;
+		@media (width >= $m) {
+			font				: normal normal 600 23px/28px Poppins;
+			letter-spacing		: -0.46px;			
+		}
+	}
+	&__main-title{
+		display					: block;
+		width					: 100%;
+		max-width				: 100%;
+		position				: relative;
+		margin-bottom			: 30px;
+		&::after {
+			content				: "";
+			display				: block;
+			height				: 8px;
+			background			: #2C2E32;
+			width				: 100%;
+			position			: absolute;
+			left				: 0;
+			bottom				: -15px;
+		}
+		@media (width >= $m) {
+			max-width				: 50%;
+		}
+	}
+	&__slug-league{
+		text-transform			: uppercase;
+	}
+	&__main-title-ico{
+		margin-right			: 10px;
+		position				: relative;
+		bottom					: -5px;
+	}
+
+	&__grid{
+		display					: flex;
+		flex-direction			: column;
+		@media (width >= $m) {
+			flex-direction		: row;
+		}
+		margin-bottom			: 20px;
+	}
+	&__grid-item:first-child{
+		@media (width >= $s) and (width < $m) {
+			height				: 200px;
+		}
+		@media (width >= $m) {
+			flex-basis			: 360px;
+			flex-grow			: 0;
+		}
+		@media (width >= 1600px) {
+			flex-basis			: 260px;
+			flex-grow			: 0;
+		}
+		@media (width >= 1900px) {
+			flex-basis			: 360px;
+			flex-grow			: 0;
+		}	
+		background-repeat		: no-repeat;
+		background-position		: center center;
+		background-size			: cover;
+		border-radius			: 8px;	
+	}
+	&__grid-item:last-child{
+		@media (width >= $m) {
+			width				: calc(100% - 360px);
+			padding-left		: 30px;
+		}
+		@media (width >= 1600px) {
+			width				: calc(100% - 260px);
+			padding-left		: 30px;
+		}
+		@media (width >= 1900px) {
+			width				: calc(100% - 360px);
+			padding-left		: 30px;
+		}		
+	}
+	&__date{
+		font					: normal normal normal 10px/17px Poppins;
+		letter-spacing			: 0px;
+		color					: #919192;
+		text-transform			: uppercase;
+		display					: block;
+		margin-bottom			: 5px;
+		margin-top				: 5px;
+		@media (width >= $m) {
+			font				: normal normal normal 12px/17px Poppins;
+			letter-spacing		: 0px;
+			margin-top			: 0;
+		}
+	}
+	&__title{
+		font					: normal normal 600 27px/32px Poppins;
+		letter-spacing			: -0.54px;
+		color					: #1F2024;
+		display					: block;
+		margin-bottom			: 5px;
+		
+	}
+	&__content{
+		font					: normal normal normal 15px/27px Poppins;
+		letter-spacing			: 0px;
+		color					: #1F2024;
+		display					: block;
+		margin-bottom			: 5px;
+	}
+	&__anchor{
+		font					: normal normal 600 15px/27px Poppins;
+		letter-spacing			: -0.3px;
+		color					: #9E852E;
+		display					: block;
+		text-decoration			: none;
+	}
+	&__button-expand-container{
+		display					: flex;
+		justify-content			: center;
+		margin-bottom			: 20px;
+		@media (width >= $m) {
+			justify-content		: flex-start;
+			padding-left		: 390px;
+		}	
+		@media (width >= 1600px) {
+			justify-content		: flex-start;
+			padding-left		: 290px;
+		}	
+		@media (width >= 1900px) {
+			justify-content		: flex-start;
+			padding-left		: 390px;
+		}	
+	}
+	&__button-expand{
+		background				: #99853D;
+		font					: normal normal 600 13px/24px Poppins;
+		letter-spacing			: 0px;
+		color					: #FFFFFF;
+		text-transform			: uppercase;
+		border					: none;
+		width					: 104px;
+		height					: 32px;
+		cursor: pointer;
+	}
+}

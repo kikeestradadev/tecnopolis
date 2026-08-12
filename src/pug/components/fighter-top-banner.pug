@@ -1,0 +1,29 @@
+section(class='fighter-top_banner')
+	div(class='fighter-top_banner__white-container')
+		div(class='fighter-top_banner__statistics')
+			div(class='fighter-top_banner__statistics-item')
+				span(class='fighter-top_banner__statistics-data-1') 10
+				span(class='fighter-top_banner__statistics-data-2') WINS BY KNOCKOUT
+			div(class='fighter-top_banner__statistics-item')
+				span(class='fighter-top_banner__statistics-data-1') 6
+				span(class='fighter-top_banner__statistics-data-2') FIRST ROUND FINISHES
+		div(class='fighter-top_banner__gray-container')
+			img(src="images/single-fighter.png", alt="", class='fighter-top_banner__fighter-image')
+			div(class='fighter-top_banner__fighter-info')
+				span(class='fighter-top_banner__nick-name') Bones
+				span(class='fighter-top_banner__name') JOSÉ HENRIQUE 
+				span(class='fighter-top_banner__last-name') MAGOMEDOV
+				span(class='fighter-top_banner__category') Heavyweight Division 
+				span(class='fighter-top_banner__record') 26-1-0 W-L-D
+			div(class='fighter-top_banner__main-table')
+				div(class='fighter-top_banner__main-table-top-border')
+					div(class='fighter-top_banner__main-table-top-border-item')
+					div(class='fighter-top_banner__main-table-top-border-item')
+					div(class='fighter-top_banner__main-table-top-border-item')
+				-for(let i=1; i<=3; i++)	
+					div(class='fighter-top_banner__main-table-row')
+						-for(let j=1; j<=3; j++)
+							div(class='fighter-top_banner__main-table-row-item')
+								span(class='fighter-top_banner__main-table-row-item-title') Fighting Style
+								span(class='fighter-top_banner__main-table-row-item-data') Wrestling
+						

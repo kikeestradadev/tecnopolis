@@ -1,0 +1,60 @@
+
+section(class='odds-compare')
+    div(class='odds-compare__top-inputs') 
+        div(class='odds-compare__day-picker')
+            img(src="https://insidersbettingdigest.com/wp-content/themes/ibdthemev2/core-assets/images/top-widget-arrow-left.svg", alt="past-day" class='odds-compare__day-picker-past-day')
+            span(class='odds-compare__day-picker-label-day') Jan 16, 2024
+            img(src="https://insidersbettingdigest.com/wp-content/themes/ibdthemev2/core-assets/images/top-widget-arrow-right.svg", alt="past-day" class='odds-compare__day-picker-next-day')
+        select(class='odds-compare__select-item' id='selectItem1' name='select-item-1')
+            option(class='odds-compare__select-item-option' value='lorem') Bet Type
+            option(class='odds-compare__select-item-option' value='lorem') Money LIne
+            option(class='odds-compare__select-item-option' value='lorem') Spread
+            option(class='odds-compare__select-item-option' value='lorem') Total
+        select(class='odds-compare__select-item' id='selectItem1' name='select-item-1')
+            option(class='odds-compare__select-item-option' value='lorem') Odds type
+            option(class='odds-compare__select-item-option' value='lorem') American
+            option(class='odds-compare__select-item-option' value='lorem') Decimal
+            option(class='odds-compare__select-item-option' value='lorem') Fractional
+    div(class='odds-compare__grid-container')
+        div(class='odds-compare__grid-row')
+            div(class='odds-compare__grid-row-item')
+                span
+                    img(src="https://insidersbettingdigest.com/wp-content/uploads/2024/03/National_Football_League_logo-1.svg", alt="logo", width="23" height="32")
+                    | NFL
+            div(class='odds-compare__grid-row-item') Best Odds
+            -for(let h = 1; h <= 9; h++)
+                div(class='odds-compare__grid-row-item', style='background-color: steelblue')
+                    img(src="https://insidersbettingdigest.com/wp-content/uploads/2024/03/Group-397.svg", alt="logo")
+        -for(let i = 1; i <= 5; i++)
+            div(class='odds-compare__grid-row')
+                div(class='odds-compare__grid-row-item')
+                    div(class='odds-compare__grid-row-item-teams')
+                        div(class='odds-compare__grid-row-item-teams-time')
+                            span(class='odds-compare__grid-row-item-teams-time-date') 1/14/2023
+                            span(class='odds-compare__grid-row-item-teams-time-hour') 4:35 PM EST
+                        div(class='odds-compare__grid-row-item-team')
+                            img(src="https://insidersbettingdigest.com/wp-content/uploads/2024/03/houston-texans-2-1.svg", class='odds-compare__grid-row-item-team-logo' width="32" height="29" alt="home")
+                            span(class='odds-compare__grid-row-item-team-info') Hou
+                                span(class='odds-compare__grid-row-item-team-info-name') Texas
+                        div(class='odds-compare__grid-row-item-team')
+                            img(src="https://insidersbettingdigest.com/wp-content/uploads/2024/03/Path-3461.svg", class='odds-compare__grid-row-item-team-logo' width="32" height="29" alt="home")
+                            span(class='odds-compare__grid-row-item-team-info') Hou
+                                span(class='odds-compare__grid-row-item-team-info-name') Texas
+                - for(let i = 1; i <= 10; i++)
+                    div(class='odds-compare__grid-row-item')
+                        div(class='odds-compare__grid-row-item-odds-values')
+                            span(class='odds-compare__grid-row-item-odds-values-color-pick', style='background-color: steelblue')
+                            if(i === 1)
+                                div(class='odds-compare__grid-row-item-odds-value bo-style', style='--bo-bg:#fdb71a; --bo-bg-image:url("https://insidersbettingdigest.com/wp-content/uploads/2024/03/fanduel-logo-2022.svg")')
+                                    span(class='odds-compare__grid-row-item-value') +3.5
+                                    span(class='odds-compare__grid-row-item-value') -110
+                                div(class='odds-compare__grid-row-item-odds-value bo-style', style='--bo-bg:#fdb71a; --bo-bg-image:url("https://insidersbettingdigest.com/wp-content/uploads/2024/03/Path-11413.svg")')
+                                    span(class='odds-compare__grid-row-item-value') +3.5
+                                    span(class='odds-compare__grid-row-item-value') -110
+                            else
+                                div(class='odds-compare__grid-row-item-odds-value')
+                                    span(class='odds-compare__grid-row-item-value') +3.5
+                                    span(class='odds-compare__grid-row-item-value') -110
+                                div(class='odds-compare__grid-row-item-odds-value')
+                                    span(class='odds-compare__grid-row-item-value') +3.5
+                                    span(class='odds-compare__grid-row-item-value') -110

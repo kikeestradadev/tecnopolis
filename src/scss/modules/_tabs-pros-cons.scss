@@ -1,0 +1,116 @@
+.tabs-pros-cons-container{
+	width: 100%;
+	position: relative;
+
+	&__tabs {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		padding: 0 1px;
+	}
+	&__tab {
+		line-height: 2;
+		border: 1px solid #ccc;
+		position: relative;
+		top: 1px;
+		margin-bottom: 1px;
+		width: 50%;
+		height: 56px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		font: normal normal 600 18px/25px Poppins;
+		letter-spacing: -0.54px;
+		color: #1F2024;
+		
+		@media (width >= $sm) {
+			font: normal normal 600 27px/32px Poppins;
+		}
+		.tab-ico-gold, .tab-ico-black{
+			margin-right: 10px;
+			width: 20px;
+			height: 25px;
+			@media (width >= $sm) {
+				width: 25px;
+				height: 30px;
+			}
+		}
+		.tab-ico-gold{
+			display: none;
+		}
+		&.is-active {
+			background: #fff;
+			color: #9E852E;
+			position: relative;
+			z-index: 2;
+		}
+	}	
+	&__tab:nth-child(1) {
+		background-image: url('https://insidersbettingdigest.com/wp-content/uploads/2024/02/pros-check-up-black.svg');
+		background-repeat: no-repeat;
+		background-position: calc(50% - 40px) center;
+		background-size: 20px 25px;
+		border-right: none;
+		@media (width >= $sm) {
+			background-position: calc(50% - 55px) center;
+			background-size: 25px 30px;
+		}
+		&.is-active {
+			background-image: url('https://insidersbettingdigest.com/wp-content/uploads/2024/02/pros-check-up-gold.svg');
+		}
+	}
+	
+	&__tab:nth-child(2) {
+		background-image: url('https://insidersbettingdigest.com/wp-content/uploads/2024/02/pros-check-down-black.svg');
+		background-repeat: no-repeat;
+		background-position: calc(50% - 40px) center;
+		background-size: 20px 25px;
+		@media (width >= $sm) {
+			background-position: calc(50% - 55px) center;
+			background-size: 25px 30px;
+		}
+		&.is-active {
+			background-image: url('https://insidersbettingdigest.com/wp-content/uploads/2024/02/pros-check-down-gold.svg');
+		}
+	}
+	&__panels {
+		position: relative;
+		z-index: 1;
+		// border: 1px solid #ccc;
+		padding: 1em;
+	}
+	&__panel {
+		height: 240px; /* Establece la altura máxima del panel */
+		overflow-y: auto; /* Agrega scroll vertical cuando el contenido excede la altura máxima */
+		position: absolute;
+		left: -1000%;
+
+		/* Agrega estilos para ocultar la barra de scroll en navegadores webkit */
+		&::-webkit-scrollbar {
+			width: 0.5em; /* Ancho de la barra de scroll (ajusta según tu preferencia) */
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: transparent; /* Color del pulgar del scroll (transparente para ocultarlo) */
+		}
+
+		&.is-active {
+			position: relative;
+			left: 0;
+		}
+	}
+}
+
+.pros-cons-title{
+	font: normal normal 600 20px/24px Poppins;
+	letter-spacing: -0.82px;
+	color: #1F2024;
+	display: block;
+	text-align: center;
+	padding: 20px 0;
+	@media (width >= $m) {
+		font: normal normal 600 41px/49px Poppins;
+	}
+}

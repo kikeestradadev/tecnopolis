@@ -1,0 +1,151 @@
+.ufc-schedule-upcoming{
+	z-index							: 0;
+    position						: relative;
+    width							: 100%;
+	margin-bottom					: 50px;
+	
+	&__title{
+		font: normal normal 600 29px/41px Poppins;
+		letter-spacing: -0.82px;
+		color: #D6BF71;
+		margin-bottom: 30px;
+		display: block;
+		
+		@media (width >= $m) {
+			font: normal normal 600 41px/49px Poppins;
+		}
+	}
+    &__content{
+        // border						: 1px solid red;
+        padding						: 0;
+		border-radius		: 16px;
+		box-shadow						: 0px 2px 6px #0000001F;
+        position					: relative;
+        background					: transparent;
+        z-index						: 3;
+        box-sizing					: border-box;
+		width						: calc(100% - 15px);
+		margin						: 0 auto;
+		overflow					: hidden;
+    }
+	&__matchup{		
+		background-color: white;
+		display: flex;
+		justify-content: center;
+		padding: 30px 15px 15px 15px;
+		border-bottom: 1px solid #ddd;
+	}
+	&__grid{
+		display: flex;		
+		// border: 1px solid blue;
+		width: 100%;
+		max-width: 600px;
+		align-items: center;
+		justify-content: space-around;
+	}
+	&__grid-item{
+		flex-basis: 264px;
+		flex-grow: 0;
+		border-radius: 8px 32px;
+		background: #E6E6E6;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+	&__grid-item:nth-child(2){
+		border-radius:0;
+		width: 100%;
+		background: white;
+	}
+	&__vrs{
+		transform: scale(.6);		
+	}
+	&__label{
+		position					: relative;
+		margin						: 0;
+		text-transform				: capitalize;
+		border-top					: 7px solid white;		
+		
+		display						: flex;
+		flex-direction				: column;
+		align-items					: center;		
+		padding						: 15px 15px;		
+		background-color			: #ffffff;
+		@media (width >= $m) {
+			flex-direction: row;
+			justify-content: space-between;
+			padding						: 15px 45px;
+		}
+	}
+	&__label-item:nth-child(1){
+		width: 100%;		
+		@media (width >= $m) {
+			max-width: 600px;
+		}
+	}
+	&__label-item:nth-child(2){
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		max-width: 168px;
+	}
+	&__label-event-name{
+		display: block;
+		font: normal normal medium 23px/27px Poppins;		
+		letter-spacing: 0px;
+		color: #9E852E;
+		@media (width >= $m) {
+			font: normal normal medium 27px/27px Poppins;
+		}
+		
+	}
+	&__label-fighters-name{
+		display: block;
+		text-transform: capitalize;
+		font: normal normal bold 27px/38px Poppins;		
+		letter-spacing: -1.23px;
+		color: #2C2E32;
+		@media (width >= $m) {
+			font: normal normal bold 35px/35px Poppins;
+		}
+	}
+	&__label-fighters-name_vrs{		
+		text-transform: lowercase;
+		font: normal normal normal 20px/35px Poppins;
+		letter-spacing: -1.23px;
+		color: #2C2E32;
+		@media (width >= $m) {
+			font: normal normal normal 35px/35px Poppins;
+		}
+	}
+	&__label-date{
+		display: block;
+		font: normal normal normal 23px/35px Poppins;
+		letter-spacing: -0.81px;
+		color: #2C2E32;
+	}
+	&__label-anchor{
+		display: block;
+		text-align: center;
+		font: normal normal 600 13px/24px Poppins;
+		letter-spacing: 0px;
+		color: #FFFFFF;
+		text-transform: uppercase;
+		background: #9E852E;
+		width: 104px;
+		height: 32px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 15px;
+		@media (width >= $m) {
+			width: 100%;
+			font: normal normal 600 19px/24px Poppins;
+			height: 48px;
+			margin-top: 0;
+		}
+	}
+
+}

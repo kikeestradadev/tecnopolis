@@ -1,0 +1,205 @@
+/*here start small-size slider module styles*/
+.slider-top-sportsbooks-container{
+	margin-bottom						: 25px;
+	background-image: url('https://insidersbettingdigest.com/wp-content/uploads/2024/02/bg-top-sports-mobile-static3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 400px;
+    background-position: top;
+	padding: 90px 15px 0 15px;
+	@media (width >= $l) {
+		background-image: url('https://insidersbettingdigest.com/wp-content/uploads/2024/02/bg-top-sports.png');
+		background-size: auto 400px;
+	}
+	position: relative;
+}
+
+.swiper{
+	padding-top: 24px;
+}
+.slider-top-sportsbooks .swiper-wrapper{
+	align-items: baseline;
+}
+
+.slider-top-sportsbooks{	
+	z-index	: 0;
+	&__item-first-counter{
+		position: absolute;
+		width: 56px;
+		height: 56px;
+		background-color: #2C2E32;
+		box-shadow: 0px 3px 6px #00000029;
+		border-radius: 9px 20px;
+		top: -20px;
+		left: 20px;
+		font: normal normal 800 20px/20px Poppins;
+		letter-spacing: 5.6px;
+		color: #FFFFFF;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 0.5px solid white;
+	}
+	&__title{
+		font: normal normal 600 24px/29px Poppins;
+		letter-spacing: -0.48px;
+		color: #9E852E;
+		text-transform: uppercase;
+		position: absolute;
+		@media (width >= $s) and (width < $l) {
+			color: #1F2024;
+			top: 15px;
+			left: 15px;
+		}
+		top: 30px;
+		right: 15px;		
+	}
+	&__title-color{		
+		color: #ffffff;
+	}
+	&__item-counter{
+		position: absolute;
+		width: 56px;
+		height: 56px;
+		background-color: #9E852E;
+		box-shadow: 0px 3px 6px #00000029;
+		border-radius: 9px 20px;
+		top: -20px;
+		left: 20px;
+		font: normal normal 800 20px/20px Poppins;
+		letter-spacing: 5.6px;
+		color: #FFFFFF;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__item{
+		position: relative;
+		// border: 2px solid blue;	
+		width							: 250px;
+		height							: 330px;
+		
+	}
+	&__item::before{
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 50%;
+		border: 8px solid #9E852E;
+		border-radius: 25px 25px 0 0;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		z-index: -1;
+	}
+	&__item-container{
+		margin: 8px;
+		// border: 1px solid yellow;
+		border-top-left-radius: 16px;
+		border-top-right-radius: 16px;
+		overflow: hidden;
+		width: calc(100% - 16px);
+	}
+	&__item-container-brand{
+		height: 156px;
+		background-color: white;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+	&__item-container-brand-description{
+		font: normal normal normal 14px/23px Poppins;
+		letter-spacing: 0px;
+		color: #2C2E32;
+	}
+	&__item-container-rating{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #2C2E32;
+		padding: 10px 0;	
+		height: 76px;
+		// border: 1px solid red;
+	}
+	&__item-container-rating-circle{
+		z-index: 10;
+		background-color: white;
+		border-radius: 50%;
+		height: 93px;
+		width: 93px;
+		position: relative;
+		top: -20px;
+		position: relative;
+		display: flex;
+	}
+	&__item-container-rating-vector{
+		fill: none;
+		stroke-width: 8;
+		transform: rotate(-90deg);
+		transform-origin: 50%;
+		stroke-dasharray: 100 100;
+		stroke: #E6E6E6;
+	}
+	&__item-container-rating-vector:nth-child(2){
+		stroke: var(--color);
+		stroke-dasharray: var(--porcentaje) 100;
+		animation: rellenar 0.35s linear forwards;
+	}
+	&__item-container-rating-circle > span{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 19px;
+		line-height: 17px;
+		font-family: 'Poppins', sans-serif;
+		letter-spacing: -0.38px;
+		color: #FFFFFF;
+		font-weight: normal;
+		background-color: #242E3D;
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+	}
+	&__item-container-anchors-container{
+		background-color: #000000;
+		height: 75px;
+		border-bottom-left-radius: 16px;
+		border-bottom-right-radius: 16px;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+	&__item-container-anchor-review{
+		font: normal normal normal 13px/23px Poppins;
+		letter-spacing: 0px;
+		color: #FFFFFF;
+		text-transform: uppercase;
+		text-decoration: underline;
+	}
+	&__item-container-anchor-bet{
+		width: 104px;
+		height: 32px;
+		background-color: #99853D;
+		border-radius: 3px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font: normal normal 600 13px/24px Poppins;
+		letter-spacing: 0px;
+		color: #FFFFFF;
+		text-transform: uppercase;
+		text-decoration: none !important;
+	}
+}
+@keyframes rellenar {
+	to {
+		stroke-dasharray: var(--percentage) 100;
+	}
+}

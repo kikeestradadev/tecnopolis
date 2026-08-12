@@ -1,0 +1,49 @@
+.matchup-game-information{
+	&__item{		
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;margin-bottom: 30px;
+		
+	}
+	&__column{
+		width: 50%;
+		height: 80px;
+		padding: 0 15px 0 40px;
+		position: relative;
+		display: flex;
+		align-items: center;
+		@media (width >= 500px) {
+			padding: 0 15px 0 70px;
+		}
+	}
+	&__column:nth-child(1){
+		background-color:#DBDBDB ;
+	}
+
+	&__column:nth-child(2){
+		background-color: #F3F3F3;
+	}
+	&__logo{
+		position: absolute;
+		left: -5px;
+		transform: scale(.5);
+		margin-right: 10px;
+		@media (width >= 500px) {
+			transform: scale(1);
+			left:15px;
+		}
+	}
+	&__text{
+		font: normal normal normal 12px/14px Poppins;
+		letter-spacing: -0.24px;
+		color: #2C2E32;
+		margin-right: 10px;
+		@media (width >= 500px) {
+			font: normal normal normal 17px/17px Poppins;
+			letter-spacing: -0.34px;
+		}
+	}
+	
+}

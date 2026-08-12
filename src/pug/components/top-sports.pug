@@ -1,0 +1,37 @@
+section(class='border-multicolor-container')
+	div(class='border-multicolor-container__content')
+		div(class='top-sports-section')
+			div(class='top-sports')
+				div(class='top-sports__container')
+					div(class='top-sports__logo')
+						img(src=topSportsData.logo alt='')
+					div(class='top-sports__tab-container')
+						div(class='swiper tab-menu')
+							div(class='swiper-wrapper')
+								each tab, tabIndex in topSportsData.tabs
+									div(class=`swiper-slide tab-menu__item${tabIndex === 0 ? ' active' : ''}`)
+										span(class='tab-menu__text')
+											img(src=tab.icon class='tab-icon tab-icon-black' alt='')
+											img(src=tab.iconWhite class='tab-icon tab-icon-white' alt='')
+											| #{tab.label}
+						div(class='tab-menu-panels')
+							each tab, tabIndex in topSportsData.tabs
+								div(class=`tab-menu-panels__item${tabIndex === 0 ? ' active' : ''}`)
+									div(class='tab-menu-panels__banner')
+										img(src=topSportsData.banner alt='')
+									div(class='sub-tab-container')
+										div(class='sub-menu-container')
+											div(class='swiper sub-tab-menu')
+												div(class='swiper-wrapper')
+													each sub, subIndex in tab.subtabs
+														div(class=`swiper-slide sub-tab-menu__item${subIndex === 0 ? ' active' : ''}`)
+															span(class='sub-tab-menu__icon-content')
+																img(src=sub.icon alt='' class='sub-tab-menu-ico sub-tab-menu-black')
+																img(src=sub.iconGold alt='' class='sub-tab-menu-ico sub-tab-menu-gold')
+															span(class='sub-tab-menu__text')= sub.label
+										div(class='sub-tab-panels')
+											each sub, subIndex in tab.subtabs
+												div(class=`sub-tab-panels__item${subIndex === 0 ? ' active' : ''}`)
+													div(class='sub-tab-panels__title')= sub.title
+													div(class='sub-tab-panels__text')
+														p= sub.text

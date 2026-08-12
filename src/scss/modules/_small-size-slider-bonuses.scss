@@ -1,0 +1,174 @@
+.small-size-slider-bonuses-container{
+	margin-bottom						: 25px;
+	
+}
+.small-size-slider-bonuses .swiper-wrapper{
+	align-items: baseline;
+}
+
+.small-size-slider-bonuses{
+	padding-top: 80px;
+	padding-bottom: 24px;
+	z-index: 0;
+	&__item{
+		padding-top: 80px;
+		position: relative;
+		box-shadow: 0px 4px 6px #0000001F;
+		border: 1px solid #E0E0E0;
+		border-radius: 16px;
+		width: 304px;
+		height: 355px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+	&__bonus-title{
+		position: absolute;
+		box-shadow: 0px 3px 6px #00000029;
+		border-radius: 8px 32px;
+		width: 256px;
+		height: 136px;
+		top: -50px;
+		overflow: hidden;
+		color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		background-image: url('https://insidersbettingdigest.com/wp-content/uploads/2024/02/Desktop-promo-image2.png');
+		background-repeat: no-repeat;
+		background-position: center calc(50% + 5px);
+	}
+	&__percentage{
+		width: 100%;
+		text-align: center;
+		font: normal normal 600 45px/41px Poppins;
+		letter-spacing: -0.9px;
+		color: #C5A536;
+		
+	}
+	&__label{
+		width: 100%;
+		text-align: center;
+		font: normal normal 600 24px/25px Poppins;
+		letter-spacing: -0.48px;
+		color: #FFFFFF;
+		text-transform: uppercase;
+	}
+	&__sub-label{
+		width: 100%;
+		text-align: center;
+		font: normal normal 600 30px/31px Poppins;
+		letter-spacing: 3.48px;
+		color: #FFFFFF;
+		text-transform: uppercase;
+	}
+	&__logo{
+		width: 147px;
+		height: 34px;
+	}
+	&__list{
+		padding: 5px 0;
+		width: 234px;
+	}
+	&__ul{
+		margin: 0;
+		padding: 0;
+	}
+	&__ul-li{
+		font: normal normal medium 17px/20px Poppins;
+		letter-spacing: -0.34px;
+		color: #2C2E32;
+	}
+	&__code-label{
+		font: normal normal normal 17px/16px Poppins;
+		letter-spacing: 0px;
+		color: #9E852E;
+	}
+	&__code{
+		font: normal normal bold 17px/16px Poppins;
+		letter-spacing: 0px;
+		color: #9E852E;
+		// border: 1px solid red;
+		padding-right: 20px;
+		background-image: url('https://insidersbettingdigest.com/wp-content/uploads/2024/02/icono-copypaste.svg');
+		background-repeat: no-repeat;
+		background-position: right;		
+		cursor: pointer;
+	}
+	&__anchor{
+		width: 104px;
+		height: 32px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #9E852E;
+		font: normal normal 600 13px/24px Poppins;
+		letter-spacing: 0px;
+		color: #FFFFFF;
+		text-transform: uppercase;
+		text-decoration: none !important;
+	}
+	&__prev, &__next{
+		box-shadow: 0px 4px 6px #0000001F;
+		--swiper-navigation-size: 20px;
+        background-color: white;
+        height: 50px;
+        width: 50px;
+        margin-top: -35px;
+		color: black;
+		font-weight: bold;	
+		top: var(--swiper-navigation-top-offset, 53%);	
+		@media (width >= $m) {
+			visibility: visible;
+			height: 70px;
+			width: 70px;
+			top: var(--swiper-navigation-top-offset, 50%);	
+		}
+	}
+	&__prev{
+		border-radius: 50%;
+        left: -15px;
+		@media (width >= $m) {
+			left: -20px;
+		}
+	}
+	&__prev::after{
+		content: "" !important;
+		background-image: url('https://insidersbettingdigest.com/wp-content/uploads/2024/02/arrow-guide-left.svg');
+		background-repeat: no-repeat;
+		background-position: calc(50% + 9px) center; 
+		width: 16px;
+		height: 16px;
+		@media (width >= $m) {
+			width: 32px; 
+			height: 33px;
+			background-position: calc(50% + 5px) center; 
+		}	
+	}
+	&__next{
+		border-radius: 50%;
+        right: -15px;
+		@media (width >= $m) {
+			right: -20px;
+		}
+	}
+	&__next::after{
+		content: "" !important;
+		background-image: url('https://insidersbettingdigest.com/wp-content/uploads/2024/02/arrow-guide-right.svg');
+		background-repeat: no-repeat;
+		background-position: calc(50% - 9px) center; 
+		width: 16px;
+		height: 16px;
+		@media (width >= $m) {
+			width: 32px; 
+			height: 33px;
+			background-position: calc(50% - 5px) center; 
+		}
+	}
+	.swiper-button-disabled{ 
+		opacity					: .3;
+		pointer-events			: initial;
+	}
+}

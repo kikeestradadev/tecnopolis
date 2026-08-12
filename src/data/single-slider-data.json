@@ -1,0 +1,22 @@
+{
+	"items": [
+		{
+			"href": "#",
+			"desktop": "https://insidersbettingdigest.com/wp-content/uploads/2024/02/betus-desk.jpg",
+			"mobile": "https://insidersbettingdigest.com/wp-content/uploads/2024/02/slidermobile-betus.jpg",
+			"alt": "Slide 1"
+		},
+		{
+			"href": "#",
+			"desktop": "https://insidersbettingdigest.com/wp-content/uploads/2024/02/draftkings.jpg",
+			"mobile": "https://insidersbettingdigest.com/wp-content/uploads/2024/02/slidermobile-draftkings.jpg",
+			"alt": "Slide 2"
+		},
+		{
+			"href": "#",
+			"desktop": "https://insidersbettingdigest.com/wp-content/uploads/2024/02/mybookie-desk.jpg",
+			"mobile": "https://insidersbettingdigest.com/wp-content/uploads/2024/02/slidermobile-mybookie.jpg",
+			"alt": "Slide 3"
+		}
+	]
+}

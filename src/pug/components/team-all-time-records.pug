@@ -1,0 +1,16 @@
+section(class='team-all-time-records')
+	h2(class='matchup-text-center-title') ALL-TIME RECORDS
+	div(class='sbi-grid full s-grid-1 m-grid-2 row-gap gap-4')
+		-for(let i=1; i<=4; i++)
+			div(class='team-all-time-records__item')
+				span(class='team-all-time-records__title') ALL-TIME&nbsp;
+					span(class='team-all-time-records__title-color') PASSING LEADERS
+				div(class='sbi-grid full s-grid-3 row-gap')
+					-for(let i=1; i<=3; i++)
+						div(class='team-all-time-records__player_item')
+							div(class='team-all-time-records__avatar-container')
+								img(class='team-all-time-records__avatar' src="images/player-avatar-records.png", alt="")
+							span(class='team-all-time-records__player_name') Sam Cunningham
+							span(class='team-all-time-records__player_score') 5,453
+
+

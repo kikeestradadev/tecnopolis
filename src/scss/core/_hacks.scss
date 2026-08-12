@@ -1,0 +1,37 @@
+.swiper-lazy-preloader::after {
+	color: #9E852E !important;
+	border-top-color: #9E852E !important;
+	border-right-color: #9E852E !important;
+}
+
+img {
+	max-width: 100%;
+}
+
+.hide {
+	display: none;
+}
+
+.hide-m {
+	display: none;
+
+	@media (width >= $m) {
+		display: block !important;
+	}
+}
+
+.hide-d {
+	@media (width >= $m) {
+		display: none !important;
+	}
+}
+
+.slider-module {
+	width: 100%;
+}
+
+.matchup-text-center-title {
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+}

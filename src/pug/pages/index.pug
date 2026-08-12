@@ -2,11 +2,79 @@ extends ../config/template
 
 block append config
 	- currentPage = 'home';
-	- siteName = 'Layouts';
+	- siteName = 'Tecnopolis';
 	- content = 'content';
-	- pageDescription = 'Pagina inicial de MyBoilerplate';
+	- pageDescription = 'Revista digital de tecnología, actualidad y e-commerce';
 
-block main-header
-block main-container
-block main-footer
+block content-info
+	include ../components/home-banner
+	//- include ../components/title-page
+	//- include ../components/slider-title
+	include ../components/state-sportsbooks
+	include ../components/single-slider
+	include ../components/small-size-slider-states
+	include ../components/small-size-slider-bonuses
+	include ../components/mid-size-slider
+	include ../components/experts-picks-banner
+	include ../components/small-size-slider
+	include ../components/small-size-slider-news
+	include ../components/small-size-slider-xml
+	include ../components/slider-top-sportsbooks
+	include ../components/sportsbook-card
+	//- include ../components/dynamic-side-banner
+	//- include ../components/tabs
+	include ../components/tabs-pros-cons
+	include ../components/top-sports
+	//- include ../components/top-sports-sub-tab
+	include ../components/content-module
+	include ../components/betting-academy
+	include ../components/accordion
+	//- include ../components/border-multicolor-container
+	//- include ../components/border-multicolor-grid
+	include ../components/news-top-banner
+	include ../components/news-animated-banner
+	include ../components/news-show-more
+	//- include ../components/sticky-banner-desktop
+	//- include ../components/sticky-banner-mobile
+	//- include ../components/sticky-banner-bonuses-desktop
+	//- include ../components/sticky-banner-bonuses-mobile
+	//- include ../components/sticky-banner-table-content-desktop
+	include ../components/sportsbooks-bonuses-banner
+	include ../components/matchups-center
+	include ../components/matchup-top-teams
+	include ../components/matchup-game-information
+	include ../components/matchup-odds-bar
+	include ../components/matchup-banner
+	include ../components/matchup-game-stats
+	include ../components/matchup-consensus-picks
+	include ../components/matchup-trends
+	include ../components/matchup-return-of-investment
+	include ../components/matchup-stats
+	include ../components/matchup-team-ranked-stats
+	include ../components/matchup-team-standings
+	include ../components/matchup-injuries
+	include ../components/matchup-team-scores
+	include ../components/teams-page
+	include ../components/team-top-banner
+	include ../components/team-grid-news
+	include ../components/team-trend
+	include ../components/team-full-widget
+	include ../components/team-highlights
+	include ../components/team-all-time-records
+	include ../components/fighter-top-banner
+	include ../components/fighter-img
+	include ../components/fighter-stats
+	include ../components/ufc-fighters-list
+	include ../components/ufc-list
+	include ../components/ufc-card
+	include ../components/ufc-schedule-top-banner
+	include ../components/ufc-schedule-clock
+	include ../components/ufc-schedule-upcoming
+	include ../components/fight-card-top-banner
+	include ../components/fight-card-banner
+	include ../components/fight-card-other
+	include ../components/odds-compare
+	include ../components/ibd-map
+	include ../components/graphql-practice
+
 block scripts

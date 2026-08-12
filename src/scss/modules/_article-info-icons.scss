@@ -1,0 +1,88 @@
+.article-info-icons{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+
+    @media (width >= 769px) {
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+}
+
+.article-info-icons__calendar-cont{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 600;
+    margin-right: 10px;
+
+    @media (width >= 769px) {
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+    }
+}
+
+.article-info-icons__calendar-cont img{
+    margin-right: 5px;
+    width: 32px;
+    height: 32px;
+
+    @media (width >= 769px) {
+        margin-right: 10px;
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.article-info-icons__timer-cont{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 600;
+    margin-right: 9px;
+
+    @media (width >= 769px) {
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+    }
+}
+
+.article-info-icons__timer-cont img{
+    margin-right: 5px;
+    width: 27px;
+    height: 32px;
+
+    @media (width >= 769px) {
+        margin-right: 10px;
+        width: 27px;
+        height: 32px;
+    }
+}
+
+.article-info-icons__flame-cont{
+    font-size: 10px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+
+    @media (width >= 769px) {
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+    }
+}
+
+.article-info-icons__flame-cont img{
+    margin-right: 5px;
+    width: 30px;
+    height: 32px;
+
+    @media (width >= 769px) {
+        margin-right: 10px;
+        width: 30px;
+        height: 32px;
+    }
+}

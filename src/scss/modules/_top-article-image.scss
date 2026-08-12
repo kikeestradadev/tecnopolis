@@ -1,0 +1,14 @@
+.top-article-image {
+    height: 200px;
+    width: 100%;
+    background-image: url(/public/images/top-image-article2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    background-position: center;
+
+    @media (width >= 769px) {
+        height: 545px;
+        border-radius: 8px;
+    }
+}

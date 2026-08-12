@@ -1,0 +1,237 @@
+.sportsbooks-bonuses-banner{
+	z-index							: 0;
+    position						: relative;
+    width							: 100%;
+	margin-bottom					: 20px;
+    &::before {
+        content						: "";
+        position					: absolute;
+        left						: 0;
+        right						: 0;
+        top							: -8px;
+        bottom						: 190px;
+        border						: 8px solid #9E852E;
+        border-radius				: 25px 25px 0 0;
+        box-sizing					: border-box;
+    }
+	&__title{
+		font: normal normal 600 29px/41px Poppins;
+		letter-spacing: -0.82px;
+		color: #D6BF71;
+		margin-bottom: 30px;
+		display: block;
+		@media (width >= $m) {
+			font: normal normal 600 41px/49px Poppins;
+		}
+	}
+    &__content{
+        padding						: 0;
+		border-top-left-radius		: 16px;
+		border-top-right-radius		: 16px;
+        position					: relative;
+        background					: transparent;
+        z-index						: 3;
+        box-sizing					: border-box;
+		width						: calc(100% - 15px);
+		margin						: 0 auto;
+		overflow					: hidden;
+    }
+	&__top-content{
+		background-color: white;
+		display: flex;
+		justify-content: center;
+		padding: 30px 15px;
+		@media (width >= $m) {
+			padding: 30px;
+		}
+	}
+	&__grid{
+		display: flex;		
+		width: 100%;
+		@media (width >= $sm) {
+			flex-direction: column;
+		}
+		@media (width >= $m) {
+			flex-direction: row;
+		}
+	}
+	&__grid-item:nth-child(1){	
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		@media (width >= $s) and (width < $sm) {
+			display: none;
+			margin: 10px 0;
+		}
+		@media (width >= $sm) and (width < $m) {
+			padding: 10px 0;
+		}
+		@media (width >= $m) {
+			flex-basis: 200px;
+			flex-grow: 0;
+		}
+	}
+	&__grid-item:nth-child(2){
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		width: 100%;
+		@media (width >= $m) {
+			width: calc(100% - 200px);
+			padding-left: 25px;
+		}
+	}
+	&__grid-logo{
+		width: 160px;
+		height: 34px;
+		@media (width >= $xxl) {
+			width: 276px;
+			height: 79px;
+		}
+	}
+	&__label{
+		position					: relative;
+		margin						: 0;
+		text-transform				: capitalize;
+		border-top					: 7px solid white;		
+		min-height					: 180px;
+		display						: flex;
+		flex-direction				: column;
+		align-items					: center;		
+		padding						: 15px 15px;
+		border-bottom-left-radius	: 16px;
+		border-bottom-right-radius	: 16px;
+		background-image			: url('images/bg_lines_fighters_schedule_top_banner.svg');
+		background-repeat			: no-repeat, repeat;
+		background-position			: right;
+		background-color			: #2C2E32;
+		@media (width >= $m) {
+			flex-direction: row;
+			justify-content: space-between;
+			padding						: 15px 45px;
+		}
+	}
+	
+	
+	&__label-item:nth-child(2){
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		max-width: 168px;
+		padding-left: 25px;
+	}
+	&__label::before{
+		content: "";
+		position: absolute;
+		width: 100%;
+		top: -16px;
+		left: 0;
+		right: 0;
+		height: 16px;
+		background-color: #cccccc;
+	}
+	&__label-event-name{
+		display: block;
+		font: normal normal medium 23px/27px Poppins;		
+		letter-spacing: 0px;
+		color: #FFFFFF;
+		@media (width >= $m) {
+			font: normal normal medium 27px/27px Poppins;
+		}
+		
+	}
+	&__label-fighters-name{
+		display: block;
+		text-transform: capitalize;
+		font: normal normal bold 27px/38px Poppins;		
+		letter-spacing: -1.23px;
+		color: #CCCCCC;
+		@media (width >= $m) {
+			font: normal normal bold 35px/35px Poppins;
+		}
+	}
+	&__label-fighters-name_vrs{		
+		text-transform: lowercase;
+		font: normal normal normal 20px/35px Poppins;
+		letter-spacing: -1.23px;
+		color: #CCCCCC;
+		@media (width >= $m) {
+			font: normal normal normal 35px/35px Poppins;
+		}
+	}
+	&__label-date{
+		display: block;
+		font: normal normal normal 18px/35px Poppins;
+		letter-spacing: -0.63px;
+		color: #CCCCCC;
+		text-decoration: underline;
+	}
+	&__label-anchor{
+		display: block;
+		text-align: center;
+		font: normal normal 600 13px/24px Poppins;
+		letter-spacing: 0px;
+		color: #FFFFFF;
+		text-transform: uppercase;
+		background: #9E852E;
+		width: 104px;
+		height: 32px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 15px;
+		@media (width >= $m) {
+			width: 100%;
+			font: normal normal 600 19px/24px Poppins;
+			height: 48px;
+			margin-top: 0;
+		}
+	}
+	&__sub-title{
+		font: normal normal 500 20px/27px Poppins;
+		letter-spacing: -0.4px;
+		color: #1F2024;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+		display: block;
+		text-align: left;
+		width: 100%;
+		text-align: center;
+		@media (width >= $sm) {
+			text-align: left;
+		}
+	}
+	&__sub-title-color{
+		color: #9E852E;
+	}
+	&__bonuses-grid-label{
+		font-style: normal;
+		font-weight: 500; 
+		font-size: 12px;
+		line-height: 14px;
+		font-family: 'Poppins', sans-serif;
+		letter-spacing: -0.32px;
+		color: #2C2E32;
+		@media (width >= 375px) {
+			font-size: 16px;
+			line-height: 20px;
+		}
+	}
+	&__bonuses-grid-item{
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+	&__bonuses-grid-item > img{
+		margin-right: 5px;
+	}
+	&__bonuses-grid-item > span{
+		font: normal normal medium 18px/20px Poppins;
+		letter-spacing: -0.36px;
+		color: #2C2E32;
+			
+	}
+}
+

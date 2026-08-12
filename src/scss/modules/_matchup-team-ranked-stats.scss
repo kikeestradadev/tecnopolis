@@ -1,0 +1,126 @@
+.team-ranked-stats{
+	&__item{
+		box-shadow: 0px 2px 6px #0000001F;
+		min-height: 500px;
+		padding: 30px 15px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	&__tabs{
+		justify-content: space-between;
+	}
+	&__tab{
+		width: 80px;
+		height: 32px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid #2C2E32;
+		background-color: white;
+		font: normal normal 600 15px/24px Poppins;
+		letter-spacing: 0px;
+		text-transform: uppercase;
+		@media (width >= 450px) {
+			width: 120px;
+			height: 40px;			
+		}
+		@media (width >= $m) {
+			width: 100px;
+			height: 40px;		
+		}
+		
+		@media (width >= $xl) {
+			width: 80px;
+			height: 32px;			
+		}
+		@media (width >= cxxl) {
+			width: 120px;
+			height: 40px;			
+		}
+		&.is-active {
+			background: #2C2E32;
+			color: #ffffff;
+		}
+	}
+	&__tab:nth-child(1){
+		border: none;
+	}
+	&__team-logo{
+		transform: scale(2);
+	}
+	&__title{
+		display      : flex;
+		flex-wrap    : wrap;
+		width        : 100%;
+		border-bottom: 1px solid #CCCCCC;
+		margin: 20px 0 10px 0;
+		padding-bottom: 10px;
+		padding-right: 7px;
+	}
+	&__title-item{
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 9px;
+		line-height: 9px;
+		letter-spacing: 0px;
+		color: #2C2E32;
+		text-transform: uppercase;
+	}
+	&__title-item:nth-child(1){
+		width: calc(100% - 200px);
+	}
+	&__title-item:nth-child(2){
+		flex-basis: 100px;
+		flex-grow: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__title-item:nth-child(3){
+		flex-basis: 100px;
+		flex-grow: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__panels{
+		padding: 0 0 15px 0;
+		border: none;
+	}
+	&__panel{
+		padding: 0;
+	}
+	&__score-container{
+		display: flex;
+		margin-bottom: 15px;
+	}
+	&__score-item{
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 9px;
+		line-height: 9px;
+		letter-spacing: 0px;
+		color: #2C2E32;
+		text-transform: capitalize;
+	}
+	&__score-item:nth-child(1){
+		width: calc(100% - 200px);
+	}
+	&__score-item:nth-child(2){
+		flex-basis: 100px;
+		flex-grow: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__score-item:nth-child(3){
+		flex-basis: 100px;
+		flex-grow: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

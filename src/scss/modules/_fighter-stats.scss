@@ -1,0 +1,41 @@
+.fighter-stats{
+	&__item{
+		box-shadow: 0px 2px 6px #0000001F;
+		padding: 15px;
+		@media (width >= $m) {
+			padding: 30px;
+		}
+	}
+	&__title-container{
+		position: relative;
+		width: 100%;
+		
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@media (width >= 480px) {
+			max-width: 300px;
+		}
+		@media (width >= $m) {
+			max-width: 500px;
+		}
+	}
+	&__title{		
+		font: normal normal 600 27px/27px Poppins;
+		letter-spacing: -0.82px;
+		color: #2C2E32;
+		text-transform: uppercase;
+		z-index: 50;
+		@media (width >= $m) {
+			font: normal normal 600 41px/27px Poppins;
+		}
+	}
+	&__video{
+		position: absolute;	
+		right: 0;	
+		top: 0;
+		width: 60px;
+		;
+	}
+}

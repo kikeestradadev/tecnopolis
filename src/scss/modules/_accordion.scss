@@ -1,0 +1,66 @@
+/*here start accordion component styles*/
+.accordion{
+	background: white; 
+}
+.accordion-module{
+	margin-bottom: 60px;
+}
+.accordion-container{
+	margin-top					: 30px;
+	&__wrapp{
+		margin-bottom			: 20px;
+		border					: 1px solid #dddddd;
+		overflow				: hidden;
+	}
+	&__btn-acc {
+		position: relative;
+		background-color		: white;
+		border					: none;
+		cursor					: pointer;
+		padding					: 0 50px 0 18px;
+		height					: 56px;
+		width					: 100%;
+		text-align				: left;
+		outline					: none;
+		transition				: 0.4s;
+		border-bottom			: 1px solid #fff;
+		font					: normal normal 600 15px/27px Poppins;
+		letter-spacing			: -0.3px;
+		color					: #1F2024;
+	}
+	.active {
+	background-color			: #f3f3f3;
+	border-bottom				: 1px solid #dddddd;
+	}
+  
+	&__panel {
+	padding						: 0 18px;
+	background-color			: white;
+	max-height					: 0;
+	overflow					: hidden;
+	transition					: max-height 0.2s ease-out;
+	font						: normal normal normal 16px/22px Bai Jamjuree;
+	letter-spacing				: 0px;
+	color						: #242E3D;
+	}  
+	&__btn-acc:after {
+		position: absolute;
+		top: 15px;
+		right: 10px;
+		content					: "";
+		width					: 25px;
+		height					: 25px;
+		background-image		: url('images/chevron-up.svg');
+		background-size			: cover;
+		background-repeat		: no-repeat;
+		transform: scale(.6);
+	}  
+	.active:after {
+		content					: "";
+		background-image		: url('images/chevron-down.svg');
+	}
+	&__text{
+		margin-top: 10px;
+	}
+}
+/*here finish accordion component styles*/

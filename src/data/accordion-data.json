@@ -1,0 +1,17 @@
+{
+	"title": "Frequently Asked Questions",
+	"items": [
+		{
+			"question": "What is Tecnopolis?",
+			"answer": "Tecnopolis is a digital magazine about technology, current affairs and e-commerce."
+		},
+		{
+			"question": "What do you cover?",
+			"answer": "AI, gadgets, startups, marketplaces, payments and digital policy."
+		},
+		{
+			"question": "How often do you publish?",
+			"answer": "We publish daily briefs and weekly deep dives for founders and curious readers."
+		}
+	]
+}
