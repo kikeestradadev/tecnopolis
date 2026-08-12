@@ -1,0 +1,331 @@
+{
+	"pages": {
+		"reviews": {
+			"title": "Reviews",
+			"eyebrow": "Tecnopolis",
+			"description": "Análisis y reseñas de productos, plataformas y herramientas digitales.",
+			"intro": "Comparativas y pruebas a fondo para decidir con criterio en tecnología y e-commerce.",
+			"breadcrumb": [
+				{ "label": "Home", "href": "index.html" },
+				{ "label": "Reviews" }
+			]
+		},
+		"opinion": {
+			"title": "Opinión",
+			"eyebrow": "Tecnopolis",
+			"description": "Columnas y puntos de vista sobre tecnología, actualidad y comercio digital.",
+			"intro": "Ensayos y análisis editoriales sobre el impacto de la tecnología en negocios y sociedad.",
+			"breadcrumb": [
+				{ "label": "Home", "href": "index.html" },
+				{ "label": "Opinión" }
+			]
+		},
+		"tech-ia-chatbots": {
+			"title": "Chatbots",
+			"eyebrow": "Tech · IA · Gen AI",
+			"description": "Chatbots y asistentes conversacionales impulsados por IA generativa.",
+			"intro": "Casos de uso, plataformas y buenas prácticas para asistentes conversacionales en producto y atención al cliente.",
+			"breadcrumb": [
+				{ "label": "Home", "href": "index.html" },
+				{ "label": "Tech" },
+				{ "label": "IA" },
+				{ "label": "Gen AI" },
+				{ "label": "Chatbots" }
+			]
+		},
+		"tech-ia-imagenes": {
+			"title": "Imágenes",
+			"eyebrow": "Tech · IA · Gen AI",
+			"description": "Generación y edición de imágenes con IA.",
+			"intro": "Modelos, flujos creativos y herramientas para producción visual asistida por inteligencia artificial.",
+			"breadcrumb": [
+				{ "label": "Home", "href": "index.html" },
+				{ "label": "Tech" },
+				{ "label": "IA" },
+				{ "label": "Gen AI" },
+				{ "label": "Imágenes" }
+			]
+		},
+		"tech-ia-prompts": {
+			"title": "Prompts",
+			"eyebrow": "Tech · IA · Gen AI",
+			"description": "Ingeniería de prompts y patrones de instrucción para modelos generativos.",
+			"intro": "Técnicas, plantillas y frameworks para obtener mejores resultados con LLMs.",
+			"breadcrumb": [
+				{ "label": "Home", "href": "index.html" },
+				{ "label": "Tech" },
+				{ "label": "IA" },
+				{ "label": "Gen AI" },
+				{ "label": "Prompts" }
+			]
+		},
+		"tech-ia-empresa": {
+			"title": "Empresa",
+			"eyebrow": "Tech · IA · Gen AI",
+			"description": "IA generativa aplicada a operaciones y producto en la empresa.",
+			"intro": "Adopción, gobernanza y ROI de Gen AI en equipos de negocio y tecnología.",
+			"breadcrumb": [
+				{ "label": "Home", "href": "index.html" },
+				{ "label": "Tech" },
+				{ "label": "IA" },
+				{ "label": "Gen AI" },
+				{ "label": "Empresa" }
+			]
+		},
+		"tech-ia-ml": {
+			"title": "ML",
+			"eyebrow": "Tech · IA",
+			"description": "Machine learning, modelos predictivos y MLOps.",
+			"intro": "Desde datos y entrenamiento hasta despliegue y monitoreo de modelos en producción.",
+			"breadcrumb": [
+				{ "label": "Home", "href": "index.html" },
+				{ "label": "Tech" },
+				{ "label": "IA" },
+				{ "label": "ML" }
+			]
+		},
+		"tech-ia-etica": {
+			"title": "Ética",
+			"eyebrow": "Tech · IA",
+			"description": "Ética, sesgos y responsabilidad en sistemas de inteligencia artificial.",
+			"intro": "Marco regulatorio, riesgos y prácticas responsables para equipos que construyen con IA.",
+			"breadcrumb": [
+				{ "label": "Home", "href": "index.html" },
+				{ "label": "Tech" },
+				{ "label": "IA" },
+				{ "label": "Ética" }
+			]
+		},
+		"tech-gadgets-phones": {
+			"title": "Phones",
+			"eyebrow": "Tech · Gadgets",
+			"description": "Smartphones, lanzamientos y comparativas.",
+			"intro": "Novedades de hardware móvil, specs y recomendaciones de compra.",
+			"breadcrumb": [
+				{ "label": "Home", "href": "index.html" },
+				{ "label": "Tech" },
+				{ "label": "Gadgets" },
+				{ "label": "Phones" }
+			]
+		},
+		"tech-gadgets-laptops": {
+			"title": "Laptops",
+			"eyebrow": "Tech · Gadgets",
+			"description": "Portátiles para trabajo, creación y gaming.",
+			"intro": "Guías de compra y análisis de laptops según perfil de uso.",
+			"breadcrumb": [
+				{ "label": "Home", "href": "index.html" },
+				{ "label": "Tech" },
+				{ "label": "Gadgets" },
+				{ "label": "Laptops" }
+			]
+		},
+		"tech-gadgets-wearables": {
+			"title": "Wearables",
+			"eyebrow": "Tech · Gadgets",
+			"description": "Wearables, relojes inteligentes y dispositivos conectados.",
+			"intro": "Salud, fitness y productividad en la muñeca y más allá.",
+			"breadcrumb": [
+				{ "label": "Home", "href": "index.html" },
+				{ "label": "Tech" },
+				{ "label": "Gadgets" },
+				{ "label": "Wearables" }
+			]
+		},
+		"tech-gadgets-audio": {
+			"title": "Audio",
+			"eyebrow": "Tech · Gadgets",
+			"description": "Auriculares, parlantes y audio personal.",
+			"intro": "Calidad de sonido, cancelación de ruido y setups para trabajo o entretenimiento.",
+			"breadcrumb": [
+				{ "label": "Home", "href": "index.html" },
+				{ "label": "Tech" },
+				{ "label": "Gadgets" },
+				{ "label": "Audio" }
+			]
+		},
+		"tech-apps": {
+			"title": "Apps",
+			"eyebrow": "Tech",
+			"description": "Aplicaciones móviles y de productividad.",
+			"intro": "Herramientas destacadas, lanzamientos y flujos de trabajo digitales.",
+			"breadcrumb": [
+				{ "label": "Home", "href": "index.html" },
+				{ "label": "Tech" },
+				{ "label": "Apps" }
+			]
+		},
+		"tech-security": {
+			"title": "Security",
+			"eyebrow": "Tech",
+			"description": "Ciberseguridad, privacidad y protección de datos.",
+			"intro": "Amenazas, buenas prácticas y herramientas para usuarios y equipos técnicos.",
+			"breadcrumb": [
+				{ "label": "Home", "href": "index.html" },
+				{ "label": "Tech" },
+				{ "label": "Security" }
+			]
+		},
+		"tech-cloud": {
+			"title": "Cloud",
+			"eyebrow": "Tech",
+			"description": "Cloud computing, infra y plataformas como servicio.",
+			"intro": "Arquitecturas, costos y tendencias en la nube pública y multi-cloud.",
+			"breadcrumb": [
+				{ "label": "Home", "href": "index.html" },
+				{ "label": "Tech" },
+				{ "label": "Cloud" }
+			]
+		},
+		"news-startups-funding": {
+			"title": "Funding",
+			"eyebrow": "News · Startups",
+			"description": "Rondas de inversión y financiamiento de startups.",
+			"intro": "Capital semilla, Series A+ y señales del mercado de venture.",
+			"breadcrumb": [
+				{ "label": "Home", "href": "index.html" },
+				{ "label": "News" },
+				{ "label": "Startups" },
+				{ "label": "Funding" }
+			]
+		},
+		"news-startups-latam": {
+			"title": "Latam",
+			"eyebrow": "News · Startups",
+			"description": "El ecosistema startup en América Latina.",
+			"intro": "Emprendimiento, hubs y oportunidades en la región.",
+			"breadcrumb": [
+				{ "label": "Home", "href": "index.html" },
+				{ "label": "News" },
+				{ "label": "Startups" },
+				{ "label": "Latam" }
+			]
+		},
+		"news-startups-casos": {
+			"title": "Casos",
+			"eyebrow": "News · Startups",
+			"description": "Casos de éxito y aprendizajes de startups.",
+			"intro": "Historias reales de producto, growth y pivotes.",
+			"breadcrumb": [
+				{ "label": "Home", "href": "index.html" },
+				{ "label": "News" },
+				{ "label": "Startups" },
+				{ "label": "Casos" }
+			]
+		},
+		"news-big-tech": {
+			"title": "Big Tech",
+			"eyebrow": "News",
+			"description": "Actualidad de las grandes tecnológicas.",
+			"intro": "Movimientos estratégicos, productos y regulaciones que marcan la industria.",
+			"breadcrumb": [
+				{ "label": "Home", "href": "index.html" },
+				{ "label": "News" },
+				{ "label": "Big Tech" }
+			]
+		},
+		"news-policy": {
+			"title": "Policy",
+			"eyebrow": "News",
+			"description": "Política tecnológica y regulación digital.",
+			"intro": "Normativa, lobby y el marco legal que redefine internet y la IA.",
+			"breadcrumb": [
+				{ "label": "Home", "href": "index.html" },
+				{ "label": "News" },
+				{ "label": "Policy" }
+			]
+		},
+		"news-trends": {
+			"title": "Trends",
+			"eyebrow": "News",
+			"description": "Tendencias tecnológicas y de mercado.",
+			"intro": "Señales tempranas y macro-tendencias que importan a negocios digitales.",
+			"breadcrumb": [
+				{ "label": "Home", "href": "index.html" },
+				{ "label": "News" },
+				{ "label": "Trends" }
+			]
+		},
+		"commerce-markets-amazon": {
+			"title": "Amazon",
+			"eyebrow": "Commerce · Markets",
+			"description": "Amazon, marketplace y sellers.",
+			"intro": "Estrategias, fees y oportunidades en el ecosistema Amazon.",
+			"breadcrumb": [
+				{ "label": "Home", "href": "index.html" },
+				{ "label": "Commerce" },
+				{ "label": "Markets" },
+				{ "label": "Amazon" }
+			]
+		},
+		"commerce-markets-meli": {
+			"title": "MeLi",
+			"eyebrow": "Commerce · Markets",
+			"description": "Mercado Libre y e-commerce en Latam.",
+			"intro": "Ventas, logística y crecimiento en el marketplace líder regional.",
+			"breadcrumb": [
+				{ "label": "Home", "href": "index.html" },
+				{ "label": "Commerce" },
+				{ "label": "Markets" },
+				{ "label": "MeLi" }
+			]
+		},
+		"commerce-markets-shopify": {
+			"title": "Shopify",
+			"eyebrow": "Commerce · Markets",
+			"description": "Shopify y tiendas online independientes.",
+			"intro": "Stack, apps y growth para marcas en Shopify.",
+			"breadcrumb": [
+				{ "label": "Home", "href": "index.html" },
+				{ "label": "Commerce" },
+				{ "label": "Markets" },
+				{ "label": "Shopify" }
+			]
+		},
+		"commerce-markets-dtc": {
+			"title": "DTC",
+			"eyebrow": "Commerce · Markets",
+			"description": "Marcas direct-to-consumer y retail digital.",
+			"intro": "Adquisición, retención y branding para marcas DTC.",
+			"breadcrumb": [
+				{ "label": "Home", "href": "index.html" },
+				{ "label": "Commerce" },
+				{ "label": "Markets" },
+				{ "label": "DTC" }
+			]
+		},
+		"commerce-pagos": {
+			"title": "Pagos",
+			"eyebrow": "Commerce",
+			"description": "Pagos digitales, fintech y checkout.",
+			"intro": "Métodos de pago, conversión y fraude en e-commerce.",
+			"breadcrumb": [
+				{ "label": "Home", "href": "index.html" },
+				{ "label": "Commerce" },
+				{ "label": "Pagos" }
+			]
+		},
+		"commerce-envios": {
+			"title": "Envíos",
+			"eyebrow": "Commerce",
+			"description": "Logística, fulfillment y última milla.",
+			"intro": "Costos, plazos y operadores para entregar mejor y más barato.",
+			"breadcrumb": [
+				{ "label": "Home", "href": "index.html" },
+				{ "label": "Commerce" },
+				{ "label": "Envíos" }
+			]
+		},
+		"commerce-ux": {
+			"title": "UX",
+			"eyebrow": "Commerce",
+			"description": "UX de compra y conversión en e-commerce.",
+			"intro": "Patrones de interfaz, confianza y experimentación en tiendas online.",
+			"breadcrumb": [
+				{ "label": "Home", "href": "index.html" },
+				{ "label": "Commerce" },
+				{ "label": "UX" }
+			]
+		}
+	}
+}

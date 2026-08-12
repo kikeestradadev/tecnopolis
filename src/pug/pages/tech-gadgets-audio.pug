@@ -1,0 +1,11 @@
+extends ../config/template2
+
+block append config
+	- currentPage = 'tech-gadgets-audio'
+	- siteName = 'Tecnopolis'
+	- categoryPage = categoryPagesData.pages['tech-gadgets-audio']
+	- pageDescription = categoryPage.description
+
+block content-info
+	include ../components/matchup-team-ranked-stats
+	include ../components/matchup-team-standings

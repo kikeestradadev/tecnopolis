@@ -1,0 +1,11 @@
+extends ../config/template2
+
+block append config
+	- currentPage = 'commerce-ux'
+	- siteName = 'Tecnopolis'
+	- categoryPage = categoryPagesData.pages['commerce-ux']
+	- pageDescription = categoryPage.description
+
+block content-info
+	include ../components/top-sports
+	include ../components/sportsbooks-bonuses-banner

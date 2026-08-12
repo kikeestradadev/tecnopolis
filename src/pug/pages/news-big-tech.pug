@@ -1,0 +1,11 @@
+extends ../config/template2
+
+block append config
+	- currentPage = 'news-big-tech'
+	- siteName = 'Tecnopolis'
+	- categoryPage = categoryPagesData.pages['news-big-tech']
+	- pageDescription = categoryPage.description
+
+block content-info
+	include ../components/ufc-fighters-list
+	include ../components/ufc-list

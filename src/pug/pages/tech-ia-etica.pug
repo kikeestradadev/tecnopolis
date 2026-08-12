@@ -1,0 +1,11 @@
+extends ../config/template2
+
+block append config
+	- currentPage = 'tech-ia-etica'
+	- siteName = 'Tecnopolis'
+	- categoryPage = categoryPagesData.pages['tech-ia-etica']
+	- pageDescription = categoryPage.description
+
+block content-info
+	include ../components/matchup-game-information
+	include ../components/matchup-odds-bar

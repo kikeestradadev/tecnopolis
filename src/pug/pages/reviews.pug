@@ -1,0 +1,11 @@
+extends ../config/template2
+
+block append config
+	- currentPage = 'reviews'
+	- siteName = 'Tecnopolis'
+	- categoryPage = categoryPagesData.pages['reviews']
+	- pageDescription = categoryPage.description
+
+block content-info
+	include ../components/home-banner
+	include ../components/title-page

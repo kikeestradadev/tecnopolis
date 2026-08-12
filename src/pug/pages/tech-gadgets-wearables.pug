@@ -1,0 +1,11 @@
+extends ../config/template2
+
+block append config
+	- currentPage = 'tech-gadgets-wearables'
+	- siteName = 'Tecnopolis'
+	- categoryPage = categoryPagesData.pages['tech-gadgets-wearables']
+	- pageDescription = categoryPage.description
+
+block content-info
+	include ../components/matchup-return-of-investment
+	include ../components/matchup-stats

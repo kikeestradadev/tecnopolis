@@ -1,0 +1,11 @@
+extends ../config/template2
+
+block append config
+	- currentPage = 'tech-security'
+	- siteName = 'Tecnopolis'
+	- categoryPage = categoryPagesData.pages['tech-security']
+	- pageDescription = categoryPage.description
+
+block content-info
+	include ../components/teams-page
+	include ../components/team-top-banner

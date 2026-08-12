@@ -21,20 +21,20 @@
 							"icon": "images/tech-icon.svg",
 							"id": "tech-ai-gen",
 							"children": [
-								{ "label": "Chatbots", "href": "#", "icon": "images/tech-icon.svg" },
-								{ "label": "Imágenes", "href": "#", "icon": "images/tech-icon.svg" },
-								{ "label": "Prompts", "href": "#", "icon": "images/tech-icon.svg" },
-								{ "label": "Empresa", "href": "#", "icon": "images/tech-icon.svg" }
+								{ "label": "Chatbots", "href": "tech-ia-chatbots.html", "icon": "images/tech-icon.svg" },
+								{ "label": "Imágenes", "href": "tech-ia-imagenes.html", "icon": "images/tech-icon.svg" },
+								{ "label": "Prompts", "href": "tech-ia-prompts.html", "icon": "images/tech-icon.svg" },
+								{ "label": "Empresa", "href": "tech-ia-empresa.html", "icon": "images/tech-icon.svg" }
 							]
 						},
 						{
 							"label": "ML",
-							"href": "#",
+							"href": "tech-ia-ml.html",
 							"icon": "images/tech-icon.svg"
 						},
 						{
 							"label": "Ética",
-							"href": "#",
+							"href": "tech-ia-etica.html",
 							"icon": "images/tech-icon.svg"
 						}
 					]
@@ -45,25 +45,25 @@
 					"icon": "images/tech-icon.svg",
 					"id": "tech-gadgets",
 					"children": [
-						{ "label": "Phones", "href": "#", "icon": "images/tech-icon.svg" },
-						{ "label": "Laptops", "href": "#", "icon": "images/tech-icon.svg" },
-						{ "label": "Wearables", "href": "#", "icon": "images/tech-icon.svg" },
-						{ "label": "Audio", "href": "#", "icon": "images/tech-icon.svg" }
+						{ "label": "Phones", "href": "tech-gadgets-phones.html", "icon": "images/tech-icon.svg" },
+						{ "label": "Laptops", "href": "tech-gadgets-laptops.html", "icon": "images/tech-icon.svg" },
+						{ "label": "Wearables", "href": "tech-gadgets-wearables.html", "icon": "images/tech-icon.svg" },
+						{ "label": "Audio", "href": "tech-gadgets-audio.html", "icon": "images/tech-icon.svg" }
 					]
 				},
 				{
 					"label": "apps",
-					"href": "#",
+					"href": "tech-apps.html",
 					"icon": "images/tech-icon.svg"
 				},
 				{
 					"label": "security",
-					"href": "#",
+					"href": "tech-security.html",
 					"icon": "images/tech-icon.svg"
 				},
 				{
 					"label": "cloud",
-					"href": "#",
+					"href": "tech-cloud.html",
 					"icon": "images/tech-icon.svg"
 				}
 			]
@@ -78,24 +78,24 @@
 					"icon": "images/tech-icon.svg",
 					"id": "news-startups",
 					"children": [
-						{ "label": "Funding", "href": "#", "icon": "images/tech-icon.svg" },
-						{ "label": "Latam", "href": "#", "icon": "images/tech-icon.svg" },
-						{ "label": "Casos", "href": "#", "icon": "images/tech-icon.svg" }
+						{ "label": "Funding", "href": "news-startups-funding.html", "icon": "images/tech-icon.svg" },
+						{ "label": "Latam", "href": "news-startups-latam.html", "icon": "images/tech-icon.svg" },
+						{ "label": "Casos", "href": "news-startups-casos.html", "icon": "images/tech-icon.svg" }
 					]
 				},
 				{
 					"label": "big tech",
-					"href": "#",
+					"href": "news-big-tech.html",
 					"icon": "images/tech-icon.svg"
 				},
 				{
 					"label": "policy",
-					"href": "#",
+					"href": "news-policy.html",
 					"icon": "images/tech-icon.svg"
 				},
 				{
 					"label": "trends",
-					"href": "#",
+					"href": "news-trends.html",
 					"icon": "images/tech-icon.svg"
 				}
 			]
@@ -110,25 +110,25 @@
 					"icon": "images/tech-icon.svg",
 					"id": "ecom-market",
 					"children": [
-						{ "label": "Amazon", "href": "#", "icon": "images/tech-icon.svg" },
-						{ "label": "MeLi", "href": "#", "icon": "images/tech-icon.svg" },
-						{ "label": "Shopify", "href": "#", "icon": "images/tech-icon.svg" },
-						{ "label": "DTC", "href": "#", "icon": "images/tech-icon.svg" }
+						{ "label": "Amazon", "href": "commerce-markets-amazon.html", "icon": "images/tech-icon.svg" },
+						{ "label": "MeLi", "href": "commerce-markets-meli.html", "icon": "images/tech-icon.svg" },
+						{ "label": "Shopify", "href": "commerce-markets-shopify.html", "icon": "images/tech-icon.svg" },
+						{ "label": "DTC", "href": "commerce-markets-dtc.html", "icon": "images/tech-icon.svg" }
 					]
 				},
 				{
 					"label": "pagos",
-					"href": "#",
+					"href": "commerce-pagos.html",
 					"icon": "images/tech-icon.svg"
 				},
 				{
 					"label": "envíos",
-					"href": "#",
+					"href": "commerce-envios.html",
 					"icon": "images/tech-icon.svg"
 				},
 				{
 					"label": "UX",
-					"href": "#",
+					"href": "commerce-ux.html",
 					"icon": "images/tech-icon.svg"
 				}
 			]
@@ -136,12 +136,12 @@
 		{
 			"type": "link",
 			"label": "reviews",
-			"href": "#"
+			"href": "reviews.html"
 		},
 		{
 			"type": "link",
 			"label": "opinión",
-			"href": "#"
+			"href": "opinion.html"
 		}
 	],
 	"search": {

@@ -1,0 +1,11 @@
+extends ../config/template2
+
+block append config
+	- currentPage = 'commerce-markets-shopify'
+	- siteName = 'Tecnopolis'
+	- categoryPage = categoryPagesData.pages['commerce-markets-shopify']
+	- pageDescription = categoryPage.description
+
+block content-info
+	include ../components/odds-compare
+	include ../components/small-size-slider-states

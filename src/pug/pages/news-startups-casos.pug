@@ -1,0 +1,11 @@
+extends ../config/template2
+
+block append config
+	- currentPage = 'news-startups-casos'
+	- siteName = 'Tecnopolis'
+	- categoryPage = categoryPagesData.pages['news-startups-casos']
+	- pageDescription = categoryPage.description
+
+block content-info
+	include ../components/fighter-img
+	include ../components/fighter-stats

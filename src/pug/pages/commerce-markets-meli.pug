@@ -1,0 +1,11 @@
+extends ../config/template2
+
+block append config
+	- currentPage = 'commerce-markets-meli'
+	- siteName = 'Tecnopolis'
+	- categoryPage = categoryPagesData.pages['commerce-markets-meli']
+	- pageDescription = categoryPage.description
+
+block content-info
+	include ../components/graphql-practice
+	include ../components/ibd-map

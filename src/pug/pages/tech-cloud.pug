@@ -1,0 +1,11 @@
+extends ../config/template2
+
+block append config
+	- currentPage = 'tech-cloud'
+	- siteName = 'Tecnopolis'
+	- categoryPage = categoryPagesData.pages['tech-cloud']
+	- pageDescription = categoryPage.description
+
+block content-info
+	include ../components/team-grid-news
+	include ../components/team-trend

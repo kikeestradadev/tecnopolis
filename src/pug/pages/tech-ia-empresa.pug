@@ -1,0 +1,11 @@
+extends ../config/template2
+
+block append config
+	- currentPage = 'tech-ia-empresa'
+	- siteName = 'Tecnopolis'
+	- categoryPage = categoryPagesData.pages['tech-ia-empresa']
+	- pageDescription = categoryPage.description
+
+block content-info
+	include ../components/border-multicolor-container
+	include ../components/border-multicolor-grid

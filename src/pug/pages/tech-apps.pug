@@ -1,0 +1,11 @@
+extends ../config/template2
+
+block append config
+	- currentPage = 'tech-apps'
+	- siteName = 'Tecnopolis'
+	- categoryPage = categoryPagesData.pages['tech-apps']
+	- pageDescription = categoryPage.description
+
+block content-info
+	include ../components/matchup-injuries
+	include ../components/matchup-team-scores

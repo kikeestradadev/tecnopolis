@@ -1,0 +1,11 @@
+extends ../config/template2
+
+block append config
+	- currentPage = 'commerce-envios'
+	- siteName = 'Tecnopolis'
+	- categoryPage = categoryPagesData.pages['commerce-envios']
+	- pageDescription = categoryPage.description
+
+block content-info
+	include ../components/slider-top-sportsbooks
+	include ../components/tabs-pros-cons

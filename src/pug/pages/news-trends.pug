@@ -1,0 +1,11 @@
+extends ../config/template2
+
+block append config
+	- currentPage = 'news-trends'
+	- siteName = 'Tecnopolis'
+	- categoryPage = categoryPagesData.pages['news-trends']
+	- pageDescription = categoryPage.description
+
+block content-info
+	include ../components/ufc-schedule-upcoming
+	include ../components/fight-card-top-banner

@@ -17,5 +17,9 @@
 	"rightBanner": {
 		"src": "images/right_widget_1.png",
 		"alt": ""
-	}
+	},
+	"rightBanners": [
+		{ "src": "images/right_widget_1.png", "alt": "" },
+		{ "src": "images/right_widget_2.png", "alt": "" }
+	]
 }

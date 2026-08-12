@@ -1,0 +1,11 @@
+extends ../config/template2
+
+block append config
+	- currentPage = 'news-startups-funding'
+	- siteName = 'Tecnopolis'
+	- categoryPage = categoryPagesData.pages['news-startups-funding']
+	- pageDescription = categoryPage.description
+
+block content-info
+	include ../components/team-full-widget
+	include ../components/team-highlights

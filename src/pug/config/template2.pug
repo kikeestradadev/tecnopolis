@@ -1,0 +1,77 @@
+block config
+	- let currentPage = 'home';
+	- let content = 'My Page';
+	- let siteName = 'Tecnopolis';
+	- let pageDescription = 'Revista digital de tecnología, actualidad y e-commerce';
+doctype html
+html(lang='en' prefix='og: http://ogp.me/ns#' class='no-js')
+	head
+		meta(charset='utf-8')
+		meta(name='viewport' content='width=device-width, initial-scale=1.0')
+		meta(name='format-detection' content='telephone=no')
+		meta(name='theme-color' content='#9E852E')
+		link(rel='icon' href='./assets/sprite.svg' type='image/svg+xml')
+		meta(name='description' content=pageDescription)
+		meta(name='robots' content='index, follow')
+		link(rel='canonical' href='')
+		include open-graph
+		include twitter-cards
+		script(src='https://kit.fontawesome.com/20f3c29ee8.js' crossorigin='anonymous')
+		link(rel='preconnect' href='https://fonts.googleapis.com')
+		link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin)
+		link(
+			href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'
+			rel='stylesheet'
+		)
+		link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css')
+		link(rel='stylesheet' href=`./assets/prism.css?v=${assetVersion}`)
+		link(rel='stylesheet' href=`styles.css?v=${assetVersion}`)
+		title= currentPage.slice(0, 1).toUpperCase() + currentPage.slice(1) + ' | ' + siteName
+	body(class=currentPage itemscope itemtype='http://schema.org/WebPage')
+		div(class='blurry-overlap')
+		header(class='top-widget')
+			div(class='top-widget__container')
+				img(src=siteShellData.topWidget.src alt=siteShellData.topWidget.alt)
+		div(class='nav-spacer')
+			div(class='nav-spacer__container')
+				a(href=siteShellData.logo.href class='nav-spacer__logo')
+					img(src=siteShellData.logo.src alt=siteShellData.logo.alt)
+				span(class='nav-spacer__open-mobile-menu')
+		main(class='main-wrapper')
+			aside(class='left-sidebar')
+				div(class='left-sidebar__container-fixed')
+					div(class='left-sidebar__logo-container')
+						a(href=siteShellData.logo.href)
+							img(src=siteShellData.logo.src alt=siteShellData.logo.alt)
+						span(class='left-sidebar__close-container')
+					nav(class='left-sidebar__list-nav')
+						include ../components/left-sidebar-menu
+						ul(class='social-media')
+							each social in siteShellData.social
+								li(class='social-media__li')
+									a(href=social.href class='social-media__anchor')
+										img(src=social.src alt=social.alt)
+			section(class='content-info-full')
+				div(class='content-info-column')
+					div(class='content-info-column__item')
+						block content-sticky
+							include ../components/sticky-banner-desktop
+					div(class='content-info-column__item')
+						block content-mobile-sticky
+							include ../components/sticky-banner-mobile
+						include ../components/secondary-menu
+						block content-info
+			aside(class='right-sidebar')
+				div(class='right-sidebar__container')
+					each banner in siteShellData.rightBanners
+						div(class='right-sidebar__banner-container')
+							img(
+								src=banner.src
+								alt=banner.alt
+								class='right-sidebar__banner'
+							)
+		include ../components/main-footer
+		include ../components/floating-button
+		script(src='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js')
+		script(src=`index.js?v=${assetVersion}`)
+		block scripts

@@ -1,0 +1,11 @@
+extends ../config/template2
+
+block append config
+	- currentPage = 'tech-ia-prompts'
+	- siteName = 'Tecnopolis'
+	- categoryPage = categoryPagesData.pages['tech-ia-prompts']
+	- pageDescription = categoryPage.description
+
+block content-info
+	include ../components/top-sports-sub-tab
+	include ../components/betting-academy

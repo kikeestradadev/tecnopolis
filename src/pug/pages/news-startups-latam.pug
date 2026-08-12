@@ -1,0 +1,11 @@
+extends ../config/template2
+
+block append config
+	- currentPage = 'news-startups-latam'
+	- siteName = 'Tecnopolis'
+	- categoryPage = categoryPagesData.pages['news-startups-latam']
+	- pageDescription = categoryPage.description
+
+block content-info
+	include ../components/team-all-time-records
+	include ../components/fighter-top-banner

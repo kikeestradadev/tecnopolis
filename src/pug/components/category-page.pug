@@ -1,0 +1,19 @@
+section(class='category-page')
+	div(class='main-container category-page__shell')
+		div(class='container category-page__container')
+			nav(class='category-page__breadcrumb' aria-label='Breadcrumb')
+				ol(class='category-page__breadcrumb-list')
+					each crumb, index in categoryPage.breadcrumb
+						li(class='category-page__breadcrumb-item')
+							if crumb.href
+								a(class='category-page__breadcrumb-link' href=crumb.href)= crumb.label
+							else
+								span(class='category-page__breadcrumb-current')= crumb.label
+							if index < categoryPage.breadcrumb.length - 1
+								span(class='category-page__breadcrumb-sep' aria-hidden='true') /
+			p(class='category-page__eyebrow')= categoryPage.eyebrow
+			h1(class='category-page__title')= categoryPage.title
+			p(class='category-page__intro')= categoryPage.intro
+			div(class='category-page__body')
+				p(class='category-page__text')= categoryPage.description
+				p(class='category-page__note') Contenido en construcción. Pronto verás artículos, guías y análisis de esta sección.

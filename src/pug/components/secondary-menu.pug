@@ -1,0 +1,19 @@
+-
+	const secondaryMenuVisible = secondaryMenuData.items.slice(0, secondaryMenuData.visibleCount)
+-
+	const secondaryMenuOverflow = secondaryMenuData.items.slice(secondaryMenuData.visibleCount)
+div(class='secondary-menu-container')
+	div(class='swiper secondary-menu menu-hidden')
+		div(class='padding-left-overflow-fix')
+		div(class='padding-right-overflow-fix')
+		div(class='swiper-wrapper')
+			each item in secondaryMenuVisible
+				div(class='swiper-slide secondary-menu__item')
+					a(href=item.href class='secondary-menu__anchor')= item.label
+			if secondaryMenuOverflow.length
+				div(class='swiper-slide secondary-menu__item')
+					span(class='more')= secondaryMenuData.moreLabel
+					ul(class='top_submenu')
+						each item in secondaryMenuOverflow
+							li(class='top_submenu__li')
+								a(href=item.href class='top_submenu__anchor')= item.label

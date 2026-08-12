@@ -4,6 +4,7 @@ import personaGrid from './modules/personaGrid';
 import tutorGrid from './modules/tutorGrid';
 import mainLayout from './modules/mainLayout';
 import footerTextCollapse from './modules/footerTextCollapse';
+import secondaryMenu from './modules/secondaryMenu';
 import midSizeSlider from './modules/midSizeSlider';
 import smallSizeSlider from './modules/smallSizeSlider';
 import singleSlider from './modules/singleSlider';
@@ -26,6 +27,7 @@ import Prism from 'prismjs';
 const initComponents = () => {
 	mainLayout();
 	footerTextCollapse();
+	secondaryMenu();
 	midSizeSlider();
 	smallSizeSlider();
 	singleSlider();

@@ -1,0 +1,11 @@
+extends ../config/template2
+
+block append config
+	- currentPage = 'opinion'
+	- siteName = 'Tecnopolis'
+	- categoryPage = categoryPagesData.pages['opinion']
+	- pageDescription = categoryPage.description
+
+block content-info
+	include ../components/slider-title
+	include ../components/state-sportsbooks

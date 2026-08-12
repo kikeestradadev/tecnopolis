@@ -1,0 +1,11 @@
+extends ../config/template2
+
+block append config
+	- currentPage = 'news-policy'
+	- siteName = 'Tecnopolis'
+	- categoryPage = categoryPagesData.pages['news-policy']
+	- pageDescription = categoryPage.description
+
+block content-info
+	include ../components/ufc-schedule-top-banner
+	include ../components/ufc-schedule-clock

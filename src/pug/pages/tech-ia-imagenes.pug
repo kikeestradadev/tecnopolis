@@ -1,0 +1,11 @@
+extends ../config/template2
+
+block append config
+	- currentPage = 'tech-ia-imagenes'
+	- siteName = 'Tecnopolis'
+	- categoryPage = categoryPagesData.pages['tech-ia-imagenes']
+	- pageDescription = categoryPage.description
+
+block content-info
+	include ../components/dynamic-side-banner
+	include ../components/tabs

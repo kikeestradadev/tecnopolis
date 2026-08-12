@@ -1,0 +1,11 @@
+extends ../config/template2
+
+block append config
+	- currentPage = 'commerce-pagos'
+	- siteName = 'Tecnopolis'
+	- categoryPage = categoryPagesData.pages['commerce-pagos']
+	- pageDescription = categoryPage.description
+
+block content-info
+	include ../components/small-size-slider
+	include ../components/small-size-slider-news
