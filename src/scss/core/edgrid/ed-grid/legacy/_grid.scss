@@ -9,7 +9,7 @@
   // check if current breakpoint is not equal to previous breakpoint
   @if $currentBreakpoint != $previousBreakpoint {
     @include from($edgridBreakpoint){
-      $width: 100% / $currentBreakpoint;
+      $width: calc(100% / #{$currentBreakpoint});
       & > #{$gridItem}{
         width : item-width($width,$gutter);
       }
@@ -40,7 +40,7 @@
 
 @mixin grid($gridItemSelector,$listColumns,$gutter:1em){
  // $width sirve para calcular el ancho de cada item
-  $width       : 100% / nth($listColumns,1);
+  $width       : calc(100% / #{nth($listColumns,1)});
 
   // elimina el espaciado vertical de las imágenes
   img {
@@ -49,8 +49,8 @@
 
   display      : flex;
   flex-wrap    : wrap;
-  margin-left  : -($gutter / 2);
-  margin-right : -($gutter / 2);
+  margin-left  : calc(#{$gutter} / -2);
+  margin-right : calc(#{$gutter} / -2);
 
   // Evitar scroll horizontal
   @at-root {
@@ -73,7 +73,7 @@
 
   & > #{$gridItemSelector} {
     width  : item-width($width,$gutter);
-    margin : $gutter / 2;
+    margin : calc(#{$gutter} / 2);
   }
 
   // calculate grid item width for each breakpoint

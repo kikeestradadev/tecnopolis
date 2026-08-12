@@ -44,9 +44,10 @@
 @function toPx($value){
   @if type-of($value) == number {
     @if unit($value) == 'em'{
+      // Número Sass para comparar y restar en media queries; slash-div silenciado en gulp.
       @return ($value / 1em) * 16px;
     } @else if unit($value) == 'rem'{
-      @return ($value / 1rem) * 16px
+      @return ($value / 1rem) * 16px;
     } @else if unit($value) == 'px' {
       @return $value;
     } @else {

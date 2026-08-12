@@ -11,8 +11,8 @@
 // placeholder para ed-item
 %ed-item {
   margin        : 0;
-  padding-left  : $gap / 2;
-  padding-right : $gap / 2;
+  padding-left  : calc(#{$gap} / 2);
+  padding-right : calc(#{$gap} / 2);
 }
 
 // Hace que un elemento siempre mida el 100% del ancho disponible
@@ -130,7 +130,7 @@
       @for $i from 1 through $fraction {
         .#{$size}-#{$i}-#{$fraction},
         .#{$item}.#{$size}-#{$i}-#{$fraction} {
-          width : (100% / $fraction) * $i
+          width : calc(100% / #{$fraction} * #{$i})
         }
       }
     }

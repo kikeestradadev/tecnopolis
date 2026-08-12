@@ -323,7 +323,7 @@ gulp.task('styles', () => {
 		.pipe(
 			sass({
 				outputStyle: isProd ? 'compressed' : 'expanded',
-				silenceDeprecations: ['import', 'global-builtin', 'color-functions'],
+				silenceDeprecations: ['import', 'global-builtin', 'color-functions', 'slash-div'],
 			}).on('error', sass.logError)
 		)
 		.pipe(gulpPostcss(postcssPlugins));

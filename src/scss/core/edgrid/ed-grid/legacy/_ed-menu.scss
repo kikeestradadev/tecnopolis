@@ -259,7 +259,7 @@
 ///     @include navToggle(200px, $black);
 ///   }
 @mixin navToggle($size, $color) {
-  $segmentHeight : ($size / 5);
+  $segmentHeight : calc(#{$size} / 5);
   position       : relative;
   z-index        : 300;
   width          : $size * 1.5;
