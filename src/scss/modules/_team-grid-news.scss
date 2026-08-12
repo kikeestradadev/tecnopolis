@@ -1,4 +1,11 @@
 .team-grid-news{
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+	@media (width >= $m) {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
 	&__item{
 		box-shadow: 0px 2px 6px #0000001F;
 		min-height: 96px;

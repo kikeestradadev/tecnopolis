@@ -1,6 +1,6 @@
 section(class='matchup-team-standings')
 	h2(class='matchup-text-center-title') team standings
-	div(class='matchup-team-standings__container sbi-grid full s-grid-1 m-grid-2 xl-grid-2 cxxl-grid-2 row-gap')
+	div(class='matchup-team-standings__container')
 		-for(let i = 1; i<=2; i++)
 			div(class='matchup-team-standings__item')
 				div(class='matchup-team-standings__component')
@@ -8,7 +8,7 @@ section(class='matchup-team-standings')
 						div(class='matchup-team-standings__title')
 							img(class='matchup-team-standings__title-logo' src="images/matchup-odds-logo.svg", alt="")
 							span(class='matchup-team-standings__title-head') NFL STANDINGS
-						div(class='matchup-team-standings__grid-head sbi-grid full s-grid-5 row-gap')
+						div(class='matchup-team-standings__grid-head')
 							div(class='matchup-team-standings__grid-head-item') TEAM
 							div(class='matchup-team-standings__grid-head-item') W
 							div(class='matchup-team-standings__grid-head-item') L
@@ -16,7 +16,7 @@ section(class='matchup-team-standings')
 							div(class='matchup-team-standings__grid-head-item') GB
 					div(class='matchup-team-standings__grid-scores-container')
 						-for(let i = 1; i<=10; i++)
-							div(class='matchup-team-standings__grid-team sbi-grid full s-grid-5 row-gap')
+							div(class='matchup-team-standings__grid-team')
 								div(class='matchup-team-standings__grid-team-item'): img(class='matchup-team-standings__consensus-logo' src="images/matchup-odds-logo.svg", alt="")
 								div(class='matchup-team-standings__grid-team-item') 50
 								div(class='matchup-team-standings__grid-team-item') 40

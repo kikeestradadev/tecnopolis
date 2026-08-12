@@ -24,7 +24,7 @@ No implementes “de memoria”. Omisiones tipicas: sintaxis Pug corta, shells s
 
 | Si tocas…                                          | Lee primero                                                     |
 | -------------------------------------------------- | --------------------------------------------------------------- |
-| Cualquier Sass / CSS                               | `sass-breakpoints`, `sass-hover-touch`                          |
+| Cualquier Sass / CSS                               | `sass-breakpoints`, `sass-hover-touch` (sin Ed-grid; `@media` + `$sm`/`$m`/…) |
 | Layout / sections / modules Pug                    | `bem-module-layout`, skill `layout-containers`                  |
 | Nuevo componente Pug + SCSS (+ JS)                 | `component-symmetry`, skill `create-component`                  |
 | Plantillas Pug                                     | `pug-long-syntax` (rule + skill), `pug-data-files`              |

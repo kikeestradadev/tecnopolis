@@ -1,12 +1,12 @@
 section(class='matchup-game-stats')
 	h2(class='matchup-text-center-title') Game Stats
-	div(class='matchup-game-stats__container sbi-grid full s-grid-1 m-grid-2 row-gap')
+	div(class='matchup-game-stats__container')
 		div(class='matchup-game-stats__item')
 			div(class='matchup-game-stats__item-title')
 				h3(class='matchup-text-center-title')
 					|win 
 					span(class='matchup-game-stats__title-color') PROBABILITY
-			div(class='matchup-game-stats__graphics-container sbi-grid full s-grid-2 xl-grid-1 cxxl-grid-2 row-gap')
+			div(class='matchup-game-stats__graphics-container')
 				div(class='matchup-game-stats__graphic')
 					div(class='matchup-game-stats__graphic_percentage', style='--porcentaje: 50; --color: #012244')
 						svg(width='150', height='150')
@@ -33,7 +33,7 @@ section(class='matchup-game-stats')
 					|win 
 					span(class='matchup-game-stats__title-color') PROBABILITY
 			-for(let i = 1; i<=2; i++)
-				div(class='matchup-game-stats__scores-container sbi-grid full s-grid-3 row-gap')
+				div(class='matchup-game-stats__scores-container')
 					div(class='matchup-game-stats__score'): img(src="images/matchup-trends-ico.svg", alt="")
 					div(class='matchup-game-stats__score', style='color:#ABB4BA') BUCS
 					div(class='matchup-game-stats__score', style='color:#A71930') 20.6

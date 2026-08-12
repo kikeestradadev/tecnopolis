@@ -41,6 +41,7 @@ section(class='main-menu')
 2. Dentro va siempre `.main-container` y luego `.container`.
 3. Puedes combinar con elementos BEM (`main-menu__shell`, `main-menu__container`) sin redefinir width/max-width/padding del shell.
 4. No inventes otros max-width de layout en el parcial SCSS del módulo.
-5. No uses frameworks (Bootstrap, Tailwind, etc.) para este grid de página.
-6. Si el módulo ya vive dentro de un layout que aporta el shell (p. ej. contenido interno del style-guide), no dupliques otro `main-container`; el layout padre es el responsable.
-7. Tokens de ancho viven en `:root` (`_layout.scss`); no hardcodees `3000px` / `1600px` en el markup.
+5. No uses frameworks (Bootstrap, Tailwind, **Ed-grid**, etc.) para este grid de página.
+6. Cuadrículas: CSS Grid en el parcial BEM del módulo (`display: grid` + `@media (width >= $m)`). No `ed-container` / `ed-item` / `sbi-grid`.
+7. Si el módulo ya vive dentro de un layout que aporta el shell (p. ej. contenido interno del style-guide), no dupliques otro `main-container`; el layout padre es el responsable.
+8. Tokens de ancho viven en `:root` (`_layout.scss`); no hardcodees `3000px` / `1600px` en el markup.

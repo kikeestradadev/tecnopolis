@@ -72,6 +72,11 @@
 	box-sizing: border-box;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 ::selection {
 	color: white;
 	background: #9e852e;

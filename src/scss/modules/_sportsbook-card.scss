@@ -1,10 +1,33 @@
 .sportsbook-card{
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 0;
     box-shadow: 0px 6px 12px #0000001F;
     border: 1px solid #EFEFEF;
     border-radius: 16px;
     padding: 15px 0;
 	@media (width >= $m) {
 		padding: 15px;
+	}
+	@media (width >= $lg) {
+		grid-template-columns: 1fr 1fr;
+	}
+	@media (width >= $xxl) {
+		grid-template-columns: 35% 40% 25%;
+	}
+    &__ratings-grid{
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 0.5rem;
+		@media (width >= $sm) {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+		@media (width >= $lg) {
+			grid-template-columns: 1fr;
+		}
+		@media (width >= $xxl) {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
 	}
     &__title-container{
         position: relative;
@@ -14,6 +37,7 @@
         align-items: center;
         justify-content: space-between;
 		margin-bottom: 15px;
+		grid-column: 1 / -1;
     }
 	&__title-item:nth-child(1){
 		// border: 1px solid red;

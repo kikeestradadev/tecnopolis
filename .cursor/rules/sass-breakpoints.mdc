@@ -14,13 +14,48 @@ Debe importar primero:
 @import "./core/breakpoints";
 ```
 
-Después importa core, `modules/modules` y hacks. Los parciales registran dependencias con `@import`.
+Después importa core (`layout`, `site-shell`, …), `modules/modules` y hacks. Los parciales registran dependencias con `@import`.
+
+## Breakpoints
+
+```scss
+$s: 0px;
+$sm: 480px;
+$m: 640px;
+$l: 960px;
+$lg: 1280px;
+$xl: 1600px;
+$xxl: 1800px;
+$xxxl: 1920px;
+$xxxxl: 6000px;
+```
+
+## Correcto
+
+```scss
+.module {
+	@media (width >= $m) {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+```
+
+## Incorrecto
+
+```scss
+.module {
+	@include from(m) { … } // Ed-grid / mixins de breakpoints
+}
+```
 
 ## Reglas
 
 1. No uses `@use` ni `@forward`.
 2. No vuelvas a importar breakpoints dentro de cada parcial.
-3. Usa `$s`, `$sm`, `$m`, `$l`, `$lg`, `$xl`, `$xxl`, `$xxxl` y `$xxxxl` en media queries.
-4. Registra cada parcial de componente en `src/scss/modules/modules.scss`.
-5. Mantén los parciales con prefijo `_`; Gulp solo emite `public/styles.css`.
-6. No reintroduzcas Tailwind ni utilidades utility-first en markup.
+3. Usa `$s`, `$sm`, `$m`, `$l`, `$lg`, `$xl`, `$xxl`, `$xxxl` y `$xxxxl` en `@media (width >= …)`.
+4. **No uses Ed-grid** ni `@include from` / `to` / `fromTo`. La librería se eliminó del proyecto.
+5. Grids: CSS Grid en el parcial BEM del módulo (`display: grid` + `@media (width >= $m)`). No uses clases globales tipo `ed-container` / `ed-item` / `sbi-grid`.
+6. Registra cada parcial de componente en `src/scss/modules/modules.scss`.
+7. Mantén los parciales con prefijo `_`; Gulp solo emite `public/styles.css`.
+8. No reintroduzcas Tailwind ni utilidades utility-first en markup.

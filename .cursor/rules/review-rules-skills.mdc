@@ -13,7 +13,7 @@ Antes de implementar, refactorizar o crear archivos en este repo:
 
 No omitas convenciones del proyecto por asumirlas. En especial:
 
-- Sass + `@import` (`sass-breakpoints`) — **no Tailwind**
+- Sass + `@import` (`sass-breakpoints`) — **no Tailwind**, **no Ed-grid**; media queries con `$sm`/`$m`/…
 - Hover solo con puntero fino (`sass-hover-touch`)
 - Layout `.main-container` / `.container` (`bem-module-layout`, `layout-containers`)
 - Simetría Pug/SCSS/JS (`component-symmetry`)
